@@ -144,10 +144,11 @@ Tempat saya menuliskan proses belajar, pencapaian, dan tantangan dari minggu ke 
 
 ---
 
+---
+
 # 🚀 Highlight Projects
 
-Berikut beberapa project utama yang saya kerjakan selama magang di Interlace Studies Bali.  
-Klik pada kartu di bawah untuk melihat detail lengkap beserta dokumentasi teknis & gambarnya.
+Berikut adalah rangkaian proyek yang saya bangun selama magang, berkaitan dengan data scraping, data engineering, visualisasi data, dan otomasi proses pekerjaan.
 
 <style>
 .project-grid {
@@ -164,6 +165,7 @@ Klik pada kartu di bawah untuk melihat detail lengkap beserta dokumentasi teknis
   background: #ffffff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  text-decoration: none;
 }
 
 .project-card:hover {
@@ -196,49 +198,55 @@ Klik pada kartu di bawah untuk melihat detail lengkap beserta dokumentasi teknis
 
 <div class="project-grid">
 
-<a href="/projects/scraping-acu" class="project-card">
-  <img src="/assets/img/acu-thumb.jpg" class="project-thumb" alt="Scraping ACU">
+<!-- PROVIDERS SCRAPING -->
+<a href="/projects/providers-scraping" class="project-card">
+  <img src="/assets/img/providers-thumb.jpg" class="project-thumb" alt="Providers Scraping">
   <div class="project-body">
-    <div class="project-title">ACU Course Scraping Pipeline</div>
-    <div class="project-desc">Scraping 66 study areas & ratusan course pages dari ACU menggunakan Python & BeautifulSoup.</div>
+    <div class="project-title">Providers Scraping System</div>
+    <div class="project-desc">Scraping data universitas & college (Australia) mencakup description, CRICOS, tuition fee, duration, dan entry requirements.</div>
   </div>
 </a>
 
-<a href="/projects/sql-automation" class="project-card">
-  <img src="/assets/img/sql-thumb.jpg" class="project-thumb" alt="SQL Automation">
+<!-- JOB PORTAL SCRAPING -->
+<a href="/projects/scraping-job-portal" class="project-card">
+  <img src="/assets/img/jobportal-thumb.jpg" class="project-thumb" alt="Job Portal Scraping">
   <div class="project-body">
-    <div class="project-title">SQL Auto-Generation System</div>
-    <div class="project-desc">Membangun sistem otomatis untuk menghasilkan SQL UPDATE/INSERT ratusan course data.</div>
+    <div class="project-title">Job Portal Scraping (IT Job Market)</div>
+    <div class="project-desc">Mengambil lowongan IT dari berbagai portal pekerjaan & menyiapkan data untuk analisis demand pasar teknologi.</div>
   </div>
 </a>
 
-<a href="/projects/data-cleaning" class="project-card">
-  <img src="/assets/img/cleaning-thumb.jpg" class="project-thumb" alt="Data Cleaning">
+<!-- ANZSCO SCRAPING -->
+<a href="/projects/anzsco-scraping" class="project-card">
+  <img src="/assets/img/anzsco-thumb.jpg" class="project-thumb" alt="ANZSCO Scraping">
   <div class="project-body">
-    <div class="project-title">HTML Cleaning & Normalization Engine</div>
-    <div class="project-desc">Mesin pembersih HTML untuk menstandarkan konten sebelum dimasukkan ke database.</div>
+    <div class="project-title">ANZSCO Scraping Automation</div>
+    <div class="project-desc">Scraping klasifikasi pekerjaan ANZSCO untuk memetakan job requirements berdasarkan standar Australia.</div>
   </div>
 </a>
 
-<a href="/projects/cricos-matching" class="project-card">
-  <img src="/assets/img/cricos-thumb.jpg" class="project-thumb" alt="CRICOS Matching">
+<!-- ANZSCO VISUALIZATION -->
+<a href="/projects/anzsco-viz" class="project-card">
+  <img src="/assets/img/anzsco-viz-thumb.jpg" class="project-thumb" alt="ANZSCO Visualization">
   <div class="project-body">
-    <div class="project-title">CRICOS Integration & Matching</div>
-    <div class="project-desc">Menggabungkan dataset Courses × CRICOS menggunakan fuzzy string matching.</div>
+    <div class="project-title">ANZSCO Data Visualization</div>
+    <div class="project-desc">Visualisasi hasil scraping ANZSCO menggunakan grafik & mapping kategori pekerjaan.</div>
   </div>
 </a>
 
-<a href="/projects/agent-automation" class="project-card">
-  <img src="/assets/img/agent-thumb.jpg" class="project-thumb" alt="AI Agent Automation">
+<!-- IT JOBS VISUALIZATION -->
+<a href="/projects/itjobs-viz" class="project-card">
+  <img src="/assets/img/itjobs-viz-thumb.jpg" class="project-thumb" alt="IT Jobs Visualization">
   <div class="project-body">
-    <div class="project-title">Automation Agent Experiment</div>
-    <div class="project-desc">Eksperimen agent otomatis yang membersihkan HTML, menulis ulang deskripsi, dan menghasilkan SQL.</div>
+    <div class="project-title">IT Job Demand Visualization</div>
+    <div class="project-desc">Analisis visual tren permintaan pekerjaan IT berdasarkan data lowongan dari portal-portal besar.</div>
   </div>
 </a>
 
 </div>
 
 ---
+
 
 
 Terima kasih sudah berkunjung — semoga blog ini membantu memberikan gambaran tentang perjalanan magang saya dan bisa jadi referensi untuk mahasiswa lain yang ingin belajar di bidang data engineering & automation!
