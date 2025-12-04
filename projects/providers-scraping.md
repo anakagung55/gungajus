@@ -62,7 +62,7 @@ layout: default
 
 <div class="header-wrapper">
   <div class="slideshow-container">
-      <img class="slide-img" src="{{ site.baseurl }}/assets/img/providers-thumb.png">
+      <img class="slide-img" src="{{ site.baseurl }}/assets/img/providers-thumb.jpg">
 
       <div class="header-title">Providers Scraping System</div>
   </div>
@@ -73,7 +73,7 @@ layout: default
 # 🧩 Providers Scraping System  
 *Scraping data universitas & college Australia untuk kebutuhan database Interlace Studies Bali.*
 
-<img src="{{ site.baseurl }}/assets/img/providers-thumb.png" style="width:100%; border-radius:12px; margin-top:12px;">
+<img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" style="width:100%; border-radius:12px; margin-top:12px;">
 
 ---
 
