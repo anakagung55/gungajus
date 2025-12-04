@@ -243,6 +243,15 @@ Berikut adalah rangkaian proyek yang saya bangun selama magang, berkaitan dengan
   </div>
 </a>
 
+<!-- IT JOBS VISUALIZATION -->
+<a href="/projects/assessment-scraping" class="project-card">
+  <img src="/assets/img/ass-scraping-thumb.jpg" class="project-thumb" alt="IT Jobs Visualization">
+  <div class="project-body">
+    <div class="project-title">Asessment Australia Scraping</div>
+    <div class="project-desc">Mendapatkan data skill assessment di Australia seperti deskripsi,occupation yang di handle dan biayanya</div>
+  </div>
+</a>
+
 </div>
 
 ---
