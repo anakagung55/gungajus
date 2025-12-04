@@ -46,6 +46,11 @@
   <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header1.jpg">
   <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header2.jpg">
   <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header3.jpg">
+  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header4.jpg">
+  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header5.jpg">
+  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header6.jpg">
+  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header7.jpg">
+
   
   <div class="header-title">
     Magang Interlace Studies Bali
