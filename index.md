@@ -1,3 +1,59 @@
+<!-- HEADER CAROUSEL -->
+<style>
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeSlide 18s infinite;
+  opacity: 0;
+}
+
+.carousel-slide:nth-child(1) { animation-delay: 0s; }
+.carousel-slide:nth-child(2) { animation-delay: 6s; }
+.carousel-slide:nth-child(3) { animation-delay: 12s; }
+
+@keyframes fadeSlide {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(0,0,0,0.7);
+  text-align: center;
+}
+</style>
+
+<div class="carousel-container">
+  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header1.jpg">
+  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header2.jpg">
+  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header3.jpg">
+  
+  <div class="header-title">
+    Magang Interlace Studies Bali
+  </div>
+</div>
+
+<br>
+
 <style>
 /* RESET Cayman Header */
 .page-header { display: none !important; }
