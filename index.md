@@ -142,4 +142,103 @@ Tempat saya menuliskan proses belajar, pencapaian, dan tantangan dari minggu ke 
 
 ---
 
+---
+
+# 🚀 Highlight Projects
+
+Berikut beberapa project utama yang saya kerjakan selama magang di Interlace Studies Bali.  
+Klik pada kartu di bawah untuk melihat detail lengkap beserta dokumentasi teknis & gambarnya.
+
+<style>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.project-thumb {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.project-body {
+  padding: 15px;
+}
+
+.project-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin-top: 6px;
+}
+</style>
+
+<div class="project-grid">
+
+<a href="/projects/scraping-acu" class="project-card">
+  <img src="/assets/img/acu-thumb.jpg" class="project-thumb" alt="Scraping ACU">
+  <div class="project-body">
+    <div class="project-title">ACU Course Scraping Pipeline</div>
+    <div class="project-desc">Scraping 66 study areas & ratusan course pages dari ACU menggunakan Python & BeautifulSoup.</div>
+  </div>
+</a>
+
+<a href="/projects/sql-automation" class="project-card">
+  <img src="/assets/img/sql-thumb.jpg" class="project-thumb" alt="SQL Automation">
+  <div class="project-body">
+    <div class="project-title">SQL Auto-Generation System</div>
+    <div class="project-desc">Membangun sistem otomatis untuk menghasilkan SQL UPDATE/INSERT ratusan course data.</div>
+  </div>
+</a>
+
+<a href="/projects/data-cleaning" class="project-card">
+  <img src="/assets/img/cleaning-thumb.jpg" class="project-thumb" alt="Data Cleaning">
+  <div class="project-body">
+    <div class="project-title">HTML Cleaning & Normalization Engine</div>
+    <div class="project-desc">Mesin pembersih HTML untuk menstandarkan konten sebelum dimasukkan ke database.</div>
+  </div>
+</a>
+
+<a href="/projects/cricos-matching" class="project-card">
+  <img src="/assets/img/cricos-thumb.jpg" class="project-thumb" alt="CRICOS Matching">
+  <div class="project-body">
+    <div class="project-title">CRICOS Integration & Matching</div>
+    <div class="project-desc">Menggabungkan dataset Courses × CRICOS menggunakan fuzzy string matching.</div>
+  </div>
+</a>
+
+<a href="/projects/agent-automation" class="project-card">
+  <img src="/assets/img/agent-thumb.jpg" class="project-thumb" alt="AI Agent Automation">
+  <div class="project-body">
+    <div class="project-title">Automation Agent Experiment</div>
+    <div class="project-desc">Eksperimen agent otomatis yang membersihkan HTML, menulis ulang deskripsi, dan menghasilkan SQL.</div>
+  </div>
+</a>
+
+</div>
+
+---
+
+
 Terima kasih sudah berkunjung — semoga blog ini membantu memberikan gambaran tentang perjalanan magang saya dan bisa jadi referensi untuk mahasiswa lain yang ingin belajar di bidang data engineering & automation!
