@@ -62,13 +62,7 @@ layout: default
 
 <div class="header-wrapper">
   <div class="slideshow-container">
-      <img class="slide-img" src="{{ site.baseurl }}/assets/img/header1.jpg">
-      <img class="slide-img" src="{{ site.baseurl }}/assets/img/header2.jpg">
-      <img class="slide-img" src="{{ site.baseurl }}/assets/img/header3.jpg">
-      <img class="slide-img" src="{{ site.baseurl }}/assets/img/header4.jpg">
-      <img class="slide-img" src="{{ site.baseurl }}/assets/img/header5.jpg">
-      <img class="slide-img" src="{{ site.baseurl }}/assets/img/header6.jpg">
-      <img class="slide-img" src="{{ site.baseurl }}/assets/img/header7.jpg">
+      <img class="slide-img" src="{{ site.baseurl }}/assets/img/providers-thumb.png">
 
       <div class="header-title">Providers Scraping System</div>
   </div>
