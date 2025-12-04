@@ -232,20 +232,5 @@ input, textarea {
         </div>
       </div>
     </div>
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-      <div class="sidebar-box">
-        <div class="sidebar-title">Cari Postingan</div>
-        <input type="text" placeholder="Cari judul atau deskripsi">
-      </div>
-      <div class="sidebar-box">
-        <div class="sidebar-title">Pesan ke Penulis</div>
-        <input type="email" placeholder="emailkamu@example.com">
-        <textarea placeholder="Tulis pesan untuk penulis..."></textarea>
-        <button class="sidebar-button">Kirim Pesan</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
