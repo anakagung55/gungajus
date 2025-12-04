@@ -3,12 +3,12 @@ title: "Magang Interlace Studies Bali"
 layout: default
 ---
 
-# Magang Interlace Studies Bali – Gung Ade
+# Magang Interlace Studies Bali – Gung Ajus
 
-Halo! Nama saya **Anak Agung Ade Jelantik Raditya**, mahasiswa Sistem Informasi Undiksha.  
+Halo! Nama saya **Anak Agung Bagus Jelantik Kusuma**, mahasiswa Ilmu Komputer Undiksha.  
 Blog ini berisi perjalanan magang saya di **Interlace Studies Bali**, mulai dari:
 
-- Scraping data course dari berbagai provider (ACU, University of Newcastle, Torrens, dsb.)
+- Scraping data course dari berbagai provider (Universitas dan College di Australia)
 - Pembersihan data (HTML cleaning, normalisasi format)
 - Pembuatan otomatisasi **SQL UPDATE/INSERT** untuk database `courses`
 - Analisis data di Google Sheets / dashboard
