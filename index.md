@@ -242,9 +242,6 @@ input, textarea {
 </div>
 
 <!-- HERO IMAGE -->
-<div class="hero" style="background-image:url('https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1600&q=60');">
-  <div class="hero-title">Magang Interlace Studies Bali</div>
-</div>
 <div class="container">
   <div class="section-title">Postingan Terbaru</div>
 
