@@ -94,46 +94,27 @@ Eksperimen ini bertujuan mempercepat proses standar input data bagi tim Interlac
 - Konsistensi dalam quality control data
 
 ---
+# 🎨 Tech Profile
 
----
-title: "Magang Interlace Studies Bali — Technical Internship Journey"
-layout: default
----
+## 🛠 Tech Stack  
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Web%20Scraping-00ACC1?style=for-the-badge&logo=webflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/BeautifulSoup-5C6BC0?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Regex-F44336?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/SQL-00618A?style=for-the-badge&logo=database&logoColor=white" />
+  <img src="https://img.shields.io/badge/Data%20Cleaning-4CAF50?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/GitHub%20Workflow-24292F?style=for-the-badge&logo=github&logoColor=white" />
+</p>
 
-# 🌐 **Interlace Studies Internship Journey — Gung Ajus**
-> _“Turning raw academic data into structured, automated, and scalable systems.”_  
-> _A documentation of my 2-month internship as a **Data Engineering & Automation Intern**._
+## 🌱 Soft Skills  
+<p align="left">
+  <img src="https://img.shields.io/badge/Problem%20Solving-8E24AA?style=flat-square" />
+  <img src="https://img.shields.io/badge/Attention%20to%20Detail-1976D2?style=flat-square" />
+  <img src="https://img.shields.io/badge/Documentation-43A047?style=flat-square" />
+  <img src="https://img.shields.io/badge/Team%20Collaboration-EC407A?style=flat-square" />
+</p>
 
-Saya **Anak Agung Bagus Jelantik Kusuma**, mahasiswa **Ilmu Komputer – Undiksha**.  
-Blog ini menjelaskan secara teknis perjalanan magang saya di **Interlace Studies Bali**, di mana saya membangun pipeline scraping, cleaning, automation SQL, dan integrasi dataset CRICOS.
-
----
-
-<br>
-
-# 🎨 **Tech Profile**
-<div align="center">
-
-### 🛠 Tech Stack  
-![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![](https://img.shields.io/badge/Web%20Scraping-00ACC1?style=for-the-badge&logo=webflow&logoColor=white)
-![](https://img.shields.io/badge/BeautifulSoup-5C6BC0?style=for-the-badge)
-![](https://img.shields.io/badge/Regex-F44336?style=for-the-badge)
-![](https://img.shields.io/badge/SQL-00618A?style=for-the-badge&logo=database&logoColor=white)
-![](https://img.shields.io/badge/Data%20Cleaning-4CAF50?style=for-the-badge)
-![](https://img.shields.io/badge/GitHub%20Workflow-24292F?style=for-the-badge&logo=github&logoColor=white)
-
-### 🌱 Soft Skills  
-![](https://img.shields.io/badge/Problem%20Solving-8E24AA?style=flat-square)
-![](https://img.shields.io/badge/Attention%20to%20Detail-1976D2?style=flat-square)
-![](https://img.shields.io/badge/Documentation-43A047?style=flat-square)
-![](https://img.shields.io/badge/Team%20Collaboration-EC407A?style=flat-square)
-
-</div>
-
----
-
-<br>
 
 # 📊 **Internship Stats**
 <div align="center">
