@@ -1,261 +1,251 @@
----
-title: "Magang Interlace Studies Bali"
-layout: default
----
-
-# Magang Interlace Studies Bali – Gung Ajus
-Selamat datang di blog perjalanan magang saya!  
-Saya **Anak Agung Bagus Jelantik Kusuma**, mahasiswa **Ilmu Komputer Universitas Pendidikan Ganesha (Undiksha)**.  
-
-Selama magang di **Interlace Studies Bali**, saya berfokus pada pengembangan sistem data, otomasi scraping, data cleaning, serta perapian struktur database untuk mendukung proses operasional Education & Migration Consultancy.
-
-Blog ini saya buat sebagai dokumentasi perjalanan, proses belajar, hasil kerja, dan perkembangan keterampilan saya selama magang.
-
----
-
-## 🌏 **Tentang Peran Magang Saya**
-Saya berkontribusi dalam project data engineering dan otomasi internal, utamanya pada:
-
-### 🔎 1. **Web Scraping & Data Extraction**
-Mengambil data ratusan program studi dari universitas dan college di Australia, seperti:
-- Australian Catholic University (ACU)
-- University of Newcastle
-- Torrens University
-- Federation University  
-dan provider lainnya.
-
-Data yang dikumpulkan meliputi:
-- Course description  
-- Entry requirements  
-- Tuition fee  
-- CRICOS code  
-- Total duration  
-- Apply form link  
-- Campus availability  
-dan elemen penting lainnya.
-
----
-
-### 🧹 2. **Data Cleaning & Normalisasi HTML**
-Saya mengembangkan fungsi Python untuk:
-- Merapikan tag HTML yang berantakan  
-- Menghapus whitespace yang tidak perlu  
-- Menstandarkan struktur sebelum dimasukkan ke database  
-- Menangani kasus data yang tidak konsisten antar provider
-
----
-
-### 🛠 3. **SQL Automation**
-Membuat script otomatis untuk menghasilkan:
-- `UPDATE courses SET ... WHERE cricos_course_code = '...'`
-- `INSERT INTO courses ...` saat provider baru ditambahkan
-- Sinkronisasi CRICOS dengan nama course menggunakan fuzzy matching
-
-Automation ini menghemat **±80% waktu manual staff** dalam memasukkan data.
-
----
-
-### 📊 4. **Data Analysis & Reporting**
-Saya juga melakukan:
-- Validasi data  
-- Perhitungan kondisi boolean (misal: Entry Requirements True/False)  
-- Filtering dan pencarian data berbasis nama program  
-- Analisis data di Google Sheets
-
----
-
-### 🤖 5. **Eksperimen Automation Agent**
-Membuat pipeline mini-agent untuk:
-- Membaca HTML course  
-- Membersihkan konten  
-- Menyusun ulang format deskripsi  
-- Menghasilkan SQL secara otomatis  
-
-Eksperimen ini bertujuan mempercepat proses standar input data bagi tim Interlace.
-
----
-
-## 🚀 **Skill yang Saya Kembangkan Selama Magang**
-### **Hard Skills**
-- Python (Requests, BeautifulSoup, Pandas)
-- Web Scraping
-- Data Cleaning & Normalization
-- SQL (UPDATE/INSERT automation)
-- Regex untuk ekstraksi pola text
-- Integrasi data dari multi-provider
-- Git & GitHub workflow
-- Google Sheets data operations
-
-### **Soft Skills**
-- Problem solving di situasi real-world
-- Manajemen waktu & task prioritization
-- Kolaborasi dengan tim internasional (agency)
-- Dokumentasi teknis yang jelas dan terstruktur
-- Konsistensi dalam quality control data
-
----
-# 🎨 Tech Profile
-
-## 🛠 Tech Stack  
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Web%20Scraping-00ACC1?style=for-the-badge&logo=webflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/BeautifulSoup-5C6BC0?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Regex-F44336?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/SQL-00618A?style=for-the-badge&logo=database&logoColor=white" />
-  <img src="https://img.shields.io/badge/Data%20Cleaning-4CAF50?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/GitHub%20Workflow-24292F?style=for-the-badge&logo=github&logoColor=white" />
-</p>
-
-## 🌱 Soft Skills  
-<p align="left">
-  <img src="https://img.shields.io/badge/Problem%20Solving-8E24AA?style=flat-square" />
-  <img src="https://img.shields.io/badge/Attention%20to%20Detail-1976D2?style=flat-square" />
-  <img src="https://img.shields.io/badge/Documentation-43A047?style=flat-square" />
-  <img src="https://img.shields.io/badge/Team%20Collaboration-EC407A?style=flat-square" />
-</p>
-
-
-
-## ⭐ **Apa yang Membuat Project Ini Menarik?**
-- Data dari tiap universitas **tidak seragam**, sehingga saya harus membuat sistem yang fleksibel dan tahan error.
-- Halaman provider sering berubah struktur — ini memberi saya pengalaman nyata menghadapi real scraping challenges.
-- Saya belajar bagaimana data mentah diubah menjadi format standar untuk operasional sebuah perusahaan edukasi internasional.
-- Saya melihat dampak langsung pekerjaan saya pada efisiensi tim Interlace.
-
----
-
-## 📚 **Isi Blog Ini**
-Blog ini berisi:
-1. **Jurnal Mingguan** – apa yang saya pelajari dan capai setiap minggu  
-2. **Highlight Project** – pembahasan mendalam scraping, SQL automation, dan data cleaning  
-3. **Refleksi Akhir** – insight, tantangan, dan pencapaian utama selama magang  
-4. **Dokumentasi Teknis** – snippet kode, contoh output SQL, dan alur proyek
-
----
-
-## 👉 Arahkan ke Jurnal Magang
-Silakan baca jurnal mingguan saya di sini:
-
-📘 **[Jurnal Magang Interlace Studies Bali](./journal.md)**  
-Tempat saya menuliskan proses belajar, pencapaian, dan tantangan dari minggu ke minggu.
-
----
-
----
-
----
-
-# 🚀 Highlight Projects
-
-Berikut adalah rangkaian proyek yang saya bangun selama magang, berkaitan dengan data scraping, data engineering, visualisasi data, dan otomasi proses pekerjaan.
-
 <style>
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+/* RESET Cayman Header */
+.page-header { display: none !important; }
+
+/* GLOBAL */
+body {
+  margin: 0;
+  padding: 0;
+  background: #1e2228;
+  font-family: 'Poppins', sans-serif;
+  color: #e5e5e5;
 }
 
-.project-card {
-  border: 1px solid #e2e8f0;
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  padding: 18px 60px;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-left: 28px;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* TITLE IN HERO */
+.hero-title {
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+/* SECTION WRAPPER */
+.container {
+  max-width: 1300px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* GRID POST */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.post-card {
+  background: #2a2f36;
   border-radius: 12px;
   overflow: hidden;
-  background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: 0.25s;
 }
 
-.project-card:hover {
+.post-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-.project-thumb {
+.post-thumb {
   width: 100%;
-  height: 150px;
+  height: 170px;
   object-fit: cover;
 }
 
-.project-body {
-  padding: 15px;
+.post-body {
+  padding: 20px;
 }
 
-.project-title {
-  font-size: 1.15rem;
+.post-title {
+  font-size: 20px;
   font-weight: 600;
-  color: #1a202c;
+  margin-bottom: 8px;
 }
 
-.project-desc {
-  font-size: 0.9rem;
-  color: #4a5568;
-  margin-top: 6px;
+.post-desc {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.btn-read {
+  background: #111;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn-read:hover {
+  background: #333;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 320px;
+  padding-left: 20px;
+}
+
+.sidebar-box {
+  background: #2a2f36;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  background: #1e2228;
+  border: 1px solid #3a3f47;
+  border-radius: 6px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.sidebar-button {
+  padding: 10px;
+  background: #111;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar-button:hover {
+  background: #222;
+}
+
+/* LAYOUT WRAPPER */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 </style>
 
-<div class="project-grid">
-
-<!-- PROVIDERS SCRAPING -->
-<a href="/projects/providers-scraping" class="project-card">
-  <img src="/assets/img/providers-thumb.jpg" class="project-thumb" alt="Providers Scraping">
-  <div class="project-body">
-    <div class="project-title">Providers Scraping System</div>
-    <div class="project-desc">Scraping data universitas & college (Australia) mencakup description, CRICOS, tuition fee, duration, dan entry requirements.</div>
+<!-- NAVBAR -->
+<div class="navbar">
+  <div style="font-size:20px; font-weight:600;">Ajus' Blog</div>
+  <div>
+    <a href="/">Blog</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">Tentang</a>
+    <a href="#contact">Lokasi</a>
   </div>
-</a>
-
-<!-- JOB PORTAL SCRAPING -->
-<a href="/projects/scraping-job-portal" class="project-card">
-  <img src="/assets/img/jobportal-thumb.jpg" class="project-thumb" alt="Job Portal Scraping">
-  <div class="project-body">
-    <div class="project-title">Job Portal Scraping (IT Job Market)</div>
-    <div class="project-desc">Mengambil lowongan IT dari berbagai portal pekerjaan & menyiapkan data untuk analisis demand pasar teknologi.</div>
-  </div>
-</a>
-
-<!-- ANZSCO SCRAPING -->
-<a href="/projects/anzsco-scraping" class="project-card">
-  <img src="/assets/img/anzsco-thumb.jpg" class="project-thumb" alt="ANZSCO Scraping">
-  <div class="project-body">
-    <div class="project-title">ANZSCO Scraping Automation</div>
-    <div class="project-desc">Scraping klasifikasi pekerjaan ANZSCO untuk memetakan job requirements berdasarkan standar Australia.</div>
-  </div>
-</a>
-
-<!-- ANZSCO VISUALIZATION -->
-<a href="/projects/anzsco-viz" class="project-card">
-  <img src="/assets/img/anzsco-viz-thumb.jpg" class="project-thumb" alt="ANZSCO Visualization">
-  <div class="project-body">
-    <div class="project-title">ANZSCO Data Visualization</div>
-    <div class="project-desc">Visualisasi hasil scraping ANZSCO menggunakan grafik & mapping kategori pekerjaan.</div>
-  </div>
-</a>
-
-<!-- IT JOBS VISUALIZATION -->
-<a href="/projects/itjobs-viz" class="project-card">
-  <img src="/assets/img/itjobs-viz-thumb.jpg" class="project-thumb" alt="IT Jobs Visualization">
-  <div class="project-body">
-    <div class="project-title">IT Job Demand Visualization</div>
-    <div class="project-desc">Analisis visual tren permintaan pekerjaan IT berdasarkan data lowongan dari portal-portal besar.</div>
-  </div>
-</a>
-
-<!-- IT JOBS VISUALIZATION -->
-<a href="/projects/assessment-scraping" class="project-card">
-  <img src="/assets/img/ass-scraping-thumb.jpg" class="project-thumb" alt="IT Jobs Visualization">
-  <div class="project-body">
-    <div class="project-title">Asessment Australia Scraping</div>
-    <div class="project-desc">Mendapatkan data skill assessment di Australia seperti deskripsi,occupation yang di handle dan biayanya</div>
-  </div>
-</a>
-
 </div>
 
----
+<!-- HERO IMAGE -->
+<div class="hero" style="background-image:url('https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1600&q=60');">
+  <div class="hero-title">Magang Interlace Studies Bali</div>
+</div>
+<div class="container">
+  <div class="section-title">Postingan Terbaru</div>
 
-<br>
+  <div class="content-wrapper">
+    <!-- GRID POST -->
+    <div class="posts-grid">
+      <!-- CARD 1 -->
+      <div class="post-card">
+        <img src="/assets/img/providers-thumb.jpg" class="post-thumb">
+        <div class="post-body">
+          <div class="post-title">Providers Scraping System</div>
+          <div class="post-desc">Scraping data universitas Australia lengkap dengan CRICOS, tuition fee, entry requirements, dan duration.</div>
+          <a href="/projects/providers-scraping" class="btn-read">Baca selengkapnya</a>
+        </div>
+      </div>
+      <!-- CARD 2 -->
+      <div class="post-card">
+        <img src="/assets/img/jobportal-thumb.jpg" class="post-thumb">
+        <div class="post-body">
+          <div class="post-title">IT Job Portal Scraping</div>
+          <div class="post-desc">Mengambil data lowongan pekerjaan IT dan memetakannya sebagai dataset analisis.</div>
+          <a href="/projects/scraping-job-portal" class="btn-read">Baca selengkapnya</a>
+        </div>
+      </div>
+      <!-- CARD 3 -->
+      <div class="post-card">
+        <img src="/assets/img/anzsco-thumb.jpg" class="post-thumb">
+        <div class="post-body">
+          <div class="post-title">ANZSCO Scraping</div>
+          <div class="post-desc">Scraping informasi ANZSCO untuk pemetaan job family dan skill level.</div>
+          <a href="/projects/anzsco-scraping" class="btn-read">Baca selengkapnya</a>
+        </div>
+      </div>
+      <!-- CARD 4 -->
+      <div class="post-card">
+        <img src="/assets/img/itjobs-viz-thumb.jpg" class="post-thumb">
+        <div class="post-body">
+          <div class="post-title">IT Job Visualization</div>
+          <div class="post-desc">Visualisasi tren role pekerjaan IT berdasarkan dataset job scraping.</div>
+          <a href="/projects/itjobs-viz" class="btn-read">Baca selengkapnya</a>
+        </div>
+      </div>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sidebar-box">
+        <div class="sidebar-title">Cari Postingan</div>
+        <input type="text" placeholder="Cari judul atau deskripsi">
+      </div>
+      <div class="sidebar-box">
+        <div class="sidebar-title">Pesan ke Penulis</div>
+        <input type="email" placeholder="emailkamu@example.com">
+        <textarea placeholder="Tulis pesan untuk penulis..."></textarea>
+        <button class="sidebar-button">Kirim Pesan</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-Terima kasih sudah berkunjung, semoga blog ini membantu memberikan gambaran tentang perjalanan magang saya dan bisa jadi referensi untuk mahasiswa lain yang ingin belajar di bidang data engineering & automation!
+
