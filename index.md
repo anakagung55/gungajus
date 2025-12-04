@@ -247,6 +247,6 @@ Berikut adalah rangkaian proyek yang saya bangun selama magang, berkaitan dengan
 
 ---
 
+<br>
 
-
-Terima kasih sudah berkunjung — semoga blog ini membantu memberikan gambaran tentang perjalanan magang saya dan bisa jadi referensi untuk mahasiswa lain yang ingin belajar di bidang data engineering & automation!
+Terima kasih sudah berkunjung, semoga blog ini membantu memberikan gambaran tentang perjalanan magang saya dan bisa jadi referensi untuk mahasiswa lain yang ingin belajar di bidang data engineering & automation!
