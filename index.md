@@ -1,63 +1,89 @@
-<!-- HEADER CAROUSEL -->
+<!-- ================= NAVBAR FIX ================= -->
 <style>
-.carousel-container {
-  position: relative;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 14px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar-left {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.navbar-right a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.25s ease;
+}
+
+.navbar-right a:hover {
+  opacity: 0.7;
+}
+
+/* Space to offset fixed navbar */
+.header-wrapper {
+  margin-top: 70px;
+}
+
+/* HEADER IMAGE */
+.header-img {
   width: 100%;
   height: 260px;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.carousel-slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  animation: fadeSlide 18s infinite;
-  opacity: 0;
+  border-radius: 12px;
+  position: relative;
 }
 
-.carousel-slide:nth-child(1) { animation-delay: 0s; }
-.carousel-slide:nth-child(2) { animation-delay: 6s; }
-.carousel-slide:nth-child(3) { animation-delay: 12s; }
-
-@keyframes fadeSlide {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  30% { opacity: 1; }
-  40% { opacity: 0; }
-  100% { opacity: 0; }
-}
-
+/* TITLE ON TOP OF IMAGE */
 .header-title {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 700;
   text-shadow: 0 0 12px rgba(0,0,0,0.7);
   text-align: center;
 }
 </style>
 
-<div class="carousel-container">
-  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header1.jpg">
-  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header2.jpg">
-  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header3.jpg">
-  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header4.jpg">
-  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header5.jpg">
-  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header6.jpg">
-  <img class="carousel-slide" src="{{ site.baseurl }}/assets/img/header7.jpg">
-
-  
-  <div class="header-title">
-    Magang Interlace Studies Bali
+<!-- ================= NAVBAR HTML ================= -->
+<div class="navbar">
+  <div class="navbar-left">Ajus' Blog</div>
+  <div class="navbar-right">
+    <a href="{{ site.baseurl }}/">Blog</a>
+    <a href="{{ site.baseurl }}/galeri">Galeri</a>
+    <a href="{{ site.baseurl }}/tentang">Tentang</a>
+    <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
   </div>
 </div>
 
+<!-- ================= HEADER IMAGE ================= -->
+<div class="header-wrapper" style="position: relative;">
+  <img src="{{ site.baseurl }}/assets/img/header1.jpg" class="header-img">
+  <img src="{{ site.baseurl }}/assets/img/header2.jpg" class="header-img">
+  <img src="{{ site.baseurl }}/assets/img/header3.jpg" class="header-img">
+  <img src="{{ site.baseurl }}/assets/img/header4.jpg" class="header-img">
+  <img src="{{ site.baseurl }}/assets/img/header5.jpg" class="header-img">
+  <img src="{{ site.baseurl }}/assets/img/header6.jpg" class="header-img">
+  <img src="{{ site.baseurl }}/assets/img/header7.jpg" class="header-img">
+  <div class="header-title">Magang Interlace Studies Bali</div>
+</div>
+
 <br>
+
 
 <style>
 /* RESET Cayman Header */
@@ -236,15 +262,6 @@ input, textarea {
 </style>
 
 <!-- NAVBAR -->
-<div class="navbar">
-  <div style="font-size:20px; font-weight:600;">Ajus' Blog</div>
-  <div>
-    <a href="/">Blog</a>
-    <a href="#projects">Projects</a>
-    <a href="#about">Tentang</a>
-    <a href="#contact">Lokasi</a>
-  </div>
-</div>
 
 <!-- HERO IMAGE -->
 <div class="container">
@@ -259,7 +276,7 @@ input, textarea {
         <div class="post-body">
           <div class="post-title">Providers Scraping System</div>
           <div class="post-desc">Scraping data universitas Australia lengkap dengan CRICOS, tuition fee, entry requirements, dan duration.</div>
-          <a href="/projects/providers-scraping" class="btn-read">Baca selengkapnya</a>
+          <a href="{{ site.baseurl }}/projects/providers-scraping" class="btn-read">Baca selengkapnya</a>
         </div>
       </div>
       <!-- CARD 2 -->
@@ -268,7 +285,7 @@ input, textarea {
         <div class="post-body">
           <div class="post-title">IT Job Portal Scraping</div>
           <div class="post-desc">Mengambil data lowongan pekerjaan IT dan memetakannya sebagai dataset analisis.</div>
-          <a href="/projects/scraping-job-portal" class="btn-read">Baca selengkapnya</a>
+          <a href="{{ site.baseurl }}/projects/scraping-job-portal" class="btn-read">Baca selengkapnya</a>
         </div>
       </div>
       <!-- CARD 3 -->
@@ -277,7 +294,7 @@ input, textarea {
         <div class="post-body">
           <div class="post-title">ANZSCO Scraping</div>
           <div class="post-desc">Scraping informasi ANZSCO untuk pemetaan job family dan skill level.</div>
-          <a href="/projects/anzsco-scraping" class="btn-read">Baca selengkapnya</a>
+          <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="btn-read">Baca selengkapnya</a>
         </div>
       </div>
       <!-- CARD 4 -->
@@ -286,7 +303,7 @@ input, textarea {
         <div class="post-body">
           <div class="post-title">IT Job Visualization</div>
           <div class="post-desc">Visualisasi tren role pekerjaan IT berdasarkan dataset job scraping.</div>
-          <a href="/projects/itjobs-viz" class="btn-read">Baca selengkapnya</a>
+          <a href="{{ site.baseurl }}/projects/itjobs-viz" class="btn-read">Baca selengkapnya</a>
         </div>
       </div>
     </div>
