@@ -116,44 +116,6 @@ Eksperimen ini bertujuan mempercepat proses standar input data bagi tim Interlac
 </p>
 
 
-# 📊 **Internship Stats**
-<div align="center">
-
-| 📌 Kategori | 📈 Jumlah |
-|------------|-----------|
-| Course links dikumpulkan | **623+** |
-| Course pages diproses | **350+ halaman** |
-| Deskripsi dibersihkan | **100% cleaned HTML** |
-| SQL yang dihasilkan | **200+ automated queries** |
-| Dataset yang digabungkan | **2 major datasets (Courses + CRICOS)** |
-| Efisiensi waktu | **80% faster workflow** |
-
-</div>
-
----
-
-<br>
-
-# 🧭 **Timeline Magang**
-
-
-# 📊 **Internship Stats**
-<div align="center">
-
-| 📌 Kategori | 📈 Jumlah |
-|------------|-----------|
-| Course links dikumpulkan | **623+** |
-| Course pages diproses | **350+ halaman** |
-| Deskripsi dibersihkan | **100% cleaned HTML** |
-| SQL yang dihasilkan | **200+ automated queries** |
-| Dataset yang digabungkan | **2 major datasets (Courses + CRICOS)** |
-| Efisiensi waktu | **80% faster workflow** |
-
-</div>
-
----
-
-<br>
 
 ## ⭐ **Apa yang Membuat Project Ini Menarik?**
 - Data dari tiap universitas **tidak seragam**, sehingga saya harus membuat sistem yang fleksibel dan tahan error.
