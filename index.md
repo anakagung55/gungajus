@@ -264,7 +264,7 @@ input, textarea {
       </div>
       <!-- CARD 2 -->
       <div class="post-card">
-        <img src="/assets/img/jobportal-thumb.jpg" class="post-thumb">
+        <img src="{{ site.baseurl }}/assets/img/jobportal-thumb.jpg" class="post-thumb">
         <div class="post-body">
           <div class="post-title">IT Job Portal Scraping</div>
           <div class="post-desc">Mengambil data lowongan pekerjaan IT dan memetakannya sebagai dataset analisis.</div>
@@ -273,7 +273,7 @@ input, textarea {
       </div>
       <!-- CARD 3 -->
       <div class="post-card">
-        <img src="/assets/img/anzsco-thumb.jpg" class="post-thumb">
+        <img src="{{ site.baseurl }}/assets/img/anzsco-thumb.jpg" class="post-thumb">
         <div class="post-body">
           <div class="post-title">ANZSCO Scraping</div>
           <div class="post-desc">Scraping informasi ANZSCO untuk pemetaan job family dan skill level.</div>
@@ -282,7 +282,7 @@ input, textarea {
       </div>
       <!-- CARD 4 -->
       <div class="post-card">
-        <img src="/assets/img/itjobs-viz-thumb.jpg" class="post-thumb">
+        <img src="{{ site.baseurl }}/assets/img/itjobs-viz-thumb.jpg" class="post-thumb">
         <div class="post-body">
           <div class="post-title">IT Job Visualization</div>
           <div class="post-desc">Visualisasi tren role pekerjaan IT berdasarkan dataset job scraping.</div>
