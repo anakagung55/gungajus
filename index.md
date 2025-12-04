@@ -15,3 +15,7 @@ Blog ini berisi perjalanan magang saya di **Interlace Studies Bali**, mulai dari
 - Eksperimen dengan automation / agent untuk summarization dan standarisasi data course
 
 Silakan scroll ke bawah untuk membaca jurnal mingguan dan highlight project yang saya kerjakan 👇
+---
+
+👉 Lihat detail kegiatan magang per minggu di halaman  
+[Jurnal Magang Interlace Studies Bali](./journal.md)
