@@ -32,6 +32,4 @@ Dari setiap job portal, scraper mengambil:
 
 ---
 
-## 🧩 Arsitektur Pipeline
-
 
