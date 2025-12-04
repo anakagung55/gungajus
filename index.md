@@ -95,6 +95,20 @@ Eksperimen ini bertujuan mempercepat proses standar input data bagi tim Interlac
 
 ---
 
+---
+title: "Magang Interlace Studies Bali — Technical Internship Journey"
+layout: default
+---
+
+# 🌐 **Interlace Studies Internship Journey — Gung Ajus**
+> _“Turning raw academic data into structured, automated, and scalable systems.”_  
+> _A documentation of my 2-month internship as a **Data Engineering & Automation Intern**._
+
+Saya **Anak Agung Bagus Jelantik Kusuma**, mahasiswa **Ilmu Komputer – Undiksha**.  
+Blog ini menjelaskan secara teknis perjalanan magang saya di **Interlace Studies Bali**, di mana saya membangun pipeline scraping, cleaning, automation SQL, dan integrasi dataset CRICOS.
+
+---
+
 <br>
 
 # 🎨 **Tech Profile**
@@ -120,6 +134,27 @@ Eksperimen ini bertujuan mempercepat proses standar input data bagi tim Interlac
 ---
 
 <br>
+
+# 📊 **Internship Stats**
+<div align="center">
+
+| 📌 Kategori | 📈 Jumlah |
+|------------|-----------|
+| Course links dikumpulkan | **623+** |
+| Course pages diproses | **350+ halaman** |
+| Deskripsi dibersihkan | **100% cleaned HTML** |
+| SQL yang dihasilkan | **200+ automated queries** |
+| Dataset yang digabungkan | **2 major datasets (Courses + CRICOS)** |
+| Efisiensi waktu | **80% faster workflow** |
+
+</div>
+
+---
+
+<br>
+
+# 🧭 **Timeline Magang**
+
 
 # 📊 **Internship Stats**
 <div align="center">
