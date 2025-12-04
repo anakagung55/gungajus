@@ -95,19 +95,49 @@ Eksperimen ini bertujuan mempercepat proses standar input data bagi tim Interlac
 
 ---
 
-## 📈 **Progress Magang Saya (Statistik Kinerja)**
-Berikut beberapa capaian yang dapat diukur:
+<br>
 
-- 🔗 **623+ course links** berhasil dikumpulkan dari berbagai provider  
-- 📄 **350+ halaman course** berhasil diparsing dan diekstraksi  
-- 🧼 **100% deskripsi course** dibersihkan dari HTML noise  
-- 🛢 **1 database besar** berhasil dinormalisasi format kontennya  
-- 🧮 **Ratusan SQL query** dihasilkan otomatis  
-- ⏳ **Waktu input manual berkurang ±80%** berkat automation  
-- 🏷 **2 dataset besar** (Course List + CRICOS List) berhasil digabungkan menggunakan fuzzy matching  
-- 🛠 **5+ tools internal** berhasil saya pakai dan integrasikan
+# 🎨 **Tech Profile**
+<div align="center">
+
+### 🛠 Tech Stack  
+![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![](https://img.shields.io/badge/Web%20Scraping-00ACC1?style=for-the-badge&logo=webflow&logoColor=white)
+![](https://img.shields.io/badge/BeautifulSoup-5C6BC0?style=for-the-badge)
+![](https://img.shields.io/badge/Regex-F44336?style=for-the-badge)
+![](https://img.shields.io/badge/SQL-00618A?style=for-the-badge&logo=database&logoColor=white)
+![](https://img.shields.io/badge/Data%20Cleaning-4CAF50?style=for-the-badge)
+![](https://img.shields.io/badge/GitHub%20Workflow-24292F?style=for-the-badge&logo=github&logoColor=white)
+
+### 🌱 Soft Skills  
+![](https://img.shields.io/badge/Problem%20Solving-8E24AA?style=flat-square)
+![](https://img.shields.io/badge/Attention%20to%20Detail-1976D2?style=flat-square)
+![](https://img.shields.io/badge/Documentation-43A047?style=flat-square)
+![](https://img.shields.io/badge/Team%20Collaboration-EC407A?style=flat-square)
+
+</div>
 
 ---
+
+<br>
+
+# 📊 **Internship Stats**
+<div align="center">
+
+| 📌 Kategori | 📈 Jumlah |
+|------------|-----------|
+| Course links dikumpulkan | **623+** |
+| Course pages diproses | **350+ halaman** |
+| Deskripsi dibersihkan | **100% cleaned HTML** |
+| SQL yang dihasilkan | **200+ automated queries** |
+| Dataset yang digabungkan | **2 major datasets (Courses + CRICOS)** |
+| Efisiensi waktu | **80% faster workflow** |
+
+</div>
+
+---
+
+<br>
 
 ## ⭐ **Apa yang Membuat Project Ini Menarik?**
 - Data dari tiap universitas **tidak seragam**, sehingga saya harus membuat sistem yang fleksibel dan tahan error.
