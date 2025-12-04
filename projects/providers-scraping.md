@@ -60,13 +60,6 @@ layout: default
 }
 </style>
 
-<div class="header-wrapper">
-  <div class="slideshow-container">
-      <img class="slide-img" src="{{ site.baseurl }}/assets/img/providers-thumb.jpg">
-
-      <div class="header-title">Providers Scraping System</div>
-  </div>
-</div>
 
 <br><br>
 
