@@ -197,7 +197,7 @@ input, textarea {
     <div class="posts-grid">
       <!-- CARD 1 -->
       <div class="post-card">
-        <img src="/assets/img/providers-thumb.jpg" class="post-thumb">
+        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="post-thumb">
         <div class="post-body">
           <div class="post-title">Providers Scraping System</div>
           <div class="post-desc">Scraping data universitas Australia lengkap dengan CRICOS, tuition fee, entry requirements, dan duration.</div>
