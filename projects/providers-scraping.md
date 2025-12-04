@@ -140,7 +140,7 @@ title: Providers Scraping System
 <!-- BLOG CONTENT -->
 <div class="blog-container">
 
-  <img src="/assets/img/providers-thumb.png">
+  <img src="/assets/img/providers-thumb.jpg">
 
   <h2>📌 Ringkasan Project</h2>
   <p>
@@ -160,7 +160,7 @@ title: Providers Scraping System
     <li>Campus availability</li>
   </ul>
 
-  <img src="/assets/img/providers-workflow.png">
+  <img src="/assets/img/providers-workflow.jpg">
 
   <h2>🧪 Teknologi yang Digunakan</h2>
   <ul>
