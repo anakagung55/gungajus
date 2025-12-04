@@ -1,16 +1,17 @@
-<!-- ================= NAVBAR FIX ================= -->
+<!-- ================= NAVBAR FIXED ================= -->
 <style>
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  padding: 14px 32px;
+  padding: 12px 32px;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
+  z-index: 9999; /* Pasti berada di atas semua foto */
 }
 
 .navbar-left {
@@ -28,38 +29,16 @@
 }
 
 .navbar-right a:hover {
-  opacity: 0.7;
+  opacity: 0.6;
+  transform: translateY(-1px);
 }
 
-/* Space to offset fixed navbar */
-.header-wrapper {
+/* memberi jarak agar header foto tidak tertutup navbar */
+.header-offset {
   margin-top: 70px;
-}
-
-/* HEADER IMAGE */
-.header-img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 12px;
-  position: relative;
-}
-
-/* TITLE ON TOP OF IMAGE */
-.header-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 34px;
-  font-weight: 700;
-  text-shadow: 0 0 12px rgba(0,0,0,0.7);
-  text-align: center;
 }
 </style>
 
-<!-- ================= NAVBAR HTML ================= -->
 <div class="navbar">
   <div class="navbar-left">Ajus' Blog</div>
   <div class="navbar-right">
@@ -69,6 +48,9 @@
     <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
   </div>
 </div>
+
+<div class="header-offset"></div>
+
 
 <!-- ================= HEADER IMAGE ================= -->
 <div class="header-wrapper" style="position: relative;">
