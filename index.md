@@ -40,7 +40,7 @@
 </style>
 
 <div class="navbar">
-  <div class="navbar-left">Ajus' Blog</div>
+  <div class="navbar-left">Aju's Blog</div>
   <div class="navbar-right">
     <a href="{{ site.baseurl }}/">Blog</a>
     <a href="{{ site.baseurl }}/galeri">Galeri</a>
