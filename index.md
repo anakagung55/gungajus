@@ -199,7 +199,7 @@ Berikut adalah rangkaian proyek yang saya bangun selama magang, berkaitan dengan
 <div class="project-grid">
 
 <!-- PROVIDERS SCRAPING -->
-<a href="/projects/providers-scraping" class="project-card">
+<a href="/projects/providers-scraping.md" class="project-card">
   <img src="/assets/img/providers-thumb.jpg" class="project-thumb" alt="Providers Scraping">
   <div class="project-body">
     <div class="project-title">Providers Scraping System</div>
@@ -208,7 +208,7 @@ Berikut adalah rangkaian proyek yang saya bangun selama magang, berkaitan dengan
 </a>
 
 <!-- JOB PORTAL SCRAPING -->
-<a href="/projects/scraping-job-portal" class="project-card">
+<a href="/projects/scraping-job-portal.md" class="project-card">
   <img src="/assets/img/jobportal-thumb.jpg" class="project-thumb" alt="Job Portal Scraping">
   <div class="project-body">
     <div class="project-title">Job Portal Scraping (IT Job Market)</div>
@@ -217,7 +217,7 @@ Berikut adalah rangkaian proyek yang saya bangun selama magang, berkaitan dengan
 </a>
 
 <!-- ANZSCO SCRAPING -->
-<a href="/projects/anzsco-scraping" class="project-card">
+<a href="/projects/anzsco-scraping.md" class="project-card">
   <img src="/assets/img/anzsco-thumb.jpg" class="project-thumb" alt="ANZSCO Scraping">
   <div class="project-body">
     <div class="project-title">ANZSCO Scraping Automation</div>
@@ -226,7 +226,7 @@ Berikut adalah rangkaian proyek yang saya bangun selama magang, berkaitan dengan
 </a>
 
 <!-- ANZSCO VISUALIZATION -->
-<a href="/projects/anzsco-viz" class="project-card">
+<a href="/projects/anzsco-viz.md" class="project-card">
   <img src="/assets/img/anzsco-viz-thumb.jpg" class="project-thumb" alt="ANZSCO Visualization">
   <div class="project-body">
     <div class="project-title">ANZSCO Data Visualization</div>
@@ -235,7 +235,7 @@ Berikut adalah rangkaian proyek yang saya bangun selama magang, berkaitan dengan
 </a>
 
 <!-- IT JOBS VISUALIZATION -->
-<a href="/projects/itjobs-viz" class="project-card">
+<a href="/projects/itjobs-viz.md" class="project-card">
   <img src="/assets/img/itjobs-viz-thumb.jpg" class="project-thumb" alt="IT Jobs Visualization">
   <div class="project-body">
     <div class="project-title">IT Job Demand Visualization</div>
