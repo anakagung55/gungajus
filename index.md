@@ -272,40 +272,62 @@ body {
 }
 
 /* CARD */
+/* CARD */
 .post-card {
+  position: relative;
   background: #2a2f36;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: 0.25s;
+  transition: 0.25s ease;
 }
 
 .post-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+}
+
+/* IMAGE WRAPPER */
+.post-thumb-wrapper {
+  position: relative;
+  height: 170px;
+  overflow: hidden;
 }
 
 .post-thumb {
   width: 100%;
-  height: 170px;
+  height: 100%;
   object-fit: cover;
+  transition: 0.4s ease;
 }
 
+/* Hover → gambar full frame */
+.post-card:hover .post-thumb {
+  height: 260px;          /* memperbesar */
+  object-fit: cover;
+  transform: scale(1.05);
+}
+
+/* BODY */
 .post-body {
   padding: 20px;
+  transition: 0.3s ease;
 }
 
+/* Hilangkan deskripsi saat hover */
+.post-card:hover .post-desc {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Judul tetap */
 .post-title {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 8px;
 }
 
-.post-desc {
-  font-size: 14px;
-  opacity: 0.8;
-  margin-bottom: 15px;
-}
-
+/* Tombol tetap */
 .btn-read {
   background: #111;
   color: white;
@@ -319,6 +341,7 @@ body {
 .btn-read:hover {
   background: #333;
 }
+
 
 /* SIDEBAR */
 .sidebar {
@@ -380,7 +403,9 @@ input, textarea {
     <div class="posts-grid">
       <!-- CARD 1 -->
       <div class="post-card">
-        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="post-thumb">
+        <div class="post-thumb-wrapper">
+            <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="post-thumb">
+        </div>
         <div class="post-body">
           <div class="post-title">Providers Scraping System</div>
           <div class="post-desc">Scraping data universitas Australia lengkap dengan CRICOS, tuition fee, entry requirements, dan duration.</div>
