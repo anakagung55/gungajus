@@ -175,7 +175,7 @@ animate();
 }
 </style>
 
-<!-- <div class="slideshow-container">
+<div class="slideshow-container">
   
   <img class="slide-img" src="{{ site.baseurl }}/assets/img/header1.jpg">
   <img class="slide-img" src="{{ site.baseurl }}/assets/img/header2.jpg">
