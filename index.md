@@ -382,6 +382,18 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 
 /* SIDEBAR */
 .sidebar {
