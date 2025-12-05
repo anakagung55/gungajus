@@ -252,9 +252,9 @@ body {
 
 /* SECTION WRAPPER */
 .container {
-  max-width: 1300px;
-  margin: 50px auto;
-  padding: 0 20px;
+  max-width: 1200px;  /* batas tengah */
+  margin: 0 auto;     /* center horizontally */
+  padding: 0 20px;    /* sedikit breathing space kiri-kanan */
 }
 
 /* SECTION TITLE */
@@ -266,9 +266,11 @@ body {
 
 /* GRID POST */
 .posts-grid {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+  gap: 28px;
+  justify-items: center;
 }
 
 /* ============================
@@ -439,9 +441,11 @@ input, textarea {
 
 /* LAYOUT WRAPPER */
 .content-wrapper {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
+    
 </style>
 
 <!-- NAVBAR -->
