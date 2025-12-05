@@ -413,6 +413,7 @@ input, textarea {
           <div class="post-desc">Visualisasi tren role pekerjaan IT berdasarkan dataset job scraping.</div>
           <a href="{{ site.baseurl }}/projects/itjobs-viz" class="btn-read">Baca selengkapnya</a>
         </div>
+       </div>
           <!-- CARD 5 -->
       <div class="post-card">
         <img src="{{ site.baseurl }}/assets/img/anzsco-viz-thumb.jpg" class="post-thumb">
@@ -421,6 +422,7 @@ input, textarea {
           <div class="post-desc">Visualisasi data ANZSCO menggunakan Looker Studio.</div>
           <a href="{{ site.baseurl }}/projects/anzsco-viz" class="btn-read">Baca selengkapnya</a>
         </div>
+       </div>
           <!-- CARD 6 -->
       <div class="post-card">
         <img src="{{ site.baseurl }}/assets/img/ass-scraping.jpg" class="post-thumb">
