@@ -1,16 +1,30 @@
 ---
+layout: project
 title: Providers Scraping System
+hero-image: /assets/img/providers-hero.jpg
+category: Data Engineering
+tools: Python, BeautifulSoup, SQL
+year: 2025
+github: https://github.com/ajus/providers-scraping
 ---
 
-<div class="blog-header">
-  <h1>Providers Scraping System</h1>
-  <p>Dokumentasi project scraping data universitas Australia untuk Interlace Studies Bali.</p>
-</div>
+## 💡 Overview
 
-<div class="blog-container">
+Project scraping untuk mengumpulkan data:
+- CRICOS
+- Tuition Fee
+- Duration
+- Entry Requirements
 
-  <img src="/assets/img/providers-thumb.jpg">
+Dilengkapi dengan sistem update otomatis & retry handler.
 
-  <h2>📌 Ringkasan Project</h2>
-  ...
-</div>
+---
+
+## 🔧 Teknologi
+
+- Python
+- BeautifulSoup
+- Requests + Retry
+- SQL (MySQL)
+
+---
