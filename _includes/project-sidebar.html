@@ -1,0 +1,22 @@
+<div class="project-sidebar">
+
+  <div class="sidebar-box">
+    <h3>📌 Project Info</h3>
+    <p><strong>Category:</strong> {{ page.category }}</p>
+    <p><strong>Tools:</strong> {{ page.tools }}</p>
+    <p><strong>Year:</strong> {{ page.year }}</p>
+  </div>
+
+  <div class="sidebar-box">
+    <h3>🔗 Links</h3>
+    {% if page.github %}
+      <a href="{{ page.github }}" target="_blank">View on GitHub →</a>
+    {% endif %}
+    
+    {% if page.demo %}
+      <br>
+      <a href="{{ page.demo }}" target="_blank">Live Demo →</a>
+    {% endif %}
+  </div>
+
+</div>
