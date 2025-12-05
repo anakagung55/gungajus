@@ -286,10 +286,10 @@ body {
 
 .post-thumb {
   width: 100%;
-  aspect-ratio: 16 / 9;   /* Frame fix */
-  object-fit: contain;    /* NO crop EVER */
-  background: #000;       /* biar elegan */
+  aspect-ratio: 16 / 9;   /* bingkai 16:9 */
+  object-fit: cover;      /* gambar full tanpa kotak hitam */
   border-radius: 10px 10px 0 0;
+  display: block;
 }
 
 .post-card {
