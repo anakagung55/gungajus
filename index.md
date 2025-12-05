@@ -127,9 +127,9 @@ animate();
 .slideshow-container {
   position: relative;
   width: 100%;
-  height: 260px;
+  height: 300px;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 18px;
 }
 
 /* Semua slide disusun menumpuk */
