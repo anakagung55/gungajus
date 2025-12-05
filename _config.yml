@@ -1,5 +1,5 @@
-title:
-description: 
-show_downloads: false
+title: Cayman theme
+description: Blog magang berisi kegiatan,dokumentasi,project yang dilakukan selama magang di InterlaceStudies Bali
+show_downloads: true
 google_analytics:
-theme: null
+theme: jekyll-theme-cayman
