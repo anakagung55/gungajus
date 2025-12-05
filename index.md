@@ -104,25 +104,55 @@
 }
 </style>
 
-<div class="slideshow-container">
-  
-  <img class="slide-img" src="{{ site.baseurl }}/assets/img/header1.jpg">
-  <img class="slide-img" src="{{ site.baseurl }}/assets/img/header2.jpg">
-  <img class="slide-img" src="{{ site.baseurl }}/assets/img/header3.jpg">
-  <img class="slide-img" src="{{ site.baseurl }}/assets/img/header4.jpg">
-  <img class="slide-img" src="{{ site.baseurl }}/assets/img/header5.jpg">
-  <img class="slide-img" src="{{ site.baseurl }}/assets/img/header6.jpg">
-  <img class="slide-img" src="{{ site.baseurl }}/assets/img/header7.jpg">
-
-  <div class="header-title">Magang Interlace Studies Bali</div>
-
+<div class="header-wrapper">
+  <div class="slideshow-container">
+    <img class="slide-img" src="{{ site.baseurl }}/assets/img/header1.jpg">
+    <img class="slide-img" src="{{ site.baseurl }}/assets/img/header2.jpg">
+    <img class="slide-img" src="{{ site.baseurl }}/assets/img/header3.jpg">
+    <img class="slide-img" src="{{ site.baseurl }}/assets/img/header4.jpg">
+    <img class="slide-img" src="{{ site.baseurl }}/assets/img/header5.jpg">
+    <img class="slide-img" src="{{ site.baseurl }}/assets/img/header6.jpg">
+    <img class="slide-img" src="{{ site.baseurl }}/assets/img/header7.jpg">
+    <div class="header-title">Magang Interlace Studies Bali</div>
+  </div>
 </div>
+
 
 <br>
 
 
 
 <style>
+  .header-wrapper {
+  max-width: 1300px;       /* sama seperti post */
+  margin: 0 auto;          /* biar center */
+  padding: 0 20px;         /* biar tidak nempel pinggir */
+}
+
+.slideshow-container {
+  width: 100%;             /* mengikuti container */
+  height: 260px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1300px; /* samakan dengan container */
+  max-width: 100%;
+  padding: 12px 32px;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  border-radius: 0 0 12px 12px; /* biar lebih rapi */
+}
+
 /* RESET Cayman Header */
 .page-header { display: none !important; }
 
@@ -135,30 +165,6 @@ body {
   color: #e5e5e5;
 }
 
-/* NAVBAR */
-.navbar {
-  width: 100%;
-  padding: 18px 60px;
-  position: absolute;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-}
-
-.navbar a {
-  text-decoration: none;
-  margin-left: 28px;
-  color: white;
-  font-weight: 500;
-  transition: 0.2s;
-}
-
-.navbar a:hover {
-  opacity: 0.8;
-}
 
 /* HERO */
 .hero {
