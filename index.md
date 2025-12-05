@@ -274,47 +274,44 @@ body {
 /* CARD */
 .post-card {
   background: #2a2f36;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: 0.25s;
+  border-radius: 14px;
+  overflow: hidden; /* penting agar gambar ikut radius */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.28);
+  transition: 0.25s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .post-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .post-thumb {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  height: 180px;         /* FIX HEIGHT → RAPI SERAGAM */
+  object-fit: cover;     /* crop elegan */
+  display: block;
 }
     
-.post-card {
-  display: flex;
-  flex-direction: column;
-}
-.post-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .post-body {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
 }
 
 .post-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
-  margin-bottom: 8px;
+  color: #fff;
 }
 
 .post-desc {
   font-size: 14px;
-  opacity: 0.8;
-  margin-bottom: 15px;
+  opacity: 0.85;
+  line-height: 1.5;
+  color: #d2d2d2;
 }
 
 .btn-read {
@@ -324,7 +321,8 @@ body {
   border-radius: 6px;
   text-decoration: none;
   font-size: 14px;
-  transition: 0.2s;
+  width: fit-content;
+  transition: 0.2s ease;
 }
 
 .btn-read:hover {
