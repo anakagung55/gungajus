@@ -1,6 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+
+<body>
+
+  {% include navbar.html %}
+
+  <div class="header-wrapper">
+    {% include header.html %}
+  </div>
+
+  <main class="container">
     {{ content }}
-  </body>
+  </main>
+
+</body>
 </html>
