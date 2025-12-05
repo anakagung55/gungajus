@@ -286,8 +286,9 @@ body {
 
 .post-thumb {
   width: 100%;
-  height: 170px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  background: #111; /* opsional biar ada backgound */
 }
 
 .post-body {
