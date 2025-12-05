@@ -1,12 +1,12 @@
 ---
 layout: project
 title: Providers Scraping System
-hero-image: {{ site.baseurl }}/assets/img/providers-thumb.jpg
+hero-image: {{ site.baseurl }}/assets/img/providers-hero.jpg
 category: Data Engineering
-tools: Python, BeautifulSoup, SQL
+tools: Python, BeautifulSoup, SQL, Retry
 year: 2025
-github: https://github.com/ajus/providers-scraping
 ---
+
 
 ## 💡 Overview
 
