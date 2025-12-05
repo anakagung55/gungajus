@@ -283,13 +283,13 @@ body {
 .post-card:hover {
   transform: translateY(-5px);
 }
+
 .post-thumb {
   width: 100%;
-  height: 200px;
-  object-fit: contain;
-  background: #0f0f0f;
-  padding: 6px;
-  border-radius: 10px;
+  aspect-ratio: 16 / 9;     /* FIX: Semua thumbnail seragam */
+  object-fit: cover;        /* Crop elegan */
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  display: block;
 }
 .post-card {
   display: flex;
