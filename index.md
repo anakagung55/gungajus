@@ -415,18 +415,18 @@ input, textarea {
         </div>
           <!-- CARD 5 -->
       <div class="post-card">
-        <img src="{{ site.baseurl }}/assets/img/anzsco-thumb" class="post-thumb">
+        <img src="{{ site.baseurl }}/assets/img/anzsco-viz-thumb.jpg" class="post-thumb">
         <div class="post-body">
-          <div class="post-title">IT Job Visualization</div>
-          <div class="post-desc">Visualisasi tren role pekerjaan IT berdasarkan dataset job scraping.</div>
-          <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="btn-read">Baca selengkapnya</a>
+          <div class="post-title">ANZSCO Data Visualitation</div>
+          <div class="post-desc">Visualisasi data ANZSCO menggunakan Looker Studio.</div>
+          <a href="{{ site.baseurl }}/projects/anzsco-viz" class="btn-read">Baca selengkapnya</a>
         </div>
           <!-- CARD 6 -->
       <div class="post-card">
         <img src="{{ site.baseurl }}/assets/img/ass-scraping.jpg" class="post-thumb">
         <div class="post-body">
-          <div class="post-title">IT Job Visualization</div>
-          <div class="post-desc">Visualisasi tren role pekerjaan IT berdasarkan dataset job scraping.</div>
+          <div class="post-title">Skill Assessment Scraping</div>
+          <div class="post-desc">Scraping Website Skill Assessment di Australia.</div>
           <a href="{{ site.baseurl }}/projects/assessment-scraping" class="btn-read">Baca selengkapnya</a>
         </div>
       </div>
