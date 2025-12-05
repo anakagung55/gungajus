@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+
+<body>
+
+  {% include navbar.html %}
+  {% include project-hero.html %}
+
+  <main class="project-wrapper">
+
+    <div class="project-content">
+      {{ content }}
+    </div>
+
+    {% include project-sidebar.html %}
+
+  </main>
+
+</body>
+</html>
