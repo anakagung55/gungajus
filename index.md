@@ -286,11 +286,21 @@ body {
 
 .post-thumb {
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  background: #111; /* opsional biar ada backgound */
+  aspect-ratio: 16 / 9;     /* FIX: Semua thumbnail seragam */
+  object-fit: cover;        /* Crop elegan */
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  display: block;
 }
-
+.post-card {
+  display: flex;
+  flex-direction: column;
+}
+.post-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .post-body {
   padding: 20px;
 }
