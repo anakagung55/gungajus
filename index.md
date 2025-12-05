@@ -20,7 +20,6 @@
   border-radius: 12px;
 }
 
-/* Semua slide disusun menumpuk */
 .slide-img {
   position: absolute;
   width: 100%;
