@@ -14,5 +14,3 @@ title: Providers Scraping System
   <h2>📌 Ringkasan Project</h2>
   ...
 </div>
-
-{% include related-posts.html %}
