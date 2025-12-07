@@ -427,39 +427,50 @@ input, textarea {
 
 <!-- NAVBAR -->
 
+<!-- NAVBAR -->
+
 <!-- HERO IMAGE -->
 <div class="container">
   <div class="section-title">Postingan Terbaru</div>
 
-  <div class="content-wrapper">
+  <!-- Toggle -->
+  <div class="view-toggle">
+    <button id="gridView" class="active">🔲</button>
+    <button id="listView">📄</button>
+  </div>
 
-    <!-- GRID POST -->
-    <div class="posts-grid">
+  <!-- GRID WRAPPER -->
+  <div class="posts-grid">
 
-      <!-- CARD 1 -->
-      <a href="{{ site.baseurl }}/projects/providers-scraping" class="post-card">
+    <!-- CARD 1 -->
+    <a href="{{ site.baseurl }}/projects/providers-scraping" class="post-card">
+      <div class="thumb-wrapper">
         <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="post-thumb">
         <div class="post-overlay">
-            <div class="overlay-content">
-              <div class="overlay-title">Providers Scraping System</div>
-              <div class="overlay-desc">Scraping data universitas Australia lengkap...</div>
-            </div>
+          <div class="overlay-content">
+            <div class="overlay-title">Providers Scraping System</div>
+            <div class="overlay-desc">Scraping data universitas Australia lengkap...</div>
+          </div>
         </div>
-      </a>
+      </div>
+    </a>
 
-      <!-- CARD 2 -->
-      <a href="{{ site.baseurl }}/projects/scraping-job-portal" class="post-card">
+    <!-- CARD 2 -->
+    <a href="{{ site.baseurl }}/projects/scraping-job-portal" class="post-card">
+      <div class="thumb-wrapper">
         <img src="{{ site.baseurl }}/assets/img/jobportal-thumb.jpg" class="post-thumb">
         <div class="post-overlay">
-            <div class="overlay-content">
-              <div class="overlay-title">IT Job Portal Scraping</div>
-              <div class="overlay-desc">Mengambil data lowongan pekerjaan IT...</div>
-            </div>
+          <div class="overlay-content">
+            <div class="overlay-title">IT Job Portal Scraping</div>
+            <div class="overlay-desc">Mengambil data lowongan pekerjaan IT...</div>
+          </div>
         </div>
-      </a>
+      </div>
+    </a>
 
-      <!-- CARD 3 -->
-      <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="post-card">
+    <!-- CARD 3 -->
+    <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="post-card">
+      <div class="thumb-wrapper">
         <img src="{{ site.baseurl }}/assets/img/anzsco-thumb.jpg" class="post-thumb">
         <div class="post-overlay">
           <div class="overlay-content">
@@ -467,10 +478,12 @@ input, textarea {
             <div class="overlay-desc">Scraping informasi ANZSCO untuk pemetaan job...</div>
           </div>
         </div>
-      </a>
+      </div>
+    </a>
 
-      <!-- CARD 4 -->
-      <a href="{{ site.baseurl }}/projects/itjobs-viz" class="post-card">
+    <!-- CARD 4 -->
+    <a href="{{ site.baseurl }}/projects/itjobs-viz" class="post-card">
+      <div class="thumb-wrapper">
         <img src="{{ site.baseurl }}/assets/img/itjobs-viz-thumb.jpg" class="post-thumb">
         <div class="post-overlay">
           <div class="overlay-content">
@@ -478,10 +491,12 @@ input, textarea {
             <div class="overlay-desc">Visualisasi tren role pekerjaan IT...</div>
           </div>
         </div>
-      </a>
+      </div>
+    </a>
 
-      <!-- CARD 5 -->
-      <a href="{{ site.baseurl }}/projects/anzsco-viz" class="post-card">
+    <!-- CARD 5 -->
+    <a href="{{ site.baseurl }}/projects/anzsco-viz" class="post-card">
+      <div class="thumb-wrapper">
         <img src="{{ site.baseurl }}/assets/img/anzsco-viz-thumb.jpg" class="post-thumb">
         <div class="post-overlay">
           <div class="overlay-content">
@@ -489,10 +504,12 @@ input, textarea {
             <div class="overlay-desc">Visualisasi data ANZSCO menggunakan Looker...</div>
           </div>
         </div>
-      </a>
+      </div>
+    </a>
 
-      <!-- CARD 6 -->
-      <a href="{{ site.baseurl }}/projects/assessment-scraping" class="post-card">
+    <!-- CARD 6 -->
+    <a href="{{ site.baseurl }}/projects/assessment-scraping" class="post-card">
+      <div class="thumb-wrapper">
         <img src="{{ site.baseurl }}/assets/img/ass-scraping.jpg" class="post-thumb">
         <div class="post-overlay">
           <div class="overlay-content">
@@ -500,9 +517,9 @@ input, textarea {
             <div class="overlay-desc">Scraping Website Skill Assessment di Australia...</div>
           </div>
         </div>
-      </a>
+      </div>
+    </a>
 
-    </div> 
+  </div> <!-- END posts-grid -->
 
-  </div> 
-</div> 
+</div> <!-- END container -->
