@@ -234,7 +234,32 @@ body {
 .navbar a:hover {
   opacity: 0.8;
 }
+  
+/* Toggle Buttons */
+.view-toggle {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 12px;
+}
 
+.toggle-btn {
+  padding: 8px 16px;
+  background: #2a2f36;
+  border: 1px solid #3a3f47;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.toggle-btn.active {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.toggle-btn:hover {
+  opacity: .8;
+}
 /* HERO */
 .hero {
   width: 100%;
@@ -273,6 +298,48 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
+}
+/* GRID MODE */
+.posts-grid.grid-view .post-card {
+  display: block;
+}
+
+/* LIST MODE */
+.posts-grid.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.posts-grid.list-view .post-card {
+  display: flex;
+  flex-direction: row;
+  height: 180px;
+}
+
+/* Thumbnail in list mode */
+.posts-grid.list-view .post-thumb {
+  width: 280px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content wrapper inside list view */
+.posts-grid.list-view .post-overlay {
+  position: relative;
+  height: 100%;
+  background: none;
+  opacity: 1 !important;
+  padding: 20px;
+}
+
+.posts-grid.list-view .overlay-content {
+  transform: translateY(0) !important;
+}
+
+.posts-grid.list-view .overlay-btn {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 /* ============================
@@ -454,6 +521,11 @@ input, textarea {
 <div class="container">
   <div class="section-title">Postingan Terbaru</div>
 
+  <div class="view-toggle">
+  <button id="gridView" class="toggle-btn active">🔲 Grid</button>
+  <button id="listView" class="toggle-btn">📄 List</button>
+  </div>
+  
   <div class="content-wrapper">
     <!-- GRID POST -->
     <div class="posts-grid">
@@ -524,3 +596,23 @@ input, textarea {
           </div>
         </div>
     </div>
+    <script>
+    const gridBtn = document.getElementById("gridView");
+    const listBtn = document.getElementById("listView");
+    const container = document.querySelector(".posts-grid");
+    // DEFAULT = GRID MODE
+    container.classList.add("grid-view");
+    gridBtn.addEventListener("click", () => {
+      gridBtn.classList.add("active");
+      listBtn.classList.remove("active");
+      container.classList.add("grid-view");
+      container.classList.remove("list-view");
+    });
+    listBtn.addEventListener("click", () => {
+      listBtn.classList.add("active");
+      gridBtn.classList.remove("active");
+      container.classList.add("list-view");
+      container.classList.remove("grid-view");
+    });
+    </script>
+
