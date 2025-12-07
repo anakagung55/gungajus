@@ -310,10 +310,6 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-.posts-grid.list-view .post-card {
-  max-width: 950px;
-  margin: 0 auto;  /* supaya center */
-}
 
 .posts-grid.list-view .post-card {
   display: flex;
