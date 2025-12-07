@@ -1,5 +1,9 @@
 <!-- ================= AI PARTICLE BACKGROUND ================= -->
 <style>
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
 #ai-bg {
     position: fixed;
     top: 0; left: 0;
@@ -97,7 +101,6 @@ animate();
   text-decoration: none;
   font-size: 15px;
   transition: 0.25s ease;
-  display: flex;
 }
 
 .navbar-right a:hover {
