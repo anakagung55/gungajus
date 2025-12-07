@@ -805,6 +805,7 @@ input, textarea {
           <textarea placeholder="Komentar Anda"></textarea>
           <button class="send-comment-btn">Kirim</button>
         </div>
+        </div>
       </div>
     </div>
   </div>
