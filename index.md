@@ -247,54 +247,54 @@ body {
   color: white;
 }
 
-/* ======================================
-   GLOBAL WRAPPER / CONTAINER
-====================================== */
+/* TITLE IN HERO */
+.hero-title {
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+/* SECTION WRAPPER */
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 50px auto;
   padding: 0 20px;
 }
 
+/* SECTION TITLE */
 .section-title {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 25px;
 }
 
-/* ======================================
-   GRID — RESPONSIVE AUTO CENTER
-====================================== */
+/* GRID POST */
 .posts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
-  width: 100%;
-  justify-items: center;
 }
 
-/* ======================================
+/* ============================
    CARD BASE
-====================================== */
+============================ */
 .post-card {
-  display: block;
-  position: relative;
   background: #2a2f36;
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0,0,0,0.28);
   transition: .3s ease;
-  cursor: pointer;
-  text-decoration: none;
+  position: relative;
 }
 
 .post-card:hover {
   transform: translateY(-6px);
 }
 
-/* ======================================
-   THUMB & IMAGE ZOOM ON HOVER
-====================================== */
+
+/* ============================
+   THUMB WRAPPER + IMAGE
+============================ */
 .thumb-wrapper {
   position: relative;
   overflow: hidden;
@@ -311,32 +311,39 @@ body {
   transform: scale(1.08);
 }
 
-/* ======================================
+
+/* ============================
    OVERLAY
-====================================== */
+============================ */
 .post-overlay {
   position: absolute;
-  inset: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
   background: linear-gradient(
       to top,
       rgba(0,0,0,0.75),
-      rgba(0,0,0,0)
+      rgba(0,0,0,0.0)
   );
+
   opacity: 0;
   transition: opacity .35s ease;
   display: flex;
   align-items: flex-end;
   padding: 22px;
-  pointer-events: none;
 }
 
 .post-card:hover .post-overlay {
   opacity: 1;
 }
 
-/* ======================================
+
+/* ============================
    OVERLAY TEXT CONTENT
-====================================== */
+============================ */
 .overlay-content {
   transform: translateY(22px);
   transition: transform .35s ease;
@@ -360,16 +367,39 @@ body {
   line-height: 1.4;
 }
 
-/* ======================================
-   LAYOUT SIDE WRAPPER
-====================================== */
-.content-wrapper {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
+.overlay-btn {
+  display: inline-block;
+  background: #1d4ed8;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: .35s ease;
+  pointer-events: all;
 }
 
-/* OPTIONAL: Sidebar (delete if not using) */
+.post-card:hover .overlay-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* SIDEBAR */
 .sidebar {
   width: 320px;
   padding-left: 20px;
@@ -411,21 +441,12 @@ input, textarea {
   background: #222;
 }
 
-/* ======================================
-   MOBILE FIX
-====================================== */
-@media (max-width: 900px) {
-  .content-wrapper {
-    flex-direction: column;
-  }
-  .sidebar {
-    width: 100%;
-    padding-left: 0;
-  }
+/* LAYOUT WRAPPER */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
-
-
-<!-- NAVBAR -->
+</style>
 
 <!-- NAVBAR -->
 
@@ -433,93 +454,73 @@ input, textarea {
 <div class="container">
   <div class="section-title">Postingan Terbaru</div>
 
-  <!-- Toggle -->
-  <div class="view-toggle">
-    <button id="gridView" class="active">🔲</button>
-    <button id="listView">📄</button>
-  </div>
-
-  <!-- GRID WRAPPER -->
-  <div class="posts-grid">
-
-    <!-- CARD 1 -->
-    <a href="{{ site.baseurl }}/projects/providers-scraping" class="post-card">
-      <div class="thumb-wrapper">
+  <div class="content-wrapper">
+    <!-- GRID POST -->
+    <div class="posts-grid">
+      <!-- CARD 1 -->
+      <div class="post-card">
         <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="post-thumb">
-        <div class="post-overlay">
-          <div class="overlay-content">
-            <div class="overlay-title">Providers Scraping System</div>
-            <div class="overlay-desc">Scraping data universitas Australia lengkap...</div>
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <!-- CARD 2 -->
-    <a href="{{ site.baseurl }}/projects/scraping-job-portal" class="post-card">
-      <div class="thumb-wrapper">
+            <div class="post-overlay">
+                <div class="overlay-content">
+                  <div class="overlay-title">Providers Scraping System</div>
+                  <div class="overlay-desc">Scraping data universitas Australia lengkap ...</div>
+                  <a href="{{ site.baseurl }}/projects/providers-scraping" class="overlay-btn">Baca selengkapnya →</a>
+                </div>
+              </div>
+            </div>
+      <!-- CARD 2 -->
+      <div class="post-card">
         <img src="{{ site.baseurl }}/assets/img/jobportal-thumb.jpg" class="post-thumb">
-        <div class="post-overlay">
-          <div class="overlay-content">
-            <div class="overlay-title">IT Job Portal Scraping</div>
-            <div class="overlay-desc">Mengambil data lowongan pekerjaan IT...</div>
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <!-- CARD 3 -->
-    <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="post-card">
-      <div class="thumb-wrapper">
+            <div class="post-overlay">
+                <div class="overlay-content">
+                  <div class="overlay-title">IT Job Portal Scraping</div>
+                  <div class="overlay-desc">Mengambil data lowongan pekerjaan IT dan memetakannya sebagai dataset analisis.</div>
+                  <a href="{{ site.baseurl }}/projects/scraping-job-portal" class="overlay-btn">Baca selengkapnya →</a>
+                </div>
+              </div>
+            </div>
+      <!-- CARD 3 -->
+      <div class="post-card">
         <img src="{{ site.baseurl }}/assets/img/anzsco-thumb.jpg" class="post-thumb">
-        <div class="post-overlay">
-          <div class="overlay-content">
-            <div class="overlay-title">ANZSCO Scraping</div>
-            <div class="overlay-desc">Scraping informasi ANZSCO untuk pemetaan job...</div>
+          <div class="post-overlay">
+            <div class="overlay-content">
+              <div class="overlay-title">ANZSCO Scraping</div>
+              <div class="overlay-desc">Scraping informasi ANZSCO untuk pemetaan job family dan skill level.</div>
+              <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="overlay-btn">Baca selengkapnya →</a>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
-
-    <!-- CARD 4 -->
-    <a href="{{ site.baseurl }}/projects/itjobs-viz" class="post-card">
-      <div class="thumb-wrapper">
+      <!-- CARD 4 -->
+      <div class="post-card">
         <img src="{{ site.baseurl }}/assets/img/itjobs-viz-thumb.jpg" class="post-thumb">
-        <div class="post-overlay">
-          <div class="overlay-content">
-            <div class="overlay-title">IT Job Visualization</div>
-            <div class="overlay-desc">Visualisasi tren role pekerjaan IT...</div>
+           <div class="post-overlay">
+            <div class="overlay-content">
+              <div class="overlay-title">IT Job Visualizationem</div>
+              <div class="overlay-desc">Visualisasi tren role pekerjaan IT berdasarkan dataset job scraping.</div>
+              <a href="{{ site.baseurl }}/projects/itjobs-viz" class="overlay-btn">Baca selengkapnya →</a>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
-
-    <!-- CARD 5 -->
-    <a href="{{ site.baseurl }}/projects/anzsco-viz" class="post-card">
-      <div class="thumb-wrapper">
+          <!-- CARD 5 -->
+      <div class="post-card">
         <img src="{{ site.baseurl }}/assets/img/anzsco-viz-thumb.jpg" class="post-thumb">
-        <div class="post-overlay">
-          <div class="overlay-content">
-            <div class="overlay-title">ANZSCO Data Visualization</div>
-            <div class="overlay-desc">Visualisasi data ANZSCO menggunakan Looker...</div>
+           <div class="post-overlay">
+            <div class="overlay-content">
+              <div class="overlay-title">ANZSCO Data Visualitation</div>
+              <div class="overlay-desc">Visualisasi data ANZSCO menggunakan Looker Studio.</div>
+              <a href="{{ site.baseurl }}/projects/anzsco-viz" class="overlay-btn">Baca selengkapnya →</a>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
-
-    <!-- CARD 6 -->
-    <a href="{{ site.baseurl }}/projects/assessment-scraping" class="post-card">
-      <div class="thumb-wrapper">
+          <!-- CARD 6 -->
+      <div class="post-card">
         <img src="{{ site.baseurl }}/assets/img/ass-scraping.jpg" class="post-thumb">
-        <div class="post-overlay">
-          <div class="overlay-content">
-            <div class="overlay-title">Skill Assessment Scraping</div>
-            <div class="overlay-desc">Scraping Website Skill Assessment di Australia...</div>
+          <div class="post-overlay">
+            <div class="overlay-content">
+              <div class="overlay-title">Skill Assessment Scraping</div>
+              <div class="overlay-desc">Scraping Website Skill Assessment di Australia.</div>
+              <a href="{{ site.baseurl }}/projects/assessment-scraping" class="overlay-btn">Baca selengkapnya →</a>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
-
-  </div> <!-- END posts-grid -->
-
-</div> <!-- END container -->
+    </div>
