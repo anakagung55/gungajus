@@ -236,30 +236,49 @@ body {
 }
   
 /* Toggle Buttons */
+/* --- WRAPPER --- */
 .view-toggle {
-  margin-bottom: 20px;
   display: flex;
   gap: 12px;
+  margin-bottom: 20px;
 }
 
+/* --- NORMAL BUTTON --- */
 .toggle-btn {
-  padding: 8px 16px;
-  background: #2a2f36;
-  border: 1px solid #3a3f47;
-  color: white;
-  border-radius: 8px;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  border: 1px solid #2f3340;
+  background: #1f232b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: .25s ease;
+  transition: .25s;
+  box-shadow: 0 0 0 transparent;
 }
 
+/* --- ACTIVE BUTTON (NEON GRADIENT) --- */
 .toggle-btn.active {
-  background: #1d4ed8;
-  border-color: #1d4ed8;
+  background: linear-gradient(135deg, #1976ff, #a431ff);
+  border: none;
+  box-shadow: 
+    0 0 10px rgba(77, 97, 255, .7),
+    0 0 20px rgba(164, 49, 255, .5);
+  transform: translateY(-1px);
 }
 
-.toggle-btn:hover {
-  opacity: .8;
+/* --- ICON STYLE --- */
+.toggle-btn i {
+  font-size: 18px;
+  color: white;
 }
+
+/* --- HOVER EFFECT --- */
+.toggle-btn:hover {
+  opacity: .85;
+}
+
 /* HERO */
 .hero {
   width: 100%;
@@ -557,9 +576,14 @@ input, textarea {
   <div class="section-title">Postingan Terbaru</div>
 
   <div class="view-toggle">
-  <button id="gridView" class="toggle-btn active">🔲 Grid</button>
-  <button id="listView" class="toggle-btn">📄 List</button>
-  </div>
+  <button id="gridView" class="toggle-btn active">
+    <i class="icon-grid"></i>
+  </button>
+
+  <button id="listView" class="toggle-btn">
+    <i class="icon-list"></i>
+  </button>
+</div>
   
   <div class="content-wrapper">
     <!-- GRID POST -->
