@@ -191,7 +191,7 @@ animate();
 
   <div class="header-title">Magang Interlace Studies Bali</div>
 
-</div> -->
+</div>
 
 <br>
 
