@@ -316,6 +316,15 @@ body {
   flex-direction: row;
   height: 180px;
 }
+.posts-grid.list-view .post-card {
+  overflow: hidden;
+}
+
+/* Atur card jadi horizontal */
+.posts-grid.list-view .post-card {
+  display: flex;
+  flex-direction: row;
+}
 
 /* Thumbnail in list mode */
 .posts-grid.list-view .post-thumb {
@@ -326,11 +335,31 @@ body {
 
 /* Content wrapper inside list view */
 .posts-grid.list-view .post-overlay {
-  position: relative;
-  height: 100%;
-  background: none;
+  position: static;
   opacity: 1 !important;
+  background: none !important;
+  height: auto;
+  padding: 0;
+  box-shadow: none;
+}
+.posts-grid.list-view .post-thumb {
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.posts-grid.list-view .overlay-content {
   padding: 20px;
+  transform: none !important;
+}
+
+/* Jangan ada animasi hover pada list */
+.posts-grid.list-view .post-card:hover .post-thumb {
+  transform: none;
+}
+
+.posts-grid.list-view .post-card:hover .post-overlay {
+  opacity: 1;
 }
 
 .posts-grid.list-view .overlay-content {
