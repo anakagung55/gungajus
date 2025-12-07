@@ -345,7 +345,7 @@ body {
   box-shadow: none;
 }
 .posts-grid.list-view .post-thumb {
-  width: 230px;
+  width: 350px;
   height: 180px;
   object-fit: cover;
   flex-shrink: 0;
