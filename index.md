@@ -325,6 +325,16 @@ body {
   display: flex;
   flex-direction: row;
 }
+.posts-grid.list-view .overlay-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.posts-grid.list-view .overlay-desc {
+  font-size: 15px;
+  opacity: 0.9;
+  margin-top: 6px;
+}
 
 /* Thumbnail in list mode */
 .posts-grid.list-view .post-thumb {
