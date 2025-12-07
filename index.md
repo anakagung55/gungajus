@@ -335,14 +335,6 @@ body {
   opacity: 0.9;
   margin-top: 6px;
 }
-
-/* Thumbnail in list mode */
-.posts-grid.list-view .post-thumb {
-  width: 280px;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* Content wrapper inside list view */
 .posts-grid.list-view .post-overlay {
   position: static;
@@ -353,7 +345,7 @@ body {
   box-shadow: none;
 }
 .posts-grid.list-view .post-thumb {
-  width: 300px;
+  width: 230px;
   height: 180px;
   object-fit: cover;
   flex-shrink: 0;
