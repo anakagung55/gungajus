@@ -746,70 +746,72 @@ input, textarea {
       </span>
     </button>
     <button id="listView" class="toggle-btn">
-      <span class="icon-list">
-        <span></span>
-      </span>
+      <span class="icon-list"><span></span></span>
     </button>
   </div>
   
-  <!-- CONTENT WRAPPER -->
+  <!-- ============= GRID MODE (SEJAJAR DENGAN LIST!) ============= -->
   <div class="posts-grid grid-mode">
-    <!-- =============== GRID CARD VERSION =============== -->
-    <div class="post-card grid-item">
-      <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="post-thumb">
-      <div class="post-overlay">
-        <div class="overlay-content">
-          <div class="overlay-title">Providers Scraping System</div>
-          <div class="overlay-desc">Scraping data universitas Australia lengkap ...</div>
-          <div class="post-meta">Scraping • 5 min read • 2025</div>
-          <a href="{{ site.baseurl }}/projects/providers-scraping" class="overlay-btn">Baca selengkapnya →</a>
+      <div class="post-card grid-item">
+        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="post-thumb">
+        <div class="post-overlay">
+          <div class="overlay-content">
+            <div class="overlay-title">Providers Scraping System</div>
+            <div class="overlay-desc">Scraping data universitas Australia lengkap ...</div>
+            <div class="post-meta">Scraping • 5 min read • 2025</div>
+            <a href="{{ site.baseurl }}/projects/providers-scraping" class="overlay-btn">Baca selengkapnya →</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="post-card grid-item">
-      <img src="{{ site.baseurl }}/assets/img/jobportal-thumb.jpg" class="post-thumb">
-      <div class="post-overlay">
-        <div class="overlay-content">
-          <div class="overlay-title">IT Job Portal Scraping</div>
-          <div class="overlay-desc">Mengambil data lowongan pekerjaan IT dan memetakannya sebagai dataset analisis.</div>
-          <div class="post-meta">Scraping • 5 min read • 2025</div>
-          <a href="{{ site.baseurl }}/projects/scraping-job-portal" class="overlay-btn">Baca selengkapnya →</a>
+      <div class="post-card grid-item">
+        <img src="{{ site.baseurl }}/assets/img/jobportal-thumb.jpg" class="post-thumb">
+        <div class="post-overlay">
+          <div class="overlay-content">
+            <div class="overlay-title">IT Job Portal Scraping</div>
+            <div class="overlay-desc">Mengambil data lowongan pekerjaan IT dan memetakannya sebagai dataset analisis.</div>
+            <div class="post-meta">Scraping • 5 min read • 2025</div>
+            <a href="{{ site.baseurl }}/projects/scraping-job-portal" class="overlay-btn">Baca selengkapnya →</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="post-card grid-item">
-      <img src="{{ site.baseurl }}/assets/img/anzsco-thumb.jpg" class="post-thumb">
-      <div class="post-overlay">
-        <div class="overlay-content">
-          <div class="overlay-title">ANZSCO Scraping</div>
-          <div class="overlay-desc">Scraping informasi ANZSCO untuk pemetaan job family dan skill level.</div>
-          <div class="post-meta">Scraping • 5 min read • 2025</div>
-          <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="overlay-btn">Baca selengkapnya →</a>
+      <div class="post-card grid-item">
+        <img src="{{ site.baseurl }}/assets/img/anzsco-thumb.jpg" class="post-thumb">
+        <div class="post-overlay">
+          <div class="overlay-content">
+            <div class="overlay-title">ANZSCO Scraping</div>
+            <div class="overlay-desc">Scraping informasi ANZSCO untuk pemetaan job family dan skill level.</div>
+            <div class="post-meta">Scraping • 5 min read • 2025</div>
+            <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="overlay-btn">Baca selengkapnya →</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="posts-list list-mode">
-    <!-- ================== LIST VERSION ================== -->
-    <div class="post-card list-item">
-      <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
-      <div class="list-content">
-        <h2 class="list-title">Providers Scraping System</h2>
-        <div class="list-date">– November 23, 2023</div>
-        <div class="list-desc">
-          Scraping data universitas Australia lengkap menggunakan teknologi automasi...
-        </div>
-        <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">BACA SELENGKAPNYA</a>
-        <div class="comment-toggle">💬 Posting Komentar</div>
-        <div class="comment-box">
-          <input type="text" placeholder="Nama Anda">
-          <textarea placeholder="Komentar Anda"></textarea>
-          <button class="send-comment-btn">Kirim</button>
-        </div>
+  </div> <!-- END GRID -->
+
+  <!-- ============= LIST MODE (SEJAJAR, BUKAN DI DALAM GRID!) ============= -->
+  <div class="posts-list list-mode" style="display:none;">
+      <div class="post-card list-item">
+        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
+        <div class="list-content">
+          <h2 class="list-title">Providers Scraping System</h2>
+          <div class="list-date">– November 23, 2023</div>
+          <div class="list-desc">
+            Scraping data universitas Australia lengkap menggunakan teknologi automasi...
+          </div>
+          <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">
+            BACA SELENGKAPNYA
+          </a>
+          <div class="comment-toggle">💬 Posting Komentar</div>
+          <div class="comment-box">
+            <input type="text" placeholder="Nama Anda">
+            <textarea placeholder="Komentar Anda"></textarea>
+            <button class="send-comment-btn">Kirim</button>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+  </div> <!-- END LIST -->
+
 </div>
+
 <script>
 const gridBtn = document.getElementById("gridView");
 const listBtn = document.getElementById("listView");
