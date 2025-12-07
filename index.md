@@ -443,28 +443,17 @@ body {
   cursor: pointer;
   opacity: 0.8;
 }
-  
-<script>
-document.querySelectorAll('.comment-toggle').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const box = btn.nextElementSibling;
-
-        if (box.classList.contains("show")) {
-            box.classList.remove("show");
-            box.style.display = "none";
-        } else {
-            box.classList.add("show");
-            box.style.display = "flex";
-        }
-    });
-});
-</script>
 
 .comment-box {
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  margin-top: 10px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .3s ease;
+}
+
+.comment-box.show {
+  opacity: 1;
+  max-height: 300px; /* cukup untuk form */
 }
 
 .comment-box input,
@@ -743,6 +732,20 @@ input, textarea {
   </div> <!-- END LIST -->
 
 </div>
+
+<script>
+document.querySelectorAll('.comment-toggle').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        const box = toggle.nextElementSibling;
+
+        if (box.style.display === "flex") {
+            box.style.display = "none";   // sembunyikan
+        } else {
+            box.style.display = "flex";   // tampilkan
+        }
+    });
+});
+</script>
 
 <script>
 const gridBtn = document.getElementById("gridView");
