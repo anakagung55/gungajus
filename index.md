@@ -383,18 +383,16 @@ body {
 /* LIST CARD ITEM */
 .list-item {
   display: flex;
-  background: #2b2e34;
-  border-radius: 14px;
+  background: #2f3338;
+  border-radius: 16px;
   padding: 18px;
-  gap: 18px;
-  color: white;
-  width: 100%;
+  gap: 20px;
 }
 
 /* LIST THUMBNAIL */
 .list-thumb {
-  width: 180px;
-  height: 120px;
+  width: 220px;
+  height: 140px;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -404,9 +402,9 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  justify-content: center;
+  gap: 6px;
 }
-
 /* LIST TEXT */
 .list-title {
   font-size: 20px;
@@ -420,23 +418,22 @@ body {
 }
 
 .list-desc {
-  font-size: 14px;
-  line-height: 1.5;
-  max-height: 48px;
+  font-size: 15px;
+  color: #ddd;
+  line-height: 1.4;
+  max-height: 3.3em; /* 2 baris */
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .read-more-btn {
-  display: inline-block;
-  margin-top: 6px;
-  background: #1d4ed8;
-  padding: 8px 14px;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  font-size: 13px;
+  color: #4ea3ff;
   font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
 }
 
 /* COMMENT */
@@ -446,6 +443,22 @@ body {
   cursor: pointer;
   opacity: 0.8;
 }
+  
+<script>
+document.querySelectorAll('.comment-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const box = btn.nextElementSibling;
+
+        if (box.classList.contains("show")) {
+            box.classList.remove("show");
+            box.style.display = "none";
+        } else {
+            box.classList.add("show");
+            box.style.display = "flex";
+        }
+    });
+});
+</script>
 
 .comment-box {
   display: none;
