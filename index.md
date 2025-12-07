@@ -254,7 +254,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: .25s;
+  transition: .25s ease;
   box-shadow: 0 0 0 transparent;
 }
 
@@ -277,6 +277,58 @@ body {
 /* --- HOVER EFFECT --- */
 .toggle-btn:hover {
   opacity: .85;
+}
+.icon-grid {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+}
+
+.icon-grid::before,
+.icon-grid::after,
+.icon-grid span {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 4px;
+  display: block;
+}
+
+.icon-grid span {
+  content: "";
+}
+.icon-list {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: relative;
+}
+
+.icon-list::before,
+.icon-list::after,
+.icon-list span {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 10px;
+}
+
+.icon-list::before {
+  top: 3px;
+}
+
+.icon-list span {
+  top: 9px;
+}
+
+.icon-list::after {
+  top: 15px;
 }
 
 /* HERO */
@@ -518,7 +570,6 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-
 
 /* SIDEBAR */
 .sidebar {
