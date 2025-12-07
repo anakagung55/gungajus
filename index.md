@@ -279,54 +279,43 @@ body {
   opacity: .85;
 }
 .icon-grid {
-  width: 20px;
-  height: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4px;
+  width: 22px;
+  height: 22px;
 }
 
-.icon-grid::before,
-.icon-grid::after,
 .icon-grid span {
-  content: "";
   width: 100%;
   height: 100%;
   background: white;
   border-radius: 4px;
-  display: block;
-}
-
-.icon-grid span {
-  content: "";
 }
 .icon-list {
-  width: 20px;
-  height: 20px;
-  display: block;
   position: relative;
+  width: 22px;
+  height: 22px;
 }
 
 .icon-list::before,
 .icon-list::after,
-.icon-list span {
+.icon-list span::before {
   content: "";
   position: absolute;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background: white;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .icon-list::before {
   top: 3px;
 }
-
-.icon-list span {
+.icon-list span::before {
   top: 9px;
 }
-
 .icon-list::after {
   top: 15px;
 }
@@ -627,13 +616,17 @@ input, textarea {
   <div class="section-title">Postingan Terbaru</div>
 
   <div class="view-toggle">
-  <button id="gridView" class="toggle-btn active">
-    <i class="icon-grid"></i>
-  </button>
-
-  <button id="listView" class="toggle-btn">
-    <i class="icon-list"></i>
-  </button>
+    <button id="gridView" class="toggle-btn active">
+      <span class="icon-grid">
+      <span></span><span></span>
+      <span></span><span></span>
+      </span>
+    </button>
+    <button id="listView" class="toggle-btn">
+      <span class="icon-list">
+      <span></span>
+      </span>
+    </button>
 </div>
   
   <div class="content-wrapper">
