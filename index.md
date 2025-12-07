@@ -354,6 +354,13 @@ body {
 }
 
 /* GRID POST */
+.posts-grid { display: grid; }
+.posts-list { display: none; }
+
+.posts-grid.grid-mode { display: grid; }
+.posts-list.list-mode { display: block; }
+
+
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -746,7 +753,7 @@ input, textarea {
   </div>
   
   <!-- CONTENT WRAPPER -->
-  <div class="posts-grid grid-view">
+  <div class="posts-grid grid-mode">
     <!-- =============== GRID CARD VERSION =============== -->
     <div class="post-card grid-item">
       <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="post-thumb">
@@ -781,6 +788,7 @@ input, textarea {
         </div>
       </div>
     </div>
+    <div class="posts-list list-mode">
     <!-- ================== LIST VERSION ================== -->
     <div class="post-card list-item">
       <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
@@ -804,30 +812,25 @@ input, textarea {
 <script>
 const gridBtn = document.getElementById("gridView");
 const listBtn = document.getElementById("listView");
-const container = document.querySelector(".posts-grid");
+
+const gridMode = document.querySelector(".posts-grid");
+const listMode = document.querySelector(".posts-list");
 
 gridBtn.addEventListener("click", () => {
-  gridBtn.classList.add("active");
-  listBtn.classList.remove("active");
-  container.classList.add("grid-view");
-  container.classList.remove("list-view");
+    gridBtn.classList.add("active");
+    listBtn.classList.remove("active");
+    gridMode.style.display = "grid";
+    listMode.style.display = "none";
 });
 
 listBtn.addEventListener("click", () => {
-  listBtn.classList.add("active");
-  gridBtn.classList.remove("active");
-  container.classList.add("list-view");
-  container.classList.remove("grid-view");
+    listBtn.classList.add("active");
+    gridBtn.classList.remove("active");
+    gridMode.style.display = "none";
+    listMode.style.display = "block";
 });
 </script>
-<script>
-document.querySelectorAll('.comment-toggle').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const box = btn.nextElementSibling;
-        box.style.display = box.style.display === 'flex' ? 'none' : 'flex';
-    });
-});
-</script>
+
 
 
 
