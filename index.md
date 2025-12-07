@@ -370,188 +370,107 @@ body {
 .posts-grid.grid-view .post-card {
   display: block;
 }
-
-/* ================================
-   LIST MODE STRUCTURE
-================================ */
-
-/* Hide list cards by default */
-.list-item { 
-  display: none; 
-}
-
-/* Show list items when list-view active */
-.posts-grid.list-view .list-item {
-  display: flex;
-}
-
-/* Hide grid cards in list mode */
-.posts-grid.list-view .grid-item {
+/* LIST MODE WRAPPER */
+.posts-list {
+  width: 100%;
   display: none;
-}
-
-
-/* ================================
-   LIST CARD BASE
-================================ */
-.posts-grid.list-view .post-card {
+  margin-top: 20px;
   display: flex;
+  flex-direction: column;
   gap: 20px;
+}
+
+/* LIST CARD ITEM */
+.list-item {
+  display: flex;
+  background: #2b2e34;
+  border-radius: 14px;
+  padding: 18px;
+  gap: 18px;
+  color: white;
   width: 100%;
-  padding: 20px;
-  background: #2d3137;
+}
+
+/* LIST THUMBNAIL */
+.list-thumb {
+  width: 180px;
+  height: 120px;
   border-radius: 12px;
-  align-items: flex-start;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
-  transition: .25s ease;
-}
-
-.posts-grid.list-view .post-card:hover {
-  transform: translateY(-3px);
-}
-
-
-/* ================================
-   LIST THUMBNAIL
-================================ */
-.posts-grid.list-view .list-thumb {
-  width: 210px;
-  height: 150px;
   object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
 }
 
-
-/* ================================
-   LIST CONTENT AREA
-================================ */
-.posts-grid.list-view .list-content {
+/* LIST CONTENT */
+.list-content {
   flex: 1;
-  color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.posts-grid.list-view .list-title {
-  font-size: 22px;
-  margin: 0;
+/* LIST TEXT */
+.list-title {
+  font-size: 20px;
   font-weight: 700;
-  line-height: 1.3;
+  margin: 0;
 }
 
-.posts-grid.list-view .list-date {
-  margin: 6px 0 12px 0;
-  opacity: 0.65;
+.list-date {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.list-desc {
   font-size: 14px;
-}
-
-
-/* ================================
-   DESCRIPTION WITH FADE SHADOW
-================================ */
-.posts-grid.list-view .list-desc {
-  max-height: 60px;
+  line-height: 1.5;
+  max-height: 48px;
   overflow: hidden;
-  position: relative;
-  font-size: 15px;
-  line-height: 1.45;
-  opacity: 0.95;
+  text-overflow: ellipsis;
 }
 
-.posts-grid.list-view .list-desc::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 35px;
-  width: 100%;
-  background: linear-gradient(180deg, transparent, #2d3137);
-}
-
-
-/* ================================
-   READ MORE BUTTON
-================================ */
 .read-more-btn {
   display: inline-block;
-  margin-top: 14px;
-  background: #1976ff;
-  padding: 8px 16px;
+  margin-top: 6px;
+  background: #1d4ed8;
+  padding: 8px 14px;
   border-radius: 8px;
   color: white;
-  font-weight: 600;
   text-decoration: none;
-  transition: .25s ease;
+  font-size: 13px;
+  font-weight: 600;
 }
 
-.read-more-btn:hover {
-  opacity: 0.85;
-}
-
-
-/* ================================
-   COMMENT TOGGLE
-================================ */
+/* COMMENT */
 .comment-toggle {
-  margin-top: 14px;
-  font-size: 15px;
+  font-size: 14px;
+  margin-top: 10px;
   cursor: pointer;
-  color: #58a6ff;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  user-select: none;
+  opacity: 0.8;
 }
 
-
-/* ================================
-   COMMENT BOX
-================================ */
 .comment-box {
-  margin-top: 12px;
   display: none;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
+  margin-top: 10px;
 }
 
 .comment-box input,
 .comment-box textarea {
   width: 100%;
-  padding: 10px;
-  background: #1f2328;
-  border: 1px solid #3b3f46;
+  padding: 8px;
+  background: #1e1f22;
+  border: 1px solid #444;
   border-radius: 6px;
   color: white;
 }
 
 .send-comment-btn {
-  align-self: flex-start;
-  background: #1976ff;
-  padding: 8px 16px;
+  padding: 8px;
+  background: #2563eb;
+  border: none;
   color: white;
   border-radius: 6px;
-  border: none;
   cursor: pointer;
-  font-weight: 600;
-  transition: .25s ease;
-}
-
-.send-comment-btn:hover {
-  opacity: 0.85;
-}
-
-
-/* ================================
-   RESPONSIVE TUNING
-================================ */
-@media (max-width: 700px) {
-  .posts-grid.list-view .post-card {
-    flex-direction: column;
-  }
-
-  .posts-grid.list-view .list-thumb {
-    width: 100%;
-    height: 180px;
-  }
 }
 
 /* ============================
