@@ -97,6 +97,7 @@ animate();
   text-decoration: none;
   font-size: 15px;
   transition: 0.25s ease;
+  display: flex;
 }
 
 .navbar-right a:hover {
