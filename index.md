@@ -306,30 +306,29 @@ body {
 
 /* LIST MODE */
 .posts-grid.list-view {
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .posts-grid.list-view .post-card {
-  height: 180px;        /* fix tinggi */
-  display: flex;
-  flex-direction: row;
-  align-items: center;  /* rata tengah vertikal */
-  width: 100%;          /* full kiri */
-  max-width: none !important;   /* supaya tidak center */
-  margin: 0 !important;
-}
-  
-.posts-grid.list-view .post-card {
   max-width: 950px;
   margin: 0 auto;  /* supaya center */
 }
-  
+
+.posts-grid.list-view .post-card {
+  display: flex;
+  flex-direction: row;
+  height: 180px;
+}
 .posts-grid.list-view .post-card {
   overflow: hidden;
 }
-  
+
+/* Atur card jadi horizontal */
+.posts-grid.list-view .post-card {
+  display: flex;
+  flex-direction: row;
+}
 .posts-grid.list-view .overlay-title {
   font-size: 20px;
   font-weight: 700;
@@ -342,11 +341,12 @@ body {
 }
 /* Content wrapper inside list view */
 .posts-grid.list-view .post-overlay {
-  height: 100%;
-  display: flex;
-  align-items: center;     /* vertikal rapi */
-  padding-left: 20px;
+  position: static;
+  opacity: 1 !important;
   background: none !important;
+  height: auto;
+  padding: 0;
+  box-shadow: none;
 }
 .posts-grid.list-view .post-thumb {
   width: 300px;
