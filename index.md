@@ -364,74 +364,114 @@ body {
   display: block;
 }
 
-/* LIST MODE */
-.posts-grid.list-view {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
+/* LIST MODE CARD */
 .posts-grid.list-view .post-card {
-  display: flex;
-  flex-direction: row;
-  height: 180px;
-}
-.posts-grid.list-view .post-card {
-  overflow: hidden;
-}
-
-/* Atur card jadi horizontal */
-.posts-grid.list-view .post-card {
-  display: flex;
-  flex-direction: row;
-}
-.posts-grid.list-view .overlay-title {
-  font-size: 20px;
-  font-weight: 700;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    background: #2d3137;
+    border-radius: 12px;
+    align-items: flex-start;
 }
 
-.posts-grid.list-view .overlay-desc {
-  font-size: 15px;
-  opacity: 0.9;
-  margin-top: 6px;
-}
-/* Content wrapper inside list view */
-.posts-grid.list-view .post-overlay {
-  position: static;
-  opacity: 1 !important;
-  background: none !important;
-  height: auto;
-  padding: 0;
-  box-shadow: none;
-}
-.posts-grid.list-view .post-thumb {
-  width: 300px;
-  height: 180px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-.posts-grid.list-view .overlay-content {
-  padding: 20px;
-  transform: none !important;
+/* Thumbnail kiri */
+.posts-grid.list-view .list-thumb {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
-/* Jangan ada animasi hover pada list */
-.posts-grid.list-view .post-card:hover .post-thumb {
-  transform: none;
+/* Content area */
+.posts-grid.list-view .list-content {
+    flex: 1;
 }
 
-.posts-grid.list-view .post-card:hover .post-overlay {
-  opacity: 1;
+/* Title */
+.posts-grid.list-view .list-title {
+    font-size: 22px;
+    margin: 0 0 6px 0;
+    font-weight: 700;
 }
 
-.posts-grid.list-view .overlay-content {
-  transform: translateY(0) !important;
+/* Date */
+.posts-grid.list-view .list-date {
+    opacity: 0.6;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
-.posts-grid.list-view .overlay-btn {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
+/* Description with fade-out shadow */
+.posts-grid.list-view .list-desc {
+    max-height: 60px;
+    overflow: hidden;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.5;
 }
+
+.posts-grid.list-view .list-desc::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(180deg, transparent, #2d3137);
+}
+
+/* Read More */
+.read-more-btn {
+    display: inline-block;
+    margin-top: 12px;
+    background: #1976ff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Post Comment toggle */
+.comment-toggle {
+    margin-top: 14px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #58a6ff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Comment box (hidden first) */
+.comment-box {
+    margin-top: 12px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-box input,
+.comment-box textarea {
+    width: 100%;
+    padding: 10px;
+    background: #1f2328;
+    border: 1px solid #3b3f46;
+    border-radius: 6px;
+    color: white;
+}
+
+.send-comment-btn {
+    align-self: flex-start;
+    background: #1976ff;
+    padding: 8px 14px;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* ============================
    CARD BASE
@@ -704,7 +744,7 @@ input, textarea {
             </div>
           </div>
         </div>
-    </div>
+    </div>    
     <script>
     const gridBtn = document.getElementById("gridView");
     const listBtn = document.getElementById("listView");
@@ -724,3 +764,30 @@ input, textarea {
       container.classList.remove("grid-view");
     });
     </script>
+    <div class="post-card list-item">
+    <img src="IMG_URL" class="list-thumb">
+    <div class="list-content">
+        <h2 class="list-title">Judul Postingan</h2>
+        <div class="list-date">– November 23, 2023</div>
+        <div class="list-desc">
+            Magang merupakan kegiatan akademik yang menempatkan mahasiswa untuk terlibat langsung...
+        </div>
+        <a class="read-more-btn" href="#">BACA SELENGKAPNYA</a>
+        <div class="comment-toggle">💬 Posting Komentar</div>
+        <div class="comment-box">
+            <input type="text" placeholder="Nama Anda">
+            <textarea placeholder="Komentar Anda"></textarea>
+            <button class="send-comment-btn">Kirim</button>
+        </div>
+    </div>
+</div>
+<script>
+document.querySelectorAll('.comment-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const box = btn.nextElementSibling;
+        box.style.display = box.style.display === "flex" ? "none" : "flex";
+    });
+});
+</script>
+
+
