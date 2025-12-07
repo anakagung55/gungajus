@@ -435,7 +435,11 @@ body {
 .post-card:hover .post-overlay {
   opacity: 1;
 }
-
+.post-meta {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
 
 /* ============================
    OVERLAY TEXT CONTENT
@@ -565,6 +569,7 @@ input, textarea {
                 <div class="overlay-content">
                   <div class="overlay-title">Providers Scraping System</div>
                   <div class="overlay-desc">Scraping data universitas Australia lengkap ...</div>
+                  <div class="post-meta">Scraping • 5 min read • 2025</div>
                   <a href="{{ site.baseurl }}/projects/providers-scraping" class="overlay-btn">Baca selengkapnya →</a>
                 </div>
               </div>
@@ -576,6 +581,7 @@ input, textarea {
                 <div class="overlay-content">
                   <div class="overlay-title">IT Job Portal Scraping</div>
                   <div class="overlay-desc">Mengambil data lowongan pekerjaan IT dan memetakannya sebagai dataset analisis.</div>
+                  <div class="post-meta">Scraping • 5 min read • 2025</div>
                   <a href="{{ site.baseurl }}/projects/scraping-job-portal" class="overlay-btn">Baca selengkapnya →</a>
                 </div>
               </div>
@@ -587,6 +593,7 @@ input, textarea {
             <div class="overlay-content">
               <div class="overlay-title">ANZSCO Scraping</div>
               <div class="overlay-desc">Scraping informasi ANZSCO untuk pemetaan job family dan skill level.</div>
+              <div class="post-meta">Scraping • 5 min read • 2025</div>
               <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="overlay-btn">Baca selengkapnya →</a>
             </div>
           </div>
@@ -598,6 +605,7 @@ input, textarea {
             <div class="overlay-content">
               <div class="overlay-title">IT Job Visualizationem</div>
               <div class="overlay-desc">Visualisasi tren role pekerjaan IT berdasarkan dataset job scraping.</div>
+              <div class="post-meta">Visualitation • 5 min read • 2025</div>
               <a href="{{ site.baseurl }}/projects/itjobs-viz" class="overlay-btn">Baca selengkapnya →</a>
             </div>
           </div>
@@ -609,6 +617,7 @@ input, textarea {
             <div class="overlay-content">
               <div class="overlay-title">ANZSCO Data Visualitation</div>
               <div class="overlay-desc">Visualisasi data ANZSCO menggunakan Looker Studio.</div>
+              <div class="post-meta">Visualitation • 5 min read • 2025</div>
               <a href="{{ site.baseurl }}/projects/anzsco-viz" class="overlay-btn">Baca selengkapnya →</a>
             </div>
           </div>
@@ -619,6 +628,7 @@ input, textarea {
           <div class="post-overlay">
             <div class="overlay-content">
               <div class="overlay-title">Skill Assessment Scraping</div>
+              <div class="post-meta">Scraping • 5 min read • 2025</div>
               <div class="overlay-desc">Scraping Website Skill Assessment di Australia.</div>
               <a href="{{ site.baseurl }}/projects/assessment-scraping" class="overlay-btn">Baca selengkapnya →</a>
             </div>
