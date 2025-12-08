@@ -714,37 +714,36 @@ input, textarea {
 </style>
 
 <style>
-/* GLOBAL FOOTER CONTAINER */
+/* FOOTER BG CONTAINER */
 .footer-container {
   position: relative;
   width: 100%;
-  background: transparent;
-  padding-top: 160px;   /* ruang untuk wave muncul di belakang footer */
+  padding-top: 160px; /* supaya wave muncul di belakang footer */
+  background: #000; /* fallback */
+  overflow: hidden;
 }
 
-/* WAVE SECTION – tetap pendek agar animasi terlihat */
+/* WAVE AT TOP */
 .footer-wave-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 220px;       /* tinggi ideal, jangan dibesarin */
+  height: 160px;   /* tetap kecil agar wave cantik */
   overflow: hidden;
   z-index: 1;
 }
 
 .footer-wave {
-  position: absolute;
-  bottom: 0;
   width: 200%;
-  height: 220px;
+  height: 160px;
   animation: waveMove 6s linear infinite;
 }
 
 .footer-wave path {
   fill: url(#footerGradient);
-  opacity: .9;
-  filter: drop-shadow(0 -8px 18px rgba(150, 80, 255, 0.7));
+  opacity: .95;
+  filter: drop-shadow(0 -6px 14px rgba(140, 80, 255, 0.7));
 }
 
 @keyframes waveMove {
@@ -752,26 +751,30 @@ input, textarea {
   to   { transform: translateX(-50%); }
 }
 
-/* GRADIENT PENUTUP SAMPAI BAWAH */
-.footer-container::after {
-  content: "";
+/* AUTO FILL BAGIAN BAWAH WAVE DENGAN GRADIENT */
+.footer-background-fill {
   position: absolute;
-  top: 180px;          /* mulai setelah wave */
+  top: 140px;  /* mulai tepat di bawah wave */
   left: 0;
   width: 100%;
-  height: 400px;       /* memanjang sampai bawah footer */
-  background: linear-gradient(to bottom, rgba(60,40,140,0.9), transparent 60%);
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #5636e0 0%,
+    #3b2c6d 50%,
+    #000 100%
+  );
   z-index: 1;
 }
 
-/* FOOTER CONTENT DI DEPAN */
+/* FOOTER CONTENT */
 footer.footer {
   position: relative;
   z-index: 5;
-  padding: 100px 20px 80px; /* cukup untuk menimpa gradient */
+  padding: 100px 20px 80px;
   text-align: center;
   background: transparent;
-  color: #eaeaea;
+  color: #e6e6e6;
 }
 </style>
 
@@ -1069,8 +1072,8 @@ listBtn.addEventListener("click", () => {
 
 <!-- FOOTER CONTAINER (wave background + footer content) -->
 <div class="footer-container">
-  
-  <!-- WAVE BACKGROUND -->
+
+  <!-- WAVE -->
   <div class="footer-wave-wrapper">
     <svg class="footer-wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
       <defs>
@@ -1080,23 +1083,26 @@ listBtn.addEventListener("click", () => {
           <stop offset="100%" stop-color="#a431ff"/>
         </linearGradient>
       </defs>
-      <!-- 2 PATHS — seamless -->
       <path d="M0,200 C260,250 520,150 780,200 C1100,250 1300,170 1440,200 L1440,320 L0,320 Z"></path>
       <path d="M1440,200 C1700,250 1960,150 2220,200 C2540,250 2740,170 2880,200 L2880,320 L1440,320 Z"></path>
     </svg>
   </div>
+
+  <!-- AUTO GRADIENT FILL -->
+  <div class="footer-background-fill"></div>
 
   <!-- FOOTER CONTENT -->
   <footer class="footer">
     <h2 class="footer-brand">Aju's Blog</h2>
     <p class="footer-sub">Built with ❤️ using Jekyll • 2025</p>
     <div class="footer-links">
-      <a href="{{ site.baseurl }}/">Blog</a>
-      <a href="{{ site.baseurl }}/galeri">Galeri</a>
-      <a href="{{ site.baseurl }}/tentang">Tentang</a>
-      <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
+      <a href="#">Blog</a>
+      <a href="#">Galeri</a>
+      <a href="#">Tentang</a>
+      <a href="#">Lokasi</a>
     </div>
     <p class="footer-copy">© 2025 Aju’s Blog — All Rights Reserved.</p>
   </footer>
 
 </div>
+
