@@ -83,49 +83,32 @@ animate();
   background: rgba(0,0,0,0.45);
   backdrop-filter: blur(10px);
   z-index: 9999;
-  padding: 12px 0; /* hilangkan padding pinggir agar container yang atur */
+  padding: 12px 0;   /* jangan pakai padding kiri kanan */
 }
 
-/* INNER NAVBAR (dibatasi max-width 1200px) */
 .nav-inner {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* BRAND LEFT */
 .navbar-left {
+  color: white;
   font-size: 20px;
   font-weight: 700;
-  color: white;
 }
 
-/* MENU RIGHT */
 .navbar-right {
   display: flex;
   gap: 24px;
-  align-items: center;
-}
-
-.navbar-right a {
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  transition: .2s ease;
-}
-
-.navbar-right a:hover {
-  opacity: .6;
-  transform: translateY(-2px);
 }
 
 /* OFFSET (biar header tidak tertutup navbar) */
 .header-offset {
-  margin-top: 70px;
+  margin-top: 110px;
 }
 
 /* MOBILE RESPONSIVE */
