@@ -718,30 +718,41 @@ input, textarea {
 .footer-container {
   position: relative;
   width: 100%;
-  margin-top: 0;
 }
 
 /* WAVE BACKGROUND */
 .footer-wave-wrapper {
   position: absolute;
-  top: -40px; /* geser sedikit agar wave naik */
+  top: -20px;              /* naikkan wave sedikit */
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 320px;           /* TINGGI DIPERBESAR agar nutup sampai bawah */
   overflow: hidden;
-  z-index: 1;  /* wave di belakang */
+  z-index: 1;
 }
 
 .footer-wave {
   width: 200%;
-  height: 200px;
+  height: 320px;           /* samakan dengan wrapper */
   animation: waveMove 6s linear infinite;
 }
 
 .footer-wave path {
   fill: url(#footerGradient);
-  opacity: 0.85;
-  filter: drop-shadow(0 -6px 16px rgba(150, 90, 255, 0.7));
+  opacity: 0.95;
+  filter: drop-shadow(0 -8px 20px rgba(150, 90, 255, 0.7));
+}
+
+/* smooth fade to black so wave blends nicely */
+.footer-wave-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, #000);
+  z-index: 2;
 }
 
 @keyframes waveMove {
@@ -749,15 +760,16 @@ input, textarea {
   to   { transform: translateX(-50%); }
 }
 
-/* FOOTER CONTENT */
+/* FOOTER */
 footer.footer {
   position: relative;
-  z-index: 5; /* footer di atas wave */
+  z-index: 5;
   background: transparent;
-  padding: 100px 20px 70px; /* tambahkan top-padding agar tidak menimpa wave */
+  padding: 180px 20px 80px;  /* tambah top padding supaya tidak menimpa wave */
   text-align: center;
   color: #e2e2e2;
 }
+
 
 </style>
 
