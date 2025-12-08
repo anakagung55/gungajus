@@ -715,49 +715,81 @@ input, textarea {
 
 <style>
 /* =============================
-   ANIMATED WAVE | NEON GRADIENT
+   WAVES NEON FUTURISTIC (3 LAYER)
 ============================= */
-/* WAVE CONTAINER */
-.wave-container {
-  width: 100%;
-  height: 140px;
-  overflow: hidden;
+.footer-waves {
   position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
   margin-bottom: -5px;
 }
 
-/* SVG WAVE */
+/* BASE WAVE LAYER */
 .wave {
+  position: absolute;
+  bottom: 0;
   width: 200%;
   height: 100%;
-  animation: waveMove 8s linear infinite;
+  background-repeat: repeat-x;
+  background-size: 50% 100%;
+  opacity: 0.85;
+  filter: drop-shadow(0 -6px 18px rgba(120, 90, 255, 0.8));
 }
 
-/* WAVE COLOR GRADIENT NEON */
-.wave path {
-  fill: url(#neonGradient);
-  filter: drop-shadow(0 -4px 10px rgba(77, 97, 255, .7));
+/* LAYER 1 — Fast, Front, Bright Purple */
+.wave1 {
+  background-image: url("data:image/svg+xml;utf8,\
+  <svg viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'>\
+  <path fill='%23a431ff' d='M0,200 C300,260 550,140 850,180 C1150,220 1350,160 1440,200 L1440,320 L0,320 Z'/>\
+  </svg>");
+  animation: waveMove1 6s linear infinite;
+  opacity: 0.95;
 }
 
-/* GRADIENT DEFINITION */
-.wave defs {
-  filter: none;
+/* LAYER 2 — Medium, Opposite Direction, Blue-Purple */
+.wave2 {
+  background-image: url("data:image/svg+xml;utf8,\
+  <svg viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'>\
+  <path fill='%236a5bff' d='M0,180 C240,240 500,120 780,170 C1050,220 1250,140 1440,210 L1440,320 L0,320 Z'/>\
+  </svg>");
+  animation: waveMove2 10s linear infinite;
+  opacity: 0.6;
 }
 
-@keyframes waveMove {
+/* LAYER 3 — Slow, Deep Blue */
+.wave3 {
+  background-image: url("data:image/svg+xml;utf8,\
+  <svg viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'>\
+  <path fill='%231976ff' d='M0,220 C260,260 520,180 780,210 C1100,240 1300,200 1440,240 L1440,320 L0,320 Z'/>\
+  </svg>");
+  animation: waveMove3 14s linear infinite;
+  opacity: 0.4;
+}
+
+/* ANIMATIONS */
+@keyframes waveMove1 {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
 
+@keyframes waveMove2 {
+  from { transform: translateX(-40%); }
+  to   { transform: translateX(0%); }
+}
+
+@keyframes waveMove3 {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-75%); }
+}
 
 /* =============================
-        FOOTER BASE STYLE
+        FOOTER BASE
 ============================= */
 .footer {
   background: #0d0f13;
-  padding: 40px 0 35px 0;
+  padding: 50px 0 40px 0;
   text-align: center;
-  position: relative;
   color: #cfd3df;
 }
 
@@ -782,8 +814,8 @@ input, textarea {
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  margin-bottom: 20px;
+  gap: 24px;
+  margin-bottom: 22px;
 }
 
 .footer-links a {
@@ -791,19 +823,19 @@ input, textarea {
   text-decoration: none;
   transition: .25s;
   padding: 6px 12px;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .footer-links a:hover {
   background: linear-gradient(135deg, #1976ff, #a431ff);
   box-shadow:
-    0 0 10px rgba(77, 97, 255, .6),
-    0 0 18px rgba(164, 49, 255, .4);
+    0 0 9px rgba(77, 97, 255, 0.7),
+    0 0 16px rgba(164, 49, 255, 0.5);
   transform: translateY(-2px);
 }
 
 .footer-copy {
-  opacity: .5;
+  opacity: .45;
   font-size: 13px;
 }
 
@@ -814,6 +846,7 @@ input, textarea {
   }
 }
 </style>
+
 
 <!-- HERO IMAGE -->
 <div class="container">
@@ -1106,17 +1139,10 @@ listBtn.addEventListener("click", () => {
 });
 </script>
 
-<div class="wave-container">
-  <svg class="wave" viewBox="0 0 1440 320">
-    <defs>
-      <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#1976ff"/>
-        <stop offset="50%" stop-color="#6a5bff"/>
-        <stop offset="100%" stop-color="#a431ff"/>
-      </linearGradient>
-    </defs>
-    <path d="M0,160 C240,220 480,100 720,160 C960,220 1200,140 1440,200 L1440,320 L0,320 Z"></path>
-  </svg>
+<div class="footer-waves">
+  <div class="wave wave1"></div>
+  <div class="wave wave2"></div>
+  <div class="wave wave3"></div>
 </div>
 
 <footer class="footer">
@@ -1132,6 +1158,7 @@ listBtn.addEventListener("click", () => {
     <p class="footer-copy">© 2025 Aju’s Blog — All Rights Reserved.</p>
   </div>
 </footer>
+
 
 
 
