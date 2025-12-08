@@ -717,52 +717,38 @@ input, textarea {
 /* =============================
    ANIMATED WAVE | NEON GRADIENT
 ============================= */
-.neon-wave {
-  position: relative;
+/* WAVE CONTAINER */
+.wave-container {
   width: 100%;
-  height: 130px;
-  background: linear-gradient(135deg, #1976ff, #a431ff);
+  height: 140px;
   overflow: hidden;
+  position: relative;
+  margin-bottom: -5px;
 }
 
-.neon-wave::before,
-.neon-wave::after {
-  content: "";
-  position: absolute;
-  top: -50px;
-  left: 0;
+/* SVG WAVE */
+.wave {
   width: 200%;
-  height: 200%;
-  background-repeat: repeat no-repeat;
-  background-size: 50% 100%;
-  opacity: 0.35;
-  animation: wave 6s linear infinite;
+  height: 100%;
+  animation: waveMove 8s linear infinite;
 }
 
-/* Lapisan wave 1 */
-.neon-wave::before {
-  background-image: radial-gradient(circle at 50% 40%, rgba(255,255,255,0.45) 20%, transparent 60%);
-  animation-duration: 7s;
+/* WAVE COLOR GRADIENT NEON */
+.wave path {
+  fill: url(#neonGradient);
+  filter: drop-shadow(0 -4px 10px rgba(77, 97, 255, .7));
 }
 
-/* Lapisan wave 2 */
-.neon-wave::after {
-  background-image: radial-gradient(circle at 50% 40%, rgba(255,255,255,0.25) 30%, transparent 70%);
-  animation-duration: 9s;
+/* GRADIENT DEFINITION */
+.wave defs {
+  filter: none;
 }
 
-/* Wave movement */
-@keyframes wave {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+@keyframes waveMove {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
-/* Add glow on wave edges */
-.neon-wave {
-  box-shadow:
-    0 -4px 18px rgba(77, 97, 255, .6),
-    0 -10px 30px rgba(164, 49, 255, .5);
-}
 
 /* =============================
         FOOTER BASE STYLE
@@ -827,7 +813,6 @@ input, textarea {
     gap: 12px;
   }
 }
-
 </style>
 
 <!-- HERO IMAGE -->
@@ -1121,7 +1106,18 @@ listBtn.addEventListener("click", () => {
 });
 </script>
 
-<div class="neon-wave"></div>
+<div class="wave-container">
+  <svg class="wave" viewBox="0 0 1440 320">
+    <defs>
+      <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#1976ff"/>
+        <stop offset="50%" stop-color="#6a5bff"/>
+        <stop offset="100%" stop-color="#a431ff"/>
+      </linearGradient>
+    </defs>
+    <path d="M0,160 C240,220 480,100 720,160 C960,220 1200,140 1440,200 L1440,320 L0,320 Z"></path>
+  </svg>
+</div>
 
 <footer class="footer">
   <div class="footer-inner">
