@@ -712,94 +712,119 @@ input, textarea {
   justify-content: space-between;
 }
 </style>
+
 <style>
-  .footer {
-  margin-top: 80px;
-  padding: 40px 0 35px 0;
+/* =============================
+   ANIMATED WAVE | NEON GRADIENT
+============================= */
+.neon-wave {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  background: linear-gradient(135deg, #1976ff, #a431ff);
+  overflow: hidden;
+}
+
+.neon-wave::before,
+.neon-wave::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-repeat: repeat no-repeat;
+  background-size: 50% 100%;
+  opacity: 0.35;
+  animation: wave 6s linear infinite;
+}
+
+/* Lapisan wave 1 */
+.neon-wave::before {
+  background-image: radial-gradient(circle at 50% 40%, rgba(255,255,255,0.45) 20%, transparent 60%);
+  animation-duration: 7s;
+}
+
+/* Lapisan wave 2 */
+.neon-wave::after {
+  background-image: radial-gradient(circle at 50% 40%, rgba(255,255,255,0.25) 30%, transparent 70%);
+  animation-duration: 9s;
+}
+
+/* Wave movement */
+@keyframes wave {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Add glow on wave edges */
+.neon-wave {
+  box-shadow:
+    0 -4px 18px rgba(77, 97, 255, .6),
+    0 -10px 30px rgba(164, 49, 255, .5);
+}
+
+/* =============================
+        FOOTER BASE STYLE
+============================= */
+.footer {
   background: #0d0f13;
+  padding: 40px 0 35px 0;
   text-align: center;
   position: relative;
   color: #cfd3df;
-  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Garis neon di atas footer */
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70%;
-  height: 2px;
-  background: linear-gradient(90deg, #1976ff, #a431ff);
-  box-shadow: 
-    0 0 8px rgba(77, 97, 255, .6),
-    0 0 12px rgba(164, 49, 255, .5);
-}
-
-/* INNER FOOTER */
 .footer-inner {
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
 }
 
-/* BRAND */
 .footer-brand {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 6px;
   color: white;
-  text-shadow: 0 0 12px rgba(255,255,255,0.4);
 }
 
 .footer-sub {
+  opacity: .7;
   font-size: 14px;
-  opacity: 0.8;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-/* FOOTER LINKS */
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 25px;
   margin-bottom: 20px;
 }
 
 .footer-links a {
   color: #e5e5e5;
-  font-size: 15px;
   text-decoration: none;
-  transition: 0.25s ease;
+  transition: .25s;
   padding: 6px 12px;
   border-radius: 8px;
 }
 
-/* Hover neon */
 .footer-links a:hover {
   background: linear-gradient(135deg, #1976ff, #a431ff);
   box-shadow:
     0 0 10px rgba(77, 97, 255, .6),
-    0 0 16px rgba(164, 49, 255, .4);
+    0 0 18px rgba(164, 49, 255, .4);
   transform: translateY(-2px);
 }
 
-/* COPYRIGHT */
 .footer-copy {
+  opacity: .5;
   font-size: 13px;
-  opacity: 0.55;
 }
 
-/* MOBILE RESPONSIVE */
 @media (max-width: 600px) {
   .footer-links {
     flex-wrap: wrap;
     gap: 12px;
-  }
-  .footer-brand {
-    font-size: 20px;
   }
 }
 
@@ -1096,6 +1121,8 @@ listBtn.addEventListener("click", () => {
 });
 </script>
 
+<div class="neon-wave"></div>
+
 <footer class="footer">
   <div class="footer-inner">
     <h2 class="footer-brand">Aju's Blog</h2>
@@ -1109,6 +1136,7 @@ listBtn.addEventListener("click", () => {
     <p class="footer-copy">© 2025 Aju’s Blog — All Rights Reserved.</p>
   </div>
 </footer>
+
 
 
 
