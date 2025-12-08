@@ -80,13 +80,28 @@ animate();
   top: 0;
   left: 0;
   width: 100%;
-  padding: 12px 32px;
+  padding: 12px 20px;
   background: rgba(0,0,0,0.45);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 9999; /* Pasti berada di atas semua foto */
+  overflow: hidden;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .navbar-right a {
+    font-size: 14px;
+  }
+
+  .navbar-left {
+    font-size: 18px;
+  }
+
+  .navbar-right {
+    gap: 16px;
+  }
 }
 
 .navbar-left {
@@ -95,15 +110,12 @@ animate();
   color: white;
 }
 
-.navbar-right a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-  font-size: 15px;
-  transition: 0.25s ease;
+.navbar-right {
+  display: flex;
+  gap: 24px;        /* ruang antar menu */
+  flex-wrap: nowrap; /* cegah menu turun ke bawah */
 }
-
-.navbar-right a:hover {
+.navbar-right:hover {
   opacity: 0.6;
   transform: translateY(-1px);
 }
