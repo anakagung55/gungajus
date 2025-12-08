@@ -712,6 +712,98 @@ input, textarea {
   justify-content: space-between;
 }
 </style>
+<style>
+  .footer {
+  margin-top: 80px;
+  padding: 40px 0 35px 0;
+  background: #0d0f13;
+  text-align: center;
+  position: relative;
+  color: #cfd3df;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Garis neon di atas footer */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 2px;
+  background: linear-gradient(90deg, #1976ff, #a431ff);
+  box-shadow: 
+    0 0 8px rgba(77, 97, 255, .6),
+    0 0 12px rgba(164, 49, 255, .5);
+}
+
+/* INNER FOOTER */
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* BRAND */
+.footer-brand {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: white;
+  text-shadow: 0 0 12px rgba(255,255,255,0.4);
+}
+
+.footer-sub {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* FOOTER LINKS */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #e5e5e5;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.25s ease;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* Hover neon */
+.footer-links a:hover {
+  background: linear-gradient(135deg, #1976ff, #a431ff);
+  box-shadow:
+    0 0 10px rgba(77, 97, 255, .6),
+    0 0 16px rgba(164, 49, 255, .4);
+  transform: translateY(-2px);
+}
+
+/* COPYRIGHT */
+.footer-copy {
+  font-size: 13px;
+  opacity: 0.55;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-brand {
+    font-size: 20px;
+  }
+}
+
+</style>
 
 <!-- HERO IMAGE -->
 <div class="container">
@@ -1003,6 +1095,21 @@ listBtn.addEventListener("click", () => {
     listMode.style.display = "block";
 });
 </script>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <h2 class="footer-brand">Aju's Blog</h2>
+    <p class="footer-sub">Built with ❤️ using Jekyll • 2025</p>
+    <div class="footer-links">
+      <a href="{{ site.baseurl }}/">Blog</a>
+      <a href="{{ site.baseurl }}/galeri">Galeri</a>
+      <a href="{{ site.baseurl }}/tentang">Tentang</a>
+      <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
+    </div>
+    <p class="footer-copy">© 2025 Aju’s Blog — All Rights Reserved.</p>
+  </div>
+</footer>
+
 
 
 
