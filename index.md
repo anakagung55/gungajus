@@ -737,14 +737,10 @@ input, textarea {
 document.querySelectorAll('.comment-toggle').forEach(toggle => {
     toggle.addEventListener('click', () => {
         const box = toggle.nextElementSibling;
-
-        if (box.style.display === "flex") {
-            box.style.display = "none";   // sembunyikan
-        } else {
-            box.style.display = "flex";   // tampilkan
-        }
+        box.classList.toggle("show");
     });
 });
+
 </script>
 
 <script>
