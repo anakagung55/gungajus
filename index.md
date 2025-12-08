@@ -73,67 +73,78 @@ function animate() {
 animate();
 </script>
 
-<!-- ================= NAVBAR FIXED ================= -->
+<!-- ================= NAVBAR  ================= -->
 <style>
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 12px 20px;
   background: rgba(0,0,0,0.45);
   backdrop-filter: blur(10px);
+  z-index: 9999;
+  padding: 12px 0; /* hilangkan padding pinggir agar container yang atur */
+}
+
+/* INNER NAVBAR (dibatasi max-width 1200px) */
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 9999; /* Pasti berada di atas semua foto */
-  overflow: hidden;
-  margin: 0 auto;
-}
-@media (max-width: 900px) {
-  .navbar-right a {
-    font-size: 14px;
-  }
-
-  .navbar-left {
-    font-size: 18px;
-  }
-
-  .navbar-right {
-    gap: 16px;
-  }
 }
 
+/* BRAND LEFT */
 .navbar-left {
   font-size: 20px;
   font-weight: 700;
   color: white;
 }
 
+/* MENU RIGHT */
 .navbar-right {
   display: flex;
-  gap: 24px;        /* ruang antar menu */
-  flex-wrap: nowrap; /* cegah menu turun ke bawah */
-}
-.navbar-right:hover {
-  opacity: 0.6;
-  transform: translateY(-1px);
-}
-.nav-inner {
-  display: flex;
-  justify-content: space-between;
+  gap: 24px;
   align-items: center;
 }
 
-/* memberi jarak agar header foto tidak tertutup navbar */
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: .2s ease;
+}
+
+.navbar-right a:hover {
+  opacity: .6;
+  transform: translateY(-2px);
+}
+
+/* OFFSET (biar header tidak tertutup navbar) */
 .header-offset {
   margin-top: 70px;
 }
-</style>
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+  .navbar-right a {
+    font-size: 14px;
+  }
+  .navbar-left {
+    font-size: 18px;
+  }
+  .navbar-right {
+    gap: 16px;
+  }
+}
 
 <div class="navbar">
-  <div class="container nav-inner">
+  <div class="nav-inner">
     <div class="navbar-left">Aju's Blog</div>
+
     <div class="navbar-right">
       <a href="{{ site.baseurl }}/">Blog</a>
       <a href="{{ site.baseurl }}/galeri">Galeri</a>
