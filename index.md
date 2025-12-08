@@ -119,6 +119,11 @@ animate();
   opacity: 0.6;
   transform: translateY(-1px);
 }
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* memberi jarak agar header foto tidak tertutup navbar */
 .header-offset {
@@ -127,12 +132,14 @@ animate();
 </style>
 
 <div class="navbar">
-  <div class="navbar-left">Aju's Blog</div>
-  <div class="navbar-right">
-    <a href="{{ site.baseurl }}/">Blog</a>
-    <a href="{{ site.baseurl }}/galeri">Galeri</a>
-    <a href="{{ site.baseurl }}/tentang">Tentang</a>
-    <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
+  <div class="container nav-inner">
+    <div class="navbar-left">Aju's Blog</div>
+    <div class="navbar-right">
+      <a href="{{ site.baseurl }}/">Blog</a>
+      <a href="{{ site.baseurl }}/galeri">Galeri</a>
+      <a href="{{ site.baseurl }}/tentang">Tentang</a>
+      <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
+    </div>
   </div>
 </div>
 
@@ -666,8 +673,6 @@ input, textarea {
   justify-content: space-between;
 }
 </style>
-
-<!-- NAVBAR -->
 
 <!-- HERO IMAGE -->
 <div class="container">
