@@ -714,50 +714,65 @@ input, textarea {
 </style>
 
 <style>
-/* CONTAINER — wave bg + footer */
+/* GLOBAL FOOTER CONTAINER */
 .footer-container {
   position: relative;
   width: 100%;
+  background: transparent;
+  padding-top: 160px;   /* ruang untuk wave muncul di belakang footer */
 }
 
-/* WAVE BACKGROUND */
+/* WAVE SECTION – tetap pendek agar animasi terlihat */
 .footer-wave-wrapper {
   position: absolute;
-  top: -40px;          /* wave lebih naik sedikit */
+  top: 0;
   left: 0;
   width: 100%;
-  height: 420px;       /* PERPANJANG SUPAYA NUTUP FULL */
+  height: 220px;       /* tinggi ideal, jangan dibesarin */
   overflow: hidden;
   z-index: 1;
 }
 
 .footer-wave {
+  position: absolute;
+  bottom: 0;
   width: 200%;
-  height: 420px;       /* samakan */
+  height: 220px;
   animation: waveMove 6s linear infinite;
 }
 
 .footer-wave path {
   fill: url(#footerGradient);
-  opacity: 0.9;
-  filter: drop-shadow(0 -10px 22px rgba(160, 80, 255, 0.75));
+  opacity: .9;
+  filter: drop-shadow(0 -8px 18px rgba(150, 80, 255, 0.7));
 }
 
-/* HAPUS GRADIENT HITAM */
-.footer-wave-wrapper::after {
-  display: none;
+@keyframes waveMove {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
-/* FOOTER CONTENT */
+/* GRADIENT PENUTUP SAMPAI BAWAH */
+.footer-container::after {
+  content: "";
+  position: absolute;
+  top: 180px;          /* mulai setelah wave */
+  left: 0;
+  width: 100%;
+  height: 400px;       /* memanjang sampai bawah footer */
+  background: linear-gradient(to bottom, rgba(60,40,140,0.9), transparent 60%);
+  z-index: 1;
+}
+
+/* FOOTER CONTENT DI DEPAN */
 footer.footer {
   position: relative;
   z-index: 5;
-  background: transparent;
-  padding: 220px 20px 120px;  /* tambahkan padding supaya wave 100% cover di belakang */
+  padding: 100px 20px 80px; /* cukup untuk menimpa gradient */
   text-align: center;
-  color: #e2e2e2;
+  background: transparent;
+  color: #eaeaea;
 }
-
 </style>
 
 
