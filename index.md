@@ -373,7 +373,7 @@ body {
 /* LIST MODE WRAPPER */
 .posts-list {
   width: 100%;
-  display: none;
+  display: flex;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -387,6 +387,8 @@ body {
   border-radius: 16px;
   padding: 18px;
   gap: 20px;
+  margin-bottom: 24px;
+  border-radius: 16px;
 }
 
 /* LIST THUMBNAIL */
