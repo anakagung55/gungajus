@@ -207,8 +207,6 @@ animate();
 
 <br>
 
-
-
 <style>
 /* RESET Cayman Header */
 .page-header { display: none !important; }
@@ -222,31 +220,6 @@ body {
   color: #e5e5e5;
 }
 
-/* NAVBAR */
-.navbar {
-  width: 100%;
-  padding: 18px 60px;
-  position: absolute;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-}
-
-.navbar a {
-  text-decoration: none;
-  margin-left: 28px;
-  color: white;
-  font-weight: 500;
-  transition: 0.2s;
-}
-
-.navbar a:hover {
-  opacity: 0.8;
-}
-  
 /* Toggle Buttons */
 /* --- WRAPPER --- */
 .view-toggle {
