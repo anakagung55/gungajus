@@ -123,11 +123,10 @@ animate();
     gap: 16px;
   }
 }
-
+</style>
 <div class="navbar">
   <div class="nav-inner">
     <div class="navbar-left">Aju's Blog</div>
-
     <div class="navbar-right">
       <a href="{{ site.baseurl }}/">Blog</a>
       <a href="{{ site.baseurl }}/galeri">Galeri</a>
