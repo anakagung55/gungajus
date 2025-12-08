@@ -714,22 +714,27 @@ input, textarea {
 </style>
 
 <style>
-
-/* =============================
-   BACKGROUND WAVE UNDER FOOTER
-============================= */
-.footer-wave-wrapper {
+/* CONTAINER — wave bg + footer */
+.footer-container {
   position: relative;
   width: 100%;
-  height: 180px;
+  margin-top: 0;
+}
+
+/* WAVE BACKGROUND */
+.footer-wave-wrapper {
+  position: absolute;
+  top: -40px; /* geser sedikit agar wave naik */
+  left: 0;
+  width: 100%;
+  height: 200px;
   overflow: hidden;
+  z-index: 1;  /* wave di belakang */
 }
 
 .footer-wave {
-  position: absolute;
-  bottom: 0;
   width: 200%;
-  height: 180px;
+  height: 200px;
   animation: waveMove 6s linear infinite;
 }
 
@@ -739,66 +744,21 @@ input, textarea {
   filter: drop-shadow(0 -6px 16px rgba(150, 90, 255, 0.7));
 }
 
-/* ANIMATION — seamless */
 @keyframes waveMove {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
 
-/* =============================
-       FOOTER CONTENT
-============================= */
+/* FOOTER CONTENT */
 footer.footer {
-  background: transparent;   /* wave di belakang */
-  text-align: center;
-  padding: 40px 20px 60px 20px;
   position: relative;
+  z-index: 5; /* footer di atas wave */
+  background: transparent;
+  padding: 100px 20px 70px; /* tambahkan top-padding agar tidak menimpa wave */
+  text-align: center;
   color: #e2e2e2;
-  z-index: 10;
 }
 
-.footer-brand {
-  font-size: 26px;
-  font-weight: 700;
-  color: white;
-}
-
-.footer-sub {
-  opacity: .7;
-  font-size: 15px;
-  margin-bottom: 18px;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 26px;
-  margin-bottom: 22px;
-}
-
-.footer-links a {
-  color: #dcdcdc;
-  text-decoration: none;
-  transition: .25s;
-}
-
-.footer-links a:hover {
-  color: #9bb8ff;
-  text-shadow: 0 0 8px rgba(140,140,255,0.9);
-  transform: translateY(-2px);
-}
-
-.footer-copy {
-  opacity: .45;
-  font-size: 13px;
-}
-
-@media(max-width:600px) {
-  .footer-links {
-    flex-wrap: wrap;
-    gap: 14px;
-  }
-}
 </style>
 
 
@@ -1093,33 +1053,37 @@ listBtn.addEventListener("click", () => {
 });
 </script>
 
-<!-- WAVE BACKGROUND -->
-<div class="footer-wave-wrapper">
-  <svg class="footer-wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <defs>
-      <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#1976ff"/>
-        <stop offset="50%" stop-color="#6a5bff"/>
-        <stop offset="100%" stop-color="#a431ff"/>
-      </linearGradient>
-    </defs>
-    <!-- Duplicate 2 paths supaya seamless tanpa jeda -->
-    <path d="M0,200 C260,250 520,150 780,200 C1100,250 1300,170 1440,200 L1440,320 L0,320 Z"></path>
-    <path d="M1440,200 C1700,250 1960,150 2220,200 C2540,250 2740,170 2880,200 L2880,320 L1440,320 Z"></path>
-  </svg>
-</div>
-
-<!-- FOOTER CONTENT ABOVE WAVE -->
-<footer class="footer">
-  <h2 class="footer-brand">Aju's Blog</h2>
-  <p class="footer-sub">Built with ❤️ using Jekyll • 2025</p>
-
-  <div class="footer-links">
-    <a href="{{ site.baseurl }}/">Blog</a>
-    <a href="{{ site.baseurl }}/galeri">Galeri</a>
-    <a href="{{ site.baseurl }}/tentang">Tentang</a>
-    <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
+<!-- FOOTER CONTAINER (wave background + footer content) -->
+<div class="footer-container">
+  
+  <!-- WAVE BACKGROUND -->
+  <div class="footer-wave-wrapper">
+    <svg class="footer-wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#1976ff"/>
+          <stop offset="50%" stop-color="#6a5bff"/>
+          <stop offset="100%" stop-color="#a431ff"/>
+        </linearGradient>
+      </defs>
+      <!-- 2 PATHS — seamless -->
+      <path d="M0,200 C260,250 520,150 780,200 C1100,250 1300,170 1440,200 L1440,320 L0,320 Z"></path>
+      <path d="M1440,200 C1700,250 1960,150 2220,200 C2540,250 2740,170 2880,200 L2880,320 L1440,320 Z"></path>
+    </svg>
   </div>
 
-  <p class="footer-copy">© 2025 Aju’s Blog — All Rights Reserved.</p>
-</footer>
+  <!-- FOOTER CONTENT -->
+  <footer class="footer">
+    <h2 class="footer-brand">Aju's Blog</h2>
+    <p class="footer-sub">Built with ❤️ using Jekyll • 2025</p>
+    <div class="footer-links">
+      <a href="{{ site.baseurl }}/">Blog</a>
+      <a href="{{ site.baseurl }}/galeri">Galeri</a>
+      <a href="{{ site.baseurl }}/tentang">Tentang</a>
+      <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
+    </div>
+    <p class="footer-copy">© 2025 Aju’s Blog — All Rights Reserved.</p>
+  </footer>
+
+</div>
+
