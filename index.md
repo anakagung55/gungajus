@@ -723,13 +723,13 @@ input, textarea {
 
 /* WAVE FULL BACKGROUND */
 .footer-wave {
+  width: 300%;
+  height: 500px;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 300%;          /* supaya bisa seamless */
-  height: 500px;        /* ini yang membuat wave besar */
   animation: waveMove 10s linear infinite;
-  z-index: 1;
+  transform: translateX(-33.33%); /* posisi awal langsung seamless */
 }
 
 .footer-wave path {
@@ -738,8 +738,8 @@ input, textarea {
 
 /* ANIMATION */
 @keyframes waveMove {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-33.33%); }
+  from { transform: translateX(-33.33%); }
+  to   { transform: translateX(-66.66%); }
 }
 
 /* FOOTER CONTENT DI DEPAN WAVE */
@@ -1069,8 +1069,5 @@ listBtn.addEventListener("click", () => {
     </div>
     <p class="footer-copy">© 2025 Aju’s Blog — All Rights Reserved.</p>
   </footer>
-</div>
-
-
 </div>
 
