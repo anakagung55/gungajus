@@ -714,123 +714,77 @@ input, textarea {
 </style>
 
 <style>
+
 /* =============================
-   WAVES NEON FUTURISTIC (3 LAYER)
+   BACKGROUND WAVE UNDER FOOTER
 ============================= */
-.footer-waves {
+.footer-wave-wrapper {
   position: relative;
   width: 100%;
   height: 180px;
   overflow: hidden;
-  margin-bottom: -5px;
 }
 
-/* BASE WAVE LAYER */
-.wave {
+.footer-wave {
   position: absolute;
   bottom: 0;
   width: 200%;
-  height: 100%;
-  background-repeat: repeat-x;
-  background-size: 50% 100%;
+  height: 180px;
+  animation: waveMove 6s linear infinite;
+}
+
+.footer-wave path {
+  fill: url(#footerGradient);
   opacity: 0.85;
-  filter: drop-shadow(0 -6px 18px rgba(120, 90, 255, 0.8));
+  filter: drop-shadow(0 -6px 16px rgba(150, 90, 255, 0.7));
 }
 
-/* LAYER 1 — Fast, Front, Bright Purple */
-.wave1 {
-  background-image: url("data:image/svg+xml;utf8,\
-  <svg viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'>\
-  <path fill='%23a431ff' d='M0,200 C300,260 550,140 850,180 C1150,220 1350,160 1440,200 L1440,320 L0,320 Z'/>\
-  </svg>");
-  animation: waveMove1 6s linear infinite;
-  opacity: 0.95;
-}
-
-/* LAYER 2 — Medium, Opposite Direction, Blue-Purple */
-.wave2 {
-  background-image: url("data:image/svg+xml;utf8,\
-  <svg viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'>\
-  <path fill='%236a5bff' d='M0,180 C240,240 500,120 780,170 C1050,220 1250,140 1440,210 L1440,320 L0,320 Z'/>\
-  </svg>");
-  animation: waveMove2 10s linear infinite;
-  opacity: 0.6;
-}
-
-/* LAYER 3 — Slow, Deep Blue */
-.wave3 {
-  background-image: url("data:image/svg+xml;utf8,\
-  <svg viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'>\
-  <path fill='%231976ff' d='M0,220 C260,260 520,180 780,210 C1100,240 1300,200 1440,240 L1440,320 L0,320 Z'/>\
-  </svg>");
-  animation: waveMove3 14s linear infinite;
-  opacity: 0.4;
-}
-
-/* ANIMATIONS */
-@keyframes waveMove1 {
+/* ANIMATION — seamless */
+@keyframes waveMove {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
 
-@keyframes waveMove2 {
-  from { transform: translateX(-40%); }
-  to   { transform: translateX(0%); }
-}
-
-@keyframes waveMove3 {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-75%); }
-}
-
 /* =============================
-        FOOTER BASE
+       FOOTER CONTENT
 ============================= */
-.footer {
-  background: #0d0f13;
-  padding: 50px 0 40px 0;
+footer.footer {
+  background: transparent;   /* wave di belakang */
   text-align: center;
-  color: #cfd3df;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
+  padding: 40px 20px 60px 20px;
+  position: relative;
+  color: #e2e2e2;
+  z-index: 10;
 }
 
 .footer-brand {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   color: white;
 }
 
 .footer-sub {
   opacity: .7;
-  font-size: 14px;
-  margin-bottom: 15px;
+  font-size: 15px;
+  margin-bottom: 18px;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 26px;
   margin-bottom: 22px;
 }
 
 .footer-links a {
-  color: #e5e5e5;
+  color: #dcdcdc;
   text-decoration: none;
   transition: .25s;
-  padding: 6px 12px;
-  border-radius: 6px;
 }
 
 .footer-links a:hover {
-  background: linear-gradient(135deg, #1976ff, #a431ff);
-  box-shadow:
-    0 0 9px rgba(77, 97, 255, 0.7),
-    0 0 16px rgba(164, 49, 255, 0.5);
+  color: #9bb8ff;
+  text-shadow: 0 0 8px rgba(140,140,255,0.9);
   transform: translateY(-2px);
 }
 
@@ -839,10 +793,10 @@ input, textarea {
   font-size: 13px;
 }
 
-@media (max-width: 600px) {
+@media(max-width:600px) {
   .footer-links {
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 14px;
   }
 }
 </style>
@@ -1139,25 +1093,37 @@ listBtn.addEventListener("click", () => {
 });
 </script>
 
-<div class="footer-waves">
-  <div class="wave wave1"></div>
-  <div class="wave wave2"></div>
-  <div class="wave wave3"></div>
+<!-- WAVE BACKGROUND -->
+<div class="footer-wave-wrapper">
+  <svg class="footer-wave" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#1976ff"/>
+        <stop offset="50%" stop-color="#6a5bff"/>
+        <stop offset="100%" stop-color="#a431ff"/>
+      </linearGradient>
+    </defs>
+    <!-- Duplicate 2 paths supaya seamless tanpa jeda -->
+    <path d="M0,200 C260,250 520,150 780,200 C1100,250 1300,170 1440,200 L1440,320 L0,320 Z"></path>
+    <path d="M1440,200 C1700,250 1960,150 2220,200 C2540,250 2740,170 2880,200 L2880,320 L1440,320 Z"></path>
+  </svg>
 </div>
 
+<!-- FOOTER CONTENT ABOVE WAVE -->
 <footer class="footer">
-  <div class="footer-inner">
-    <h2 class="footer-brand">Aju's Blog</h2>
-    <p class="footer-sub">Built with ❤️ using Jekyll • 2025</p>
-    <div class="footer-links">
-      <a href="{{ site.baseurl }}/">Blog</a>
-      <a href="{{ site.baseurl }}/galeri">Galeri</a>
-      <a href="{{ site.baseurl }}/tentang">Tentang</a>
-      <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
-    </div>
-    <p class="footer-copy">© 2025 Aju’s Blog — All Rights Reserved.</p>
+  <h2 class="footer-brand">Aju's Blog</h2>
+  <p class="footer-sub">Built with ❤️ using Jekyll • 2025</p>
+
+  <div class="footer-links">
+    <a href="{{ site.baseurl }}/">Blog</a>
+    <a href="{{ site.baseurl }}/galeri">Galeri</a>
+    <a href="{{ site.baseurl }}/tentang">Tentang</a>
+    <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
   </div>
+
+  <p class="footer-copy">© 2025 Aju’s Blog — All Rights Reserved.</p>
 </footer>
+
 
 
 
