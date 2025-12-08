@@ -714,43 +714,63 @@ input, textarea {
 </style>
 
 <style>
+/* CONTAINER — wave bg + footer */
+.footer-container {
+  position: relative;
+  width: 100%;
+}
+
 /* WAVE BACKGROUND */
 .footer-wave-wrapper {
   position: absolute;
-  top: -40px;          /* wave lebih naik sedikit */
+  top: -20px;              /* naikkan wave sedikit */
   left: 0;
   width: 100%;
-  height: 420px;       /* PERPANJANG SUPAYA NUTUP FULL */
+  height: 320px;           /* TINGGI DIPERBESAR agar nutup sampai bawah */
   overflow: hidden;
   z-index: 1;
 }
 
 .footer-wave {
   width: 200%;
-  height: 420px;       /* samakan */
+  height: 320px;           /* samakan dengan wrapper */
   animation: waveMove 6s linear infinite;
 }
 
 .footer-wave path {
   fill: url(#footerGradient);
-  opacity: 0.9;
-  filter: drop-shadow(0 -10px 22px rgba(160, 80, 255, 0.75));
+  opacity: 0.95;
+  filter: drop-shadow(0 -8px 20px rgba(150, 90, 255, 0.7));
 }
 
-/* HAPUS GRADIENT HITAM */
+/* smooth fade to black so wave blends nicely */
 .footer-wave-wrapper::after {
-  display: none;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, #000);
+  z-index: 2;
 }
 
-/* FOOTER CONTENT */
+@keyframes waveMove {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* FOOTER */
 footer.footer {
   position: relative;
   z-index: 5;
   background: transparent;
-  padding: 220px 20px 120px;  /* tambahkan padding supaya wave 100% cover di belakang */
+  padding: 180px 20px 80px;  /* tambah top padding supaya tidak menimpa wave */
   text-align: center;
   color: #e2e2e2;
 }
+
+
 </style>
 
 
@@ -1078,4 +1098,3 @@ listBtn.addEventListener("click", () => {
   </footer>
 
 </div>
-
