@@ -474,6 +474,35 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
+.close-comment {
+  background: #444;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.comment-alert {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: none;
+}
+
+.comment-alert.success {
+  background: #2563eb;
+  color: white;
+}
+
+.comment-alert.error {
+  background: #b91c1c;
+  color: white;
+}
+
 
 /* ============================
    CARD BASE
@@ -723,9 +752,11 @@ input, textarea {
           </a>
           <div class="comment-toggle">💬 Posting Komentar</div>
           <div class="comment-box">
-            <input type="text" placeholder="Nama Anda">
-            <textarea placeholder="Komentar Anda"></textarea>
+            <button class="close-comment">✖</button>
+            <input type="text" class="comment-name" placeholder="Nama Anda">
+            <textarea class="comment-text" placeholder="Komentar Anda"></textarea>
             <button class="send-comment-btn">Kirim</button>
+            <div class="comment-alert"></div>
           </div>
         </div>
       </div>
@@ -734,10 +765,49 @@ input, textarea {
 </div>
 
 <script>
+// TOGGLE OPEN/CLOSE
 document.querySelectorAll('.comment-toggle').forEach(toggle => {
     toggle.addEventListener('click', () => {
         const box = toggle.nextElementSibling;
         box.classList.toggle("show");
+    });
+});
+
+// tombol close
+document.querySelectorAll('.close-comment').forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.parentElement.classList.remove("show");
+    });
+});
+
+// VALIDATION + ALERT MESSAGE
+document.querySelectorAll('.send-comment-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const box = btn.parentElement;
+        const name = box.querySelector('.comment-name');
+        const text = box.querySelector('.comment-text');
+        const alertBox = box.querySelector('.comment-alert');
+
+        if (name.value.trim() === "" || text.value.trim() === "") {
+            alertBox.textContent = "⚠️ Semua kolom harus diisi.";
+            alertBox.className = "comment-alert error";
+            alertBox.style.display = "block";
+            return;
+        }
+
+        // jika sukses
+        alertBox.textContent = "✔️ Komentar berhasil dikirim!";
+        alertBox.className = "comment-alert success";
+        alertBox.style.display = "block";
+
+        // reset input
+        name.value = "";
+        text.value = "";
+
+        // hide alert after 3 sec
+        setTimeout(() => {
+            alertBox.style.display = "none";
+        }, 3000);
     });
 });
 
