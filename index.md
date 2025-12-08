@@ -714,43 +714,35 @@ input, textarea {
 </style>
 
 <style>
+/* WRAP WAVE + FOOTER */
 .footer-bg {
   position: relative;
   width: 100%;
-  padding-top: 180px;
-  overflow: hidden;
+  margin-top: 80px;
 }
 
-/* WAVE BACKGROUND — NO MORE TRANSFORM ANIMATION */
-.wave-layer {
+/* WAVE FULL BACKGROUND */
+.footer-wave {
+  width: 300%;
+  height: 500px;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 420px;
-  background: url('data:image/svg+xml;utf8,\
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 500" preserveAspectRatio="none"> \
-    <defs> \
-      <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%"> \
-        <stop offset="0%" stop-color="%231976ff"/> \
-        <stop offset="50%" stop-color="%236a5bff"/> \
-        <stop offset="100%" stop-color="%23a431ff"/> \
-      </linearGradient> \
-    </defs> \
-    <path fill="url(%23g)" d="M0,150 C300,250 600,50 900,150 C1200,250 1500,70 1800,150 L1800,500 L0,500 Z"/> \
-  </svg>') repeat-x;
-
-  background-size: 200% 100%;
-  animation: waveScroll 12s linear infinite;
-  z-index: 1;
+  animation: waveMove 10s linear infinite;
+  transform: translateX(-33.33%); /* posisi awal langsung seamless */
 }
 
-@keyframes waveScroll {
-  from { background-position: 0 0; }
-  to   { background-position: -2000px 0; }
+.footer-wave path {
+  fill: url(#footerGradient);
 }
 
-/* FOOTER CONTENT */
+/* ANIMATION */
+@keyframes waveMove {
+  from { transform: translateX(-33.33%); }
+  to   { transform: translateX(-66.66%); }
+}
+
+/* FOOTER CONTENT DI DEPAN WAVE */
 footer.footer {
   position: relative;
   z-index: 5;
@@ -758,6 +750,7 @@ footer.footer {
   text-align: center;
   color: white;
 }
+
 </style>
 
 
@@ -1053,7 +1046,17 @@ listBtn.addEventListener("click", () => {
 </script>
 
 <div class="footer-bg">
-  <div class="wave-layer"></div>
+  <svg class="footer-wave" viewBox="0 0 1440 500" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#1976ff"/>
+        <stop offset="50%" stop-color="#6a5bff"/>
+        <stop offset="100%" stop-color="#a431ff"/>
+      </linearGradient>
+    </defs>
+    <path d="M0,150 C300,250 600,50 900,150 C1200,250 1500,70 1800,150 L1800,500 L0,500 Z"></path>
+    <path d="M1800,150 C2100,250 2400,50 2700,150 C3000,250 3300,70 3600,150 L3600,500 L1800,500 Z"></path>
+  </svg>
 
   <footer class="footer">
     <h2 class="footer-brand">Aju's Blog</h2>
@@ -1067,5 +1070,3 @@ listBtn.addEventListener("click", () => {
     <p class="footer-copy">© 2025 Aju’s Blog — All Rights Reserved.</p>
   </footer>
 </div>
-
-
