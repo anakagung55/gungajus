@@ -735,10 +735,148 @@ input, textarea {
           </div>
         </div>
       </div>
+      <div class="post-card grid-item">
+        <img src="/gungajus/assets/img/itjobs-viz-thumb.jpg" class="post-thumb">
+        <div class="post-overlay">
+          <div class="overlay-content">
+            <div class="overlay-title">IT Job Visualization</div>
+            <div class="overlay-desc">Visualisasi tren role pekerjaan IT berdasarkan dataset job scraping.</div>
+            <div class="post-meta">Visualitation • 5 min read • 2025</div>
+            <a href="/gungajus/projects/itjobs-viz" class="overlay-btn">Baca selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+      <div class="post-card grid-item">
+        <img src="/gungajus/assets/img/anzsco-viz-thumb.jpg" class="post-thumb">
+        <div class="post-overlay">
+          <div class="overlay-content">
+            <div class="overlay-title">ANZSCO Data Visualitation</div>
+            <div class="overlay-desc">Visualisasi data ANZSCO menggunakan Looker Studio.</div>
+            <div class="post-meta">Scraping • 5 min read • 2025</div>
+            <a href="/gungajus/projects/anzsco-viz" class="overlay-btn">Baca selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+      <div class="post-card grid-item">
+        <img src="/gungajus/assets/img/ass-scraping.jpg" class="post-thumb">
+        <div class="post-overlay">
+          <div class="overlay-content">
+            <div class="overlay-title">Skill Assessment Scraping</div>
+            <div class="overlay-desc">Scraping Website Skill Assessment di Australia.</div>
+            <div class="post-meta">Scraping • 5 min read • 2025</div>
+            <a href="/gungajus/projects/assessment-scraping" class="overlay-btn">Baca selengkapnya →</a>
+          </div>
+        </div>
+      </div>
   </div> <!-- END GRID -->
 
   <!-- ============= LIST MODE (SEJAJAR, BUKAN DI DALAM GRID!) ============= -->
   <div class="posts-list list-mode" style="display:none;">
+      <div class="post-card list-item">
+        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
+        <div class="list-content">
+          <h2 class="list-title">Providers Scraping System</h2>
+          <div class="list-date">– November 23, 2023</div>
+          <div class="list-desc">
+            Scraping data universitas Australia lengkap menggunakan teknologi automasi...
+          </div>
+          <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">
+            BACA SELENGKAPNYA
+          </a>
+          <div class="comment-toggle">💬 Posting Komentar</div>
+          <div class="comment-box">
+            <button class="close-comment">✖</button>
+            <input type="text" class="comment-name" placeholder="Nama Anda">
+            <textarea class="comment-text" placeholder="Komentar Anda"></textarea>
+            <button class="send-comment-btn">Kirim</button>
+            <div class="comment-alert"></div>
+          </div>
+        </div>
+      </div>
+      <div class="post-card list-item">
+        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
+        <div class="list-content">
+          <h2 class="list-title">Providers Scraping System</h2>
+          <div class="list-date">– November 23, 2023</div>
+          <div class="list-desc">
+            Scraping data universitas Australia lengkap menggunakan teknologi automasi...
+          </div>
+          <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">
+            BACA SELENGKAPNYA
+          </a>
+          <div class="comment-toggle">💬 Posting Komentar</div>
+          <div class="comment-box">
+            <button class="close-comment">✖</button>
+            <input type="text" class="comment-name" placeholder="Nama Anda">
+            <textarea class="comment-text" placeholder="Komentar Anda"></textarea>
+            <button class="send-comment-btn">Kirim</button>
+            <div class="comment-alert"></div>
+          </div>
+        </div>
+      </div>
+      <div class="post-card list-item">
+        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
+        <div class="list-content">
+          <h2 class="list-title">Providers Scraping System</h2>
+          <div class="list-date">– November 23, 2023</div>
+          <div class="list-desc">
+            Scraping data universitas Australia lengkap menggunakan teknologi automasi...
+          </div>
+          <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">
+            BACA SELENGKAPNYA
+          </a>
+          <div class="comment-toggle">💬 Posting Komentar</div>
+          <div class="comment-box">
+            <button class="close-comment">✖</button>
+            <input type="text" class="comment-name" placeholder="Nama Anda">
+            <textarea class="comment-text" placeholder="Komentar Anda"></textarea>
+            <button class="send-comment-btn">Kirim</button>
+            <div class="comment-alert"></div>
+          </div>
+        </div>
+      </div>
+      <div class="post-card list-item">
+        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
+        <div class="list-content">
+          <h2 class="list-title">Providers Scraping System</h2>
+          <div class="list-date">– November 23, 2023</div>
+          <div class="list-desc">
+            Scraping data universitas Australia lengkap menggunakan teknologi automasi...
+          </div>
+          <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">
+            BACA SELENGKAPNYA
+          </a>
+          <div class="comment-toggle">💬 Posting Komentar</div>
+          <div class="comment-box">
+            <button class="close-comment">✖</button>
+            <input type="text" class="comment-name" placeholder="Nama Anda">
+            <textarea class="comment-text" placeholder="Komentar Anda"></textarea>
+            <button class="send-comment-btn">Kirim</button>
+            <div class="comment-alert"></div>
+          </div>
+        </div>
+      </div>
+      <div class="post-card list-item">
+        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
+        <div class="list-content">
+          <h2 class="list-title">Providers Scraping System</h2>
+          <div class="list-date">– November 23, 2023</div>
+          <div class="list-desc">
+            Scraping data universitas Australia lengkap menggunakan teknologi automasi...
+          </div>
+          <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">
+            BACA SELENGKAPNYA
+          </a>
+          <div class="comment-toggle">💬 Posting Komentar</div>
+          <div class="comment-box">
+            <button class="close-comment">✖</button>
+            <input type="text" class="comment-name" placeholder="Nama Anda">
+            <textarea class="comment-text" placeholder="Komentar Anda"></textarea>
+            <button class="send-comment-btn">Kirim</button>
+            <div class="comment-alert"></div>
+          </div>
+        </div>
+      </div>
       <div class="post-card list-item">
         <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
         <div class="list-content">
