@@ -75,55 +75,94 @@ animate();
 
 <!-- ================= NAVBAR  ================= -->
 <style>
+/* NAVBAR FUTURISTIK */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0,0,0,0.45);
-  backdrop-filter: blur(10px);
   z-index: 9999;
-  padding: 12px 0;   /* jangan pakai padding kiri kanan */
+  padding: 14px 0;
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+  backdrop-filter: blur(10px);
 }
 
+/* Normal (transparan) */
+.navbar:not(.scrolled) {
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: none;
+}
+
+/* Saat scroll → aktif neon */
+.navbar.scrolled {
+  background: linear-gradient(135deg, #1976ff55, #a431ff55);
+  box-shadow: 
+    0 0 12px rgba(77, 97, 255, .6),
+    0 0 25px rgba(164, 49, 255, .4);
+}
+
+/* INNER CONTAINER */
 .nav-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* BRAND */
 .navbar-left {
-  color: white;
   font-size: 20px;
   font-weight: 700;
+  color: white;
+  text-shadow: 0 0 12px rgba(255,255,255,0.5);
 }
 
+/* MENU */
 .navbar-right {
   display: flex;
   gap: 24px;
 }
 
-/* OFFSET (biar header tidak tertutup navbar) */
-.header-offset {
-  margin-top: 110px;
+.navbar-right a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.25s ease;
+  padding: 4px 10px;
+  border-radius: 8px;
 }
 
-/* MOBILE RESPONSIVE */
-@media (max-width: 900px) {
-  .navbar-right a {
-    font-size: 14px;
+/* Hover neon effect */
+.navbar-right a:hover {
+  background: linear-gradient(135deg, #1976ff, #a431ff);
+  box-shadow:
+    0 0 8px rgba(77, 97, 255, .6),
+    0 0 16px rgba(164, 49, 255, .5);
+  transform: translateY(-2px);
+}
+
+/* OFFSET CONTENT BELOW NAVBAR */
+.header-offset {
+  margin-top: 90px;
+}
+
+/* RESPONSIVE NAVBAR */
+@media (max-width: 768px) {
+  .nav-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar-right {
+    gap: 14px;
   }
   .navbar-left {
     font-size: 18px;
   }
-  .navbar-right {
-    gap: 16px;
-  }
 }
 </style>
+
 <div class="navbar">
   <div class="nav-inner">
     <div class="navbar-left">Aju's Blog</div>
@@ -137,6 +176,13 @@ animate();
 </div>
 
 <div class="header-offset"></div>
+
+<script>
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 20);
+});
+</script>
 
 <!-- ================= SLIDESHOW HEADER ================= -->
 <style>
