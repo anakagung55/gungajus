@@ -1,0 +1,39 @@
+<style>
+/* WRAP WAVE + FOOTER */
+.footer-bg {
+  position: relative;
+  width: 100%;
+  margin-top: 80px;
+}
+
+/* WAVE FULL BACKGROUND */
+.footer-wave {
+  width: 300%;
+  height: 500px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: waveMove 10s linear infinite;
+  transform: translateX(-33.33%); /* posisi awal langsung seamless */
+}
+
+.footer-wave path {
+  fill: url(#footerGradient);
+}
+
+/* ANIMATION */
+@keyframes waveMove {
+  from { transform: translateX(-33.33%); }
+  to   { transform: translateX(-66.66%); }
+}
+
+/* FOOTER CONTENT DI DEPAN WAVE */
+footer.footer {
+  position: relative;
+  z-index: 5;
+  padding: 120px 20px 80px;
+  text-align: center;
+  color: white;
+}
+
+</style>
