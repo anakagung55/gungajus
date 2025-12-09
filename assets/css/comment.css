@@ -1,0 +1,87 @@
+<style>
+  
+
+
+/* COMMENT */
+.comment-toggle {
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.comment-box {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .3s ease;
+}
+
+.comment-box.show {
+  opacity: 1;
+  max-height: 300px; /* cukup untuk form */
+}
+
+.comment-box input,
+.comment-box textarea {
+  width: 100%;
+  padding: 8px;
+  background: #1e1f22;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: white;
+}
+
+.send-comment-btn {
+  padding: 8px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.close-comment {
+  background: #444;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.comment-alert {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: none;
+}
+
+.comment-alert.success {
+  background: #2563eb;
+  color: white;
+}
+
+.comment-alert.error {
+  background: #b91c1c;
+  color: white;
+}
+
+
+/* ============================
+   CARD BASE
+============================ */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  background: #1e2228;
+  border: 1px solid #3a3f47;
+  border-radius: 6px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+
+</style>
