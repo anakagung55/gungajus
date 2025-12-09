@@ -808,7 +808,7 @@ footer.footer {
         </div>
       </div>
       <div class="post-card grid-item">
-        <img src="/gungajus/assets/img/itjobs-viz-thumb.jpg" class="post-thumb">
+        <img src="{{ site.baseurl }}/assets/img/itjobs-viz-thumb.jpg" class="post-thumb">
         <div class="post-overlay">
           <div class="overlay-content">
             <div class="overlay-title">IT Job Visualization</div>
@@ -819,7 +819,7 @@ footer.footer {
         </div>
       </div>
       <div class="post-card grid-item">
-        <img src="/gungajus/assets/img/anzsco-viz-thumb.jpg" class="post-thumb">
+        <img src="{{ site.baseurl }}/assets/img/anzsco-viz-thumb.jpg" class="post-thumb">
         <div class="post-overlay">
           <div class="overlay-content">
             <div class="overlay-title">ANZSCO Data Visualitation</div>
@@ -830,7 +830,7 @@ footer.footer {
         </div>
       </div>
       <div class="post-card grid-item">
-        <img src="/gungajus/assets/img/ass-scraping.jpg" class="post-thumb">
+        <img src="{{ site.baseurl }}/assets/img/ass-scraping.jpg" class="post-thumb">
         <div class="post-overlay">
           <div class="overlay-content">
             <div class="overlay-title">Skill Assessment Scraping</div>
