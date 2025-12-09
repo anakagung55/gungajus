@@ -1,19 +1,29 @@
-<!DOCTYPE html>
+x<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/base.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/navbar.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slideshow.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/posts.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/comments.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/footer.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/particles.css">
 </head>
 
 <body>
 
-  {% include navbar.html %}
-  {% include header.html %}
+  {% include index.md %}
 
   <main class="container">
     {{ content }}
   </main>
+<script src="{{ site.baseurl }}/assets/js/particles.js"></script>
+<script src="{{ site.baseurl }}/assets/js/navbar.js"></script>
+<script src="{{ site.baseurl }}/assets/js/toggle-view.js"></script>
+<script src="{{ site.baseurl }}/assets/js/comments.js"></script>
 
 </body>
 </html>
