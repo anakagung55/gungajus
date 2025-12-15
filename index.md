@@ -790,7 +790,7 @@ footer.footer {
         <div class="post-overlay">
           <div class="overlay-content">
             <div class="overlay-title">ANZSCO Scraping</div>
-            <div class="overlay-desc">Scraping informasi ANZSCO untuk pemetaan job family dan skill level.</div>
+            <div class="overlay-desc">Scraping informasi ANZSCO untuk pemetaan job dan skill level.</div>
             <div class="post-meta">Scraping • 5 min read • 2025</div>
             <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="overlay-btn">Baca selengkapnya →</a>
           </div>
