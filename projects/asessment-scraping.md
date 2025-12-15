@@ -92,6 +92,78 @@ for (let i = 0; i < COUNT; i++) {
 })();
 </script>
 
+<!-- ================= NAVBAR (SAMA HOMEPAGE) ================= -->
+<style>
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 14px 0;
+  transition: background .35s ease, box-shadow .35s ease;
+  backdrop-filter: blur(10px);
+}
+.navbar:not(.scrolled) {
+  background: rgba(0,0,0,.25);
+}
+.navbar.scrolled {
+  background: linear-gradient(135deg,#1976ff55,#a431ff55);
+  box-shadow: 0 0 12px rgba(77,97,255,.6),
+              0 0 25px rgba(164,49,255,.4);
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-left {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.navbar-right {
+  display: flex;
+  gap: 24px;
+}
+.navbar-right a {
+  color: #fff !important;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 8px;
+  transition: .25s ease;
+}
+.navbar-right a:hover {
+  background: linear-gradient(135deg,#1976ff,#a431ff);
+}
+.header-offset { margin-top: 90px; }
+</style>
+
+<div class="navbar">
+  <div class="nav-inner">
+    <div class="navbar-left">Aju's Blog</div>
+    <div class="navbar-right">
+      <a href="{{ site.baseurl }}/">Blog</a>
+      <a href="{{ site.baseurl }}/galeri">Galeri</a>
+      <a href="{{ site.baseurl }}/tentang">Tentang</a>
+      <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
+    </div>
+  </div>
+</div>
+
+<div class="header-offset"></div>
+
+<script>
+window.addEventListener("scroll", () => {
+  document.querySelector(".navbar")
+    ?.classList.toggle("scrolled", window.scrollY > 20);
+});
+</script>
+
+
 <!-- ================= BLOG CONTENT ================= -->
 <style>
 .blog-wrap {
