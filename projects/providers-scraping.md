@@ -237,79 +237,119 @@ blockquote {
   </blockquote>
 </div>
 
-<!-- ================= RELATED POSTS ================= -->
+<!-- ================= RELATED PROJECTS (HOMEPAGE STYLE) ================= -->
 <style>
-.related-section {
+.related-projects {
   max-width: 1200px;
-  margin: 120px auto 80px;
+  margin: 120px auto 100px;
   padding: 0 20px;
 }
 
 .related-title {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   color: #fff;
 }
 
-.related-grid {
+.related-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+}
+
+/* CARD */
+.related-card {
+  position: relative;
+  height: 220px;
+  border-radius: 18px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,.45);
+  transition: transform .4s ease;
+}
+
+.related-card:hover {
+  transform: translateY(-8px);
+}
+
+/* DARK OVERLAY */
+.related-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.25)
+  );
+  z-index: 1;
+}
+
+/* CONTENT */
+.related-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.related-content h3 {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.related-content span {
+  font-size: 13px;
+  opacity: .8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .related-row {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 
-<div class="related-section">
+<section class="related-projects">
   <div class="related-title">Related Projects</div>
-  <div class="related-grid">
-    <!-- CARD 1 -->
-    <div class="post-card">
-      <img src="{{ site.baseurl }}/assets/img/anzsco-thumb.jpg" class="post-thumb">
-      <div class="post-overlay">
-        <div class="overlay-content">
-          <div class="overlay-title">ANZSCO Scraping</div>
-          <div class="overlay-desc">
-            Scraping data occupations Australia & New Zealand untuk pemetaan job.
-          </div>
-          <div class="post-meta">Scraping • 2025</div>
-          <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="overlay-btn">
-            Baca selengkapnya →
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- CARD 2 -->
-    <div class="post-card">
-      <img src="{{ site.baseurl }}/assets/img/ass-scraping.jpg" class="post-thumb">
-      <div class="post-overlay">
-        <div class="overlay-content">
-          <div class="overlay-title">Skill Assessment Scraping</div>
-          <div class="overlay-desc">
-            Scraping lembaga assessment Australia untuk analisis kebutuhan migrasi.
-          </div>
-          <div class="post-meta">Scraping • 2025</div>
-          <a href="{{ site.baseurl }}/projects/assessment-scraping" class="overlay-btn">
-            Baca selengkapnya →
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- CARD 3 -->
-    <div class="post-card">
-      <img src="{{ site.baseurl }}/assets/img/itjobs-viz-thumb.jpg" class="post-thumb">
-      <div class="post-overlay">
-        <div class="overlay-content">
-          <div class="overlay-title">IT Job Visualization</div>
-          <div class="overlay-desc">
-            Visualisasi tren pekerjaan IT berbasis dataset hasil scraping.
-          </div>
-          <div class="post-meta">Visualization • 2025</div>
-          <a href="{{ site.baseurl }}/projects/itjobs-viz" class="overlay-btn">
-            Baca selengkapnya →
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
+  <div class="related-row">
+    <!-- CARD 1 -->
+    <a href="{{ site.baseurl }}/projects/anzsco-scraping"
+       class="related-card"
+       style="background-image:url('{{ site.baseurl }}/assets/img/anzsco-thumb.jpg')">
+      <div class="related-content">
+        <h3>ANZSCO Scraping</h3>
+        <span>Australia & New Zealand Occupation Data</span>
+      </div>
+    </a>
+    <!-- CARD 2 -->
+    <a href="{{ site.baseurl }}/projects/assessment-scraping"
+       class="related-card"
+       style="background-image:url('{{ site.baseurl }}/assets/img/ass-scraping.jpg')">
+      <div class="related-content">
+        <h3>Skill Assessment</h3>
+        <span>Assessment Authority Scraping</span>
+      </div>
+    </a>
+    <!-- CARD 3 -->
+    <a href="{{ site.baseurl }}/projects/itjobs-viz"
+       class="related-card"
+       style="background-image:url('{{ site.baseurl }}/assets/img/itjobs-viz-thumb.jpg')">
+      <div class="related-content">
+        <h3>Data Analysis</h3>
+        <span>IT Job Market Visualization</span>
+      </div>
+    </a>
+
+  </div>
+</section>
