@@ -385,9 +385,9 @@ blockquote {
 
   <div class="related-row">
     <!-- CARD 1 -->
-    <a href="{{ site.baseurl }}/projects/provider-scraping"
+    <a href="{{ site.baseurl }}/projects/providers-scraping"
        class="related-card"
-       style="background-image:url('{{ site.baseurl }}/assets/img/provider-thumb.jpg')">
+       style="background-image:url('{{ site.baseurl }}/assets/img/providers-thumb.jpg')">
       <div class="related-overlay"></div>
       <div class="related-content">
         <h3>Provider Scraping</h3>
