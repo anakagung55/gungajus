@@ -9,6 +9,66 @@ tools: Python, BeautifulSoup, SQL, Retry
 year: 2025
 ---
 
+<style>
+.blog-article {
+  max-width: 820px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.blog-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.blog-meta {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 25px;
+}
+
+.blog-hero {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+.blog-lead {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.blog-article h2 {
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+.blog-article p {
+  margin: 16px 0;
+}
+
+.blog-article ul,
+.blog-article ol {
+  margin-left: 20px;
+}
+
+.blog-img {
+  width: 100%;
+  border-radius: 14px;
+  margin: 25px 0;
+}
+
+blockquote {
+  margin: 40px 0;
+  padding: 20px;
+  background: #2a2f36;
+  border-left: 4px solid #6f78ff;
+  border-radius: 8px;
+  font-style: italic;
+}
+</style>
+
 
 <div class="container">
   <!-- JUDUL ARTIKEL -->
