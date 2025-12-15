@@ -90,7 +90,7 @@ blockquote {
   </ul>
 
   <h2>Workflow Sistem</h2>
-  <img src="{{ site.baseurl }}/assets/img/anzsco-flow.jpg"
+  <img src="{{ site.baseurl }}/assets/img/ass-flow.jpg"
        style="width:100%;border-radius:14px;margin:20px 0;">
 
   <p>
@@ -221,7 +221,6 @@ blockquote {
         <span class="related-btn">Baca selengkapnya →</span>
       </div>
     </a>
-
     <a href="{{ site.baseurl }}/projects/anzsco-scraping"
        class="related-card"
        style="background-image:url('{{ site.baseurl }}/assets/img/anzsco-thumb.jpg')">
@@ -232,7 +231,6 @@ blockquote {
         <span class="related-btn">Baca selengkapnya →</span>
       </div>
     </a>
-
     <a href="{{ site.baseurl }}/projects/itjobs-viz"
        class="related-card"
        style="background-image:url('{{ site.baseurl }}/assets/img/itjobs-viz-thumb.jpg')">
