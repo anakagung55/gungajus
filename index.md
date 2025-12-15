@@ -803,7 +803,7 @@ footer.footer {
             <div class="overlay-title">Skill Assessment Scraping</div>
             <div class="overlay-desc">Scraping Website Skill Assessment di Australia.</div>
             <div class="post-meta">Scraping • 5 min read • 2025</div>
-            <a href="/gungajus/projects/assessment-scraping" class="overlay-btn">Baca selengkapnya →</a>
+            <a href="{{ site.baseurl }}/assessment-scraping" class="overlay-btn">Baca selengkapnya →</a>
           </div>
         </div>
       </div>
@@ -814,7 +814,7 @@ footer.footer {
             <div class="overlay-title">IT Job Visualization</div>
             <div class="overlay-desc">Visualisasi tren role pekerjaan IT berdasarkan dataset job scraping.</div>
             <div class="post-meta">Visualitation • 5 min read • 2025</div>
-            <a href="/gungajus/projects/itjobs-viz" class="overlay-btn">Baca selengkapnya →</a>
+            <a href="{{ site.baseurl }}/projects/itjobs-viz" class="overlay-btn">Baca selengkapnya →</a>
           </div>
         </div>
       </div>
@@ -836,7 +836,7 @@ footer.footer {
             <div class="overlay-title">ANZSCO Data Visualitation</div>
             <div class="overlay-desc">Visualisasi data ANZSCO menggunakan Looker Studio.</div>
             <div class="post-meta">Scraping • 5 min read • 2025</div>
-            <a href="/gungajus/projects/anzsco-viz" class="overlay-btn">Baca selengkapnya →</a>
+            <a href="{{ site.baseurl }}/projects/anzsco-viz" class="overlay-btn">Baca selengkapnya →</a>
           </div>
         </div>
       </div>
