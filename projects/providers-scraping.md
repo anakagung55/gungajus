@@ -237,7 +237,7 @@ blockquote {
   </blockquote>
 </div>
 
-<!-- ================= RELATED PROJECTS (HOMEPAGE STYLE - FINAL) ================= -->
+<!-- ================= RELATED PROJECTS (HOMEPAGE LOGIC) ================= -->
 <style>
 .related-projects {
   max-width: 1200px;
@@ -245,7 +245,6 @@ blockquote {
   padding: 0 20px;
 }
 
-/* TITLE */
 .related-title {
   font-size: 28px;
   font-weight: 700;
@@ -271,84 +270,104 @@ blockquote {
   text-decoration: none;
   cursor: pointer;
 
-  box-shadow: 0 12px 30px rgba(0,0,0,.45);
+  box-shadow: 0 14px 35px rgba(0,0,0,.55);
   transition: 
     transform .45s ease,
     box-shadow .45s ease;
 }
 
-/* HOVER LIFT + GLOW */
+/* HOVER LIFT */
 .related-card:hover {
   transform: translateY(-10px);
   box-shadow:
-    0 0 18px rgba(111,120,255,.45),
-    0 0 35px rgba(164,49,255,.35);
+    0 0 20px rgba(111,120,255,.45),
+    0 0 40px rgba(164,49,255,.35);
 }
 
-/* GRADIENT OVERLAY */
-.related-card::before {
-  content: "";
+/* OVERLAY — HIDDEN BY DEFAULT */
+.related-overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 2;
+
   background: linear-gradient(
     135deg,
-    rgba(25,118,255,.35),
-    rgba(164,49,255,.15),
-    rgba(0,0,0,.75)
+    rgba(25,118,255,.55),
+    rgba(164,49,255,.35),
+    rgba(0,0,0,.85)
   );
-  opacity: .45;
-  transition: opacity .45s ease;
-}
 
-.related-card:hover::before {
-  opacity: .85;
-}
-
-/* CONTENT WRAPPER */
-.related-content {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  transform: translateY(18px);
-  transition: transform .45s ease;
-}
-
-.related-card:hover .related-content {
-  transform: translateY(0);
-}
-
-/* TITLE */
-.related-content h3 {
-  font-size: 26px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  margin: 0 0 10px;
-  text-transform: uppercase;
-  color: #fff;
-  opacity: .85;
-  transition: opacity .35s ease;
-}
-
-.related-card:hover h3 {
-  opacity: 1;
-}
-
-/* SUBTITLE */
-.related-content span {
-  font-size: 13px;
-  color: #e0e0ff;
   opacity: 0;
   transition: opacity .45s ease;
 }
 
-.related-card:hover span {
-  opacity: .9;
+/* SHOW OVERLAY ON HOVER */
+.related-card:hover .related-overlay {
+  opacity: 1;
+}
+
+/* CONTENT — HIDDEN INITIALLY */
+.related-content {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateY(24px);
+  transition: 
+    opacity .45s ease,
+    transform .45s ease;
+}
+
+/* SHOW CONTENT ON HOVER */
+.related-card:hover .related-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* TEXT */
+.related-content h3 {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.related-content p {
+  font-size: 14px;
+  opacity: .85;
+  margin-bottom: 16px;
+  color: #e5e5ff;
+}
+
+/* BUTTON */
+.related-btn {
+  align-self: flex-start;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg,#1976ff,#a431ff);
+  border-radius: 10px;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 
+    opacity .4s ease,
+    transform .4s ease;
+}
+
+/* BUTTON APPEAR */
+.related-card:hover .related-btn {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* RESPONSIVE */
@@ -361,33 +380,41 @@ blockquote {
 
 <section class="related-projects">
   <div class="related-title">Related Projects</div>
+
   <div class="related-row">
     <!-- CARD 1 -->
     <a href="{{ site.baseurl }}/projects/anzsco-scraping"
        class="related-card"
        style="background-image:url('{{ site.baseurl }}/assets/img/anzsco-thumb.jpg')">
+      <div class="related-overlay"></div>
       <div class="related-content">
         <h3>ANZSCO Scraping</h3>
-        <span>Australia & New Zealand Occupation Data</span>
+        <p>Australia & New Zealand Occupation Dataset</p>
+        <span class="related-btn">Baca selengkapnya →</span>
       </div>
     </a>
     <!-- CARD 2 -->
     <a href="{{ site.baseurl }}/projects/assessment-scraping"
        class="related-card"
        style="background-image:url('{{ site.baseurl }}/assets/img/ass-scraping.jpg')">
+      <div class="related-overlay"></div>
       <div class="related-content">
         <h3>Skill Assessment</h3>
-        <span>Assessment Authority Scraping</span>
+        <p>Assessment Authority Scraping</p>
+        <span class="related-btn">Baca selengkapnya →</span>
       </div>
     </a>
     <!-- CARD 3 -->
     <a href="{{ site.baseurl }}/projects/itjobs-viz"
        class="related-card"
        style="background-image:url('{{ site.baseurl }}/assets/img/itjobs-viz-thumb.jpg')">
+      <div class="related-overlay"></div>
       <div class="related-content">
         <h3>Data Analysis</h3>
-        <span>IT Job Market Visualization</span>
+        <p>IT Job Market Visualization</p>
+        <span class="related-btn">Baca selengkapnya →</span>
       </div>
     </a>
   </div>
 </section>
+
