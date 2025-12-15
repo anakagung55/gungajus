@@ -803,7 +803,7 @@ footer.footer {
             <div class="overlay-title">Skill Assessment Scraping</div>
             <div class="overlay-desc">Scraping Website Skill Assessment di Australia.</div>
             <div class="post-meta">Scraping • 5 min read • 2025</div>
-            <a href="{{ site.baseurl }}/assessment-scraping" class="overlay-btn">Baca selengkapnya →</a>
+            <a href="{{ site.baseurl }}/projects/assessment-scraping" class="overlay-btn">Baca selengkapnya →</a>
           </div>
         </div>
       </div>
