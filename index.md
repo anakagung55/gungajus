@@ -786,17 +786,6 @@ footer.footer {
         </div>
       </div>
       <div class="post-card grid-item">
-        <img src="{{ site.baseurl }}/assets/img/jobportal-thumb.jpg" class="post-thumb">
-        <div class="post-overlay">
-          <div class="overlay-content">
-            <div class="overlay-title">IT Job Portal Scraping</div>
-            <div class="overlay-desc">Mengambil data lowongan pekerjaan IT dan memetakannya sebagai dataset analisis.</div>
-            <div class="post-meta">Scraping • 5 min read • 2025</div>
-            <a href="{{ site.baseurl }}/projects/scraping-job-portal" class="overlay-btn">Baca selengkapnya →</a>
-          </div>
-        </div>
-      </div>
-      <div class="post-card grid-item">
         <img src="{{ site.baseurl }}/assets/img/anzsco-thumb.jpg" class="post-thumb">
         <div class="post-overlay">
           <div class="overlay-content">
@@ -804,6 +793,17 @@ footer.footer {
             <div class="overlay-desc">Scraping informasi ANZSCO untuk pemetaan job family dan skill level.</div>
             <div class="post-meta">Scraping • 5 min read • 2025</div>
             <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="overlay-btn">Baca selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+      <div class="post-card grid-item">
+        <img src="{{ site.baseurl }}/assets/img/ass-scraping.jpg" class="post-thumb">
+        <div class="post-overlay">
+          <div class="overlay-content">
+            <div class="overlay-title">Skill Assessment Scraping</div>
+            <div class="overlay-desc">Scraping Website Skill Assessment di Australia.</div>
+            <div class="post-meta">Scraping • 5 min read • 2025</div>
+            <a href="/gungajus/projects/assessment-scraping" class="overlay-btn">Baca selengkapnya →</a>
           </div>
         </div>
       </div>
@@ -819,6 +819,17 @@ footer.footer {
         </div>
       </div>
       <div class="post-card grid-item">
+        <img src="{{ site.baseurl }}/assets/img/jobportal-thumb.jpg" class="post-thumb">
+        <div class="post-overlay">
+          <div class="overlay-content">
+            <div class="overlay-title">IT Job Portal Scraping</div>
+            <div class="overlay-desc">Mengambil data lowongan pekerjaan IT dan memetakannya sebagai dataset analisis.</div>
+            <div class="post-meta">Scraping • 5 min read • 2025</div>
+            <a href="{{ site.baseurl }}/projects/scraping-job-portal" class="overlay-btn">Baca selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+      <div class="post-card grid-item">
         <img src="{{ site.baseurl }}/assets/img/anzsco-viz-thumb.jpg" class="post-thumb">
         <div class="post-overlay">
           <div class="overlay-content">
@@ -826,17 +837,6 @@ footer.footer {
             <div class="overlay-desc">Visualisasi data ANZSCO menggunakan Looker Studio.</div>
             <div class="post-meta">Scraping • 5 min read • 2025</div>
             <a href="/gungajus/projects/anzsco-viz" class="overlay-btn">Baca selengkapnya →</a>
-          </div>
-        </div>
-      </div>
-      <div class="post-card grid-item">
-        <img src="{{ site.baseurl }}/assets/img/ass-scraping.jpg" class="post-thumb">
-        <div class="post-overlay">
-          <div class="overlay-content">
-            <div class="overlay-title">Skill Assessment Scraping</div>
-            <div class="overlay-desc">Scraping Website Skill Assessment di Australia.</div>
-            <div class="post-meta">Scraping • 5 min read • 2025</div>
-            <a href="/gungajus/projects/assessment-scraping" class="overlay-btn">Baca selengkapnya →</a>
           </div>
         </div>
       </div>
