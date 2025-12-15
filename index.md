@@ -848,9 +848,9 @@ footer.footer {
         <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
         <div class="list-content">
           <h2 class="list-title">Providers Scraping System</h2>
-          <div class="list-date">– November 23, 2023</div>
+          <div class="list-date">– Desember 10, 2025</div>
           <div class="list-desc">
-            Scraping data universitas Australia lengkap menggunakan teknologi automasi...
+            Scraping data universitas Australia lengkap menggunakan teknologi automasi untuk mendapatkan data Course yang ada di masing-masing universitas yang bekerja sama dengan Interlace Studies Bali....
           </div>
           <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">
             BACA SELENGKAPNYA
@@ -866,14 +866,14 @@ footer.footer {
         </div>
       </div>
       <div class="post-card list-item">
-        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
+        <img src="{{ site.baseurl }}/assets/img/anzsco-thumb.jpg" class="list-thumb">
         <div class="list-content">
-          <h2 class="list-title">Providers Scraping System</h2>
-          <div class="list-date">– November 23, 2023</div>
+          <h2 class="list-title">ANZSCO Scraping Project</h2>
+          <div class="list-date">– Desember 11, 2025</div>
           <div class="list-desc">
-            Scraping data universitas Australia lengkap menggunakan teknologi automasi...
+            Scraping data Occupations (daftar pekerjaan di Australia & New Zealand) berdasarkan website lembaga pemerintah,untuk mengambil data Pekerjaan...
           </div>
-          <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">
+          <a class="read-more-btn" href="{{ site.baseurl }}/projects/anzsco-scraping">
             BACA SELENGKAPNYA
           </a>
           <div class="comment-toggle">💬 Posting Komentar</div>
@@ -887,14 +887,14 @@ footer.footer {
         </div>
       </div>
       <div class="post-card list-item">
-        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
+        <img src="{{ site.baseurl }}/assets/img/ass-scraping.jpg" class="list-thumb">
         <div class="list-content">
-          <h2 class="list-title">Providers Scraping System</h2>
-          <div class="list-date">– November 23, 2023</div>
+          <h2 class="list-title">Skill Assessment Scraping Project</h2>
+          <div class="list-date">– Desember 12, 2025</div>
           <div class="list-desc">
-            Scraping data universitas Australia lengkap menggunakan teknologi automasi...
+            Scraping data lembaga penyedia sertifikat kompeten di Australia, untuk mengambil data profil lembaga dan biaya Assessment....
           </div>
-          <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">
+          <a class="read-more-btn" href="{{ site.baseurl }}/projects/assessment-scraping">
             BACA SELENGKAPNYA
           </a>
           <div class="comment-toggle">💬 Posting Komentar</div>
@@ -908,14 +908,14 @@ footer.footer {
         </div>
       </div>
       <div class="post-card list-item">
-        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
+        <img src="{{ site.baseurl }}/assets/img/itjobs-viz-thumb.jpg" class="list-thumb">
         <div class="list-content">
-          <h2 class="list-title">Providers Scraping System</h2>
-          <div class="list-date">– November 23, 2023</div>
+          <h2 class="list-title">IT Jobs Visualization</h2>
+          <div class="list-date">– Desember 12, 2025</div>
           <div class="list-desc">
-            Scraping data universitas Australia lengkap menggunakan teknologi automasi...
+            Visualisasi data hasil scraping untuk memberikan insight pekerjaan apa yang paling banyak terdaftar di job portal dengan domain Australia...
           </div>
-          <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">
+          <a class="read-more-btn" href="{{ site.baseurl }}/projects/itjobs-viz">
             BACA SELENGKAPNYA
           </a>
           <div class="comment-toggle">💬 Posting Komentar</div>
@@ -929,14 +929,14 @@ footer.footer {
         </div>
       </div>
       <div class="post-card list-item">
-        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
+        <img src="{{ site.baseurl }}/assets/img/jobportal-thumb.jpg" class="list-thumb">
         <div class="list-content">
-          <h2 class="list-title">Providers Scraping System</h2>
-          <div class="list-date">– November 23, 2023</div>
+          <h2 class="list-title">IT Jobs Portal Scraping</h2>
+          <div class="list-date">– Desember 11, 2025</div>
           <div class="list-desc">
-            Scraping data universitas Australia lengkap menggunakan teknologi automasi...
+            Scraping data job yang ada di Australia pada job portal platform berbasis online...
           </div>
-          <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">
+          <a class="read-more-btn" href="{{ site.baseurl }}/projects/jobportal-scraping">
             BACA SELENGKAPNYA
           </a>
           <div class="comment-toggle">💬 Posting Komentar</div>
@@ -950,14 +950,14 @@ footer.footer {
         </div>
       </div>
       <div class="post-card list-item">
-        <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg" class="list-thumb">
+        <img src="{{ site.baseurl }}/assets/img/anzsco-viz-thumb" class="list-thumb">
         <div class="list-content">
-          <h2 class="list-title">Providers Scraping System</h2>
-          <div class="list-date">– November 23, 2023</div>
+          <h2 class="list-title">ANZSCO Data Visualization</h2>
+          <div class="list-date">– Desember 13, 2025</div>
           <div class="list-desc">
-            Scraping data universitas Australia lengkap menggunakan teknologi automasi...
+            Visualisasi data hasil scraping daftar pekerjaan di Australia...
           </div>
-          <a class="read-more-btn" href="{{ site.baseurl }}/projects/providers-scraping">
+          <a class="read-more-btn" href="{{ site.baseurl }}/projects/anzsco-viz">
             BACA SELENGKAPNYA
           </a>
           <div class="comment-toggle">💬 Posting Komentar</div>
