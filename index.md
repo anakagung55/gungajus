@@ -1045,79 +1045,28 @@ listBtn.addEventListener("click", () => {
 });
 </script>
 
-<!-- ================= RELATED POSTS ================= -->
-<style>
-.related-section {
-  max-width: 1200px;
-  margin: 120px auto 80px;
-  padding: 0 20px;
-}
+<div class="footer-bg">
+  <svg class="footer-wave" viewBox="0 0 1440 500" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#1976ff"/>
+        <stop offset="50%" stop-color="#6a5bff"/>
+        <stop offset="100%" stop-color="#a431ff"/>
+      </linearGradient>
+    </defs>
+    <path d="M0,150 C300,250 600,50 900,150 C1200,250 1500,70 1800,150 L1800,500 L0,500 Z"></path>
+    <path d="M1800,150 C2100,250 2400,50 2700,150 C3000,250 3300,70 3600,150 L3600,500 L1800,500 Z"></path>
+  </svg>
 
-.related-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: #fff;
-}
-
-.related-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-</style>
-
-<div class="related-section">
-  <div class="related-title">Related Projects</div>
-  <div class="related-grid">
-    <!-- CARD 1 -->
-    <div class="post-card">
-      <img src="{{ site.baseurl }}/assets/img/anzsco-thumb.jpg" class="post-thumb">
-      <div class="post-overlay">
-        <div class="overlay-content">
-          <div class="overlay-title">ANZSCO Scraping</div>
-          <div class="overlay-desc">
-            Scraping data occupations Australia & New Zealand untuk pemetaan job.
-          </div>
-          <div class="post-meta">Scraping • 2025</div>
-          <a href="{{ site.baseurl }}/projects/anzsco-scraping" class="overlay-btn">
-            Baca selengkapnya →
-          </a>
-        </div>
-      </div>
+  <footer class="footer">
+    <h2 class="footer-brand">Aju's Blog</h2>
+    <p class="footer-sub">Built with ❤️ using Jekyll • 2025</p>
+    <div class="footer-links">
+      <a href="/">Blog</a>
+      <a href="/galeri">Galeri</a>
+      <a href="/tentang">Tentang</a>
+      <a href="/lokasi">Lokasi</a>
     </div>
-    <!-- CARD 2 -->
-    <div class="post-card">
-      <img src="{{ site.baseurl }}/assets/img/ass-scraping.jpg" class="post-thumb">
-      <div class="post-overlay">
-        <div class="overlay-content">
-          <div class="overlay-title">Skill Assessment Scraping</div>
-          <div class="overlay-desc">
-            Scraping lembaga assessment Australia untuk analisis kebutuhan migrasi.
-          </div>
-          <div class="post-meta">Scraping • 2025</div>
-          <a href="{{ site.baseurl }}/projects/assessment-scraping" class="overlay-btn">
-            Baca selengkapnya →
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- CARD 3 -->
-    <div class="post-card">
-      <img src="{{ site.baseurl }}/assets/img/itjobs-viz-thumb.jpg" class="post-thumb">
-      <div class="post-overlay">
-        <div class="overlay-content">
-          <div class="overlay-title">IT Job Visualization</div>
-          <div class="overlay-desc">
-            Visualisasi tren pekerjaan IT berbasis dataset hasil scraping.
-          </div>
-          <div class="post-meta">Visualization • 2025</div>
-          <a href="{{ site.baseurl }}/projects/itjobs-viz" class="overlay-btn">
-            Baca selengkapnya →
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+    <p class="footer-copy">© 2025 Aju’s Blog — All Rights Reserved.</p>
+  </footer>
 </div>
-
