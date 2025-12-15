@@ -237,7 +237,7 @@ blockquote {
   </blockquote>
 </div>
 
-<!-- ================= RELATED PROJECTS (HOMEPAGE STYLE) ================= -->
+<!-- ================= RELATED PROJECTS (HOMEPAGE STYLE - FINAL) ================= -->
 <style>
 .related-projects {
   max-width: 1200px;
@@ -245,6 +245,7 @@ blockquote {
   padding: 0 20px;
 }
 
+/* TITLE */
 .related-title {
   font-size: 28px;
   font-weight: 700;
@@ -252,13 +253,14 @@ blockquote {
   color: #fff;
 }
 
+/* GRID */
 .related-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
-/* CARD */
+/* CARD BASE */
 .related-card {
   position: relative;
   height: 220px;
@@ -266,28 +268,44 @@ blockquote {
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  text-decoration: none;
+  cursor: pointer;
+
   box-shadow: 0 12px 30px rgba(0,0,0,.45);
-  transition: transform .4s ease;
+  transition: 
+    transform .45s ease,
+    box-shadow .45s ease;
 }
 
+/* HOVER LIFT + GLOW */
 .related-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
+  box-shadow:
+    0 0 18px rgba(111,120,255,.45),
+    0 0 35px rgba(164,49,255,.35);
 }
 
-/* DARK OVERLAY */
+/* GRADIENT OVERLAY */
 .related-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0,0,0,.65),
-    rgba(0,0,0,.25)
-  );
   z-index: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(25,118,255,.35),
+    rgba(164,49,255,.15),
+    rgba(0,0,0,.75)
+  );
+  opacity: .45;
+  transition: opacity .45s ease;
 }
 
-/* CONTENT */
+.related-card:hover::before {
+  opacity: .85;
+}
+
+/* CONTENT WRAPPER */
 .related-content {
   position: relative;
   z-index: 2;
@@ -296,19 +314,41 @@ blockquote {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  transform: translateY(18px);
+  transition: transform .45s ease;
 }
 
+.related-card:hover .related-content {
+  transform: translateY(0);
+}
+
+/* TITLE */
 .related-content h3 {
   font-size: 26px;
   font-weight: 800;
   letter-spacing: 1px;
   margin: 0 0 10px;
   text-transform: uppercase;
+  color: #fff;
+  opacity: .85;
+  transition: opacity .35s ease;
 }
 
+.related-card:hover h3 {
+  opacity: 1;
+}
+
+/* SUBTITLE */
 .related-content span {
   font-size: 13px;
-  opacity: .8;
+  color: #e0e0ff;
+  opacity: 0;
+  transition: opacity .45s ease;
+}
+
+.related-card:hover span {
+  opacity: .9;
 }
 
 /* RESPONSIVE */
@@ -321,7 +361,6 @@ blockquote {
 
 <section class="related-projects">
   <div class="related-title">Related Projects</div>
-
   <div class="related-row">
     <!-- CARD 1 -->
     <a href="{{ site.baseurl }}/projects/anzsco-scraping"
@@ -350,6 +389,5 @@ blockquote {
         <span>IT Job Market Visualization</span>
       </div>
     </a>
-
   </div>
 </section>
