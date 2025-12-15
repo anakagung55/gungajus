@@ -72,7 +72,56 @@ for (let i = 0; i < 90; i++) {
 })();
 </script>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ================= NAVBAR (SAMA HOMEPAGE) ================= -->
+<style>
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 14px 0;
+  transition: background .35s ease, box-shadow .35s ease;
+  backdrop-filter: blur(10px);
+}
+.navbar:not(.scrolled) {
+  background: rgba(0,0,0,.25);
+}
+.navbar.scrolled {
+  background: linear-gradient(135deg,#1976ff55,#a431ff55);
+  box-shadow: 0 0 12px rgba(77,97,255,.6),
+              0 0 25px rgba(164,49,255,.4);
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-left {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.navbar-right {
+  display: flex;
+  gap: 24px;
+}
+.navbar-right a {
+  color: #fff !important;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 8px;
+  transition: .25s ease;
+}
+.navbar-right a:hover {
+  background: linear-gradient(135deg,#1976ff,#a431ff);
+}
+.header-offset { margin-top: 90px; }
+</style>
+
 <div class="navbar">
   <div class="nav-inner">
     <div class="navbar-left">Aju's Blog</div>
@@ -97,53 +146,50 @@ window.addEventListener("scroll", () => {
 <!-- ================= BLOG CONTENT ================= -->
 <style>
 .blog-wrap {
-  max-width: 880px;
+  max-width: 900px;
   margin: 60px auto;
-  padding: 0 20px;
+  padding: 40px;
+  background: rgba(30,34,40,.88);
+  border-radius: 18px;
+  color: #e5e5e5;
   line-height: 1.85;
+  box-shadow: 0 20px 40px rgba(0,0,0,.45);
+  backdrop-filter: blur(6px);
 }
-
-.blog-title {
+.blog-wrap h1 {
   font-size: 38px;
-  font-weight: 700;
-  margin-bottom: 6px;
+  color: #fff;
 }
-
 .blog-meta {
   font-size: 14px;
-  opacity: 0.7;
-  margin-bottom: 35px;
+  opacity: .7;
+  margin-bottom: 30px;
 }
-
 .blog-wrap h2 {
   margin-top: 45px;
   font-size: 26px;
+  color: #fff;
 }
-
-.blog-wrap ul,
-.blog-wrap ol {
-  margin-left: 22px;
+.blog-wrap p,
+.blog-wrap li {
+  color: #e0e0e0;
 }
-
-.blog-wrap p {
-  margin: 16px 0;
-}
-
 blockquote {
   margin: 40px 0;
-  padding: 22px;
-  background: #2a2f36;
+  padding: 20px 26px;
+  background: linear-gradient(135deg,#1f2a44,#2a2f36);
   border-left: 4px solid #6f78ff;
-  border-radius: 10px;
-  font-style: italic;
+  border-radius: 12px;
+  color: #dbe2ff;
 }
 </style>
 
 <div class="blog-wrap">
-  <h1 class="blog-title">Providers Scraping System</h1>
-  <div class="blog-meta">
-    Scraping • 5 min read • 2025
-  </div>
+  <h1>Providers Scraping System</h1>
+  <div class="blog-meta">Scraping • 5 min read • 2025</div>
+
+  <img src="{{ site.baseurl }}/assets/img/providers-thumb.jpg"
+       style="width:100%;border-radius:14px;margin:30px 0;">
 
   <p>
     Providers Scraping System merupakan sistem automasi pengambilan data universitas
@@ -155,10 +201,9 @@ blockquote {
 
   <h2>Latar Belakang</h2>
   <p>
-    Proses pengumpulan data universitas secara manual membutuhkan waktu yang lama
-    dan berisiko terhadap kesalahan pencatatan. Informasi seperti nama institusi,
-    lokasi, CRICOS code, serta daftar program studi sering tersebar
-    di berbagai halaman website.
+    Pengumpulan data universitas secara manual membutuhkan waktu yang lama
+    serta berisiko terhadap kesalahan pencatatan. Informasi seperti nama institusi,
+    lokasi, CRICOS code, dan daftar program studi sering tersebar di berbagai halaman website.
   </p>
 
   <h2>Tujuan Pengembangan</h2>
@@ -169,13 +214,14 @@ blockquote {
     <li>Mendukung pengambilan keputusan berbasis data</li>
   </ul>
 
-  <h2>Arsitektur Sistem</h2>
-  <ol>
-    <li>Data Fetching – pengambilan halaman website</li>
-    <li>HTML Parsing – ekstraksi elemen data penting</li>
-    <li>Data Cleaning – normalisasi dan validasi data</li>
-    <li>Database Storage – penyimpanan ke MySQL</li>
-  </ol>
+  <h2>Workflow Sistem</h2>
+  <img src="{{ site.baseurl }}/assets/img/providers-flow.jpg"
+       style="width:100%;border-radius:14px;margin:20px 0;">
+
+  <p>
+    Sistem bekerja secara berurutan mulai dari pengambilan halaman website,
+    parsing HTML, pembersihan data, hingga penyimpanan ke database MySQL.
+  </p>
 
   <h2>Teknologi yang Digunakan</h2>
   <ul>
@@ -186,8 +232,8 @@ blockquote {
   </ul>
 
   <blockquote>
-    Sistem ini menjadi fondasi awal dalam pengembangan pipeline
-    data pendidikan internasional di Interlace Studies Bali.
+    Sistem ini menjadi fondasi awal dalam pengembangan pipeline data
+    pendidikan internasional di Interlace Studies Bali.
   </blockquote>
 </div>
 
