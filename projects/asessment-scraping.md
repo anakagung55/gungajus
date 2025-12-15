@@ -7,11 +7,96 @@ tools: Python, BeautifulSoup, SQL
 year: 2025
 ---
 
+<!-- ================= FORCE TRANSPARENT LAYOUT ================= -->
+<style>
+html, body {
+  background: transparent !important;
+  overflow-x: hidden;
+}
+
+/* Override wrapper bawaan Jekyll / theme */
+.page-content,
+.main-content,
+.container,
+.wrapper,
+#content {
+  background: transparent !important;
+}
+
+/* Particle layer */
+#ai-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -5;
+  background: radial-gradient(circle at center, #0a0a0a, #050505);
+}
+#ai-bg canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Pastikan konten di atas particle */
+.blog-wrap,
+.related-projects {
+  position: relative;
+  z-index: 2;
+}
+</style>
+
+<!-- ================= AI PARTICLE BACKGROUND ================= -->
+<div id="ai-bg">
+  <canvas id="particles"></canvas>
+</div>
+
+<script>
+const canvas = document.getElementById("particles");
+const ctx = canvas.getContext("2d");
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+const particles = [];
+const COUNT = 90;
+
+for (let i = 0; i < COUNT; i++) {
+  particles.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 2 + 1,
+    dx: (Math.random() - 0.5) * 0.6,
+    dy: (Math.random() - 0.5) * 0.6
+  });
+}
+
+(function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(180,180,255,0.85)";
+    ctx.shadowBlur = 15;
+    ctx.shadowColor = "#6f78ff";
+    ctx.fill();
+
+    p.x += p.dx;
+    p.y += p.dy;
+    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+  });
+  requestAnimationFrame(animate);
+})();
+</script>
+
 <!-- ================= BLOG CONTENT ================= -->
 <style>
 .blog-wrap {
   max-width: 900px;
-  margin: 60px auto;
+  margin: 80px auto;
   padding: 40px;
   background: rgba(30,34,40,.88);
   border-radius: 18px;
@@ -57,9 +142,8 @@ blockquote {
 
   <p>
     <strong>Skill Assessment Scraping Project</strong> merupakan sistem automasi
-    untuk mengumpulkan data dari berbagai
-    <em>Assessment Authorities</em> di Australia yang berperan dalam proses
-    <strong>penilaian kompetensi tenaga kerja migran</strong>.
+    untuk mengumpulkan data dari berbagai <em>Assessment Authorities</em> di Australia
+    yang berperan dalam proses <strong>penilaian kompetensi tenaga kerja migran</strong>.
     Proyek ini dikembangkan sebagai bagian dari pipeline data engineering
     selama program magang di <strong>Interlace Studies Bali</strong>.
   </p>
@@ -69,23 +153,22 @@ blockquote {
     Setiap jalur migrasi berbasis skill di Australia mensyaratkan
     <em>skill assessment</em> dari lembaga resmi sesuai bidang pekerjaan
     (misalnya ACS, Engineers Australia, VETASSESS, dan lain-lain).
-    Informasi penting seperti <strong>occupation list</strong>,
-    <strong>assessment requirement</strong>,
-    <strong>processing time</strong>, dan <strong>biaya</strong>
-    tersebar di berbagai website lembaga dan tidak memiliki format data yang seragam.
+    Informasi penting seperti occupation list, assessment requirement,
+    processing time, dan biaya tersebar di berbagai website
+    dan tidak memiliki format data yang seragam.
   </p>
 
   <p>
     Kondisi ini menyulitkan proses analisis kebutuhan migrasi,
-    terutama ketika data tersebut harus dikombinasikan
-    dengan dataset lain seperti <em>ANZSCO</em> dan <em>job market data</em>.
+    terutama ketika data harus dikombinasikan dengan dataset lain
+    seperti <em>ANZSCO</em> dan <em>job market data</em>.
   </p>
 
   <h2>Tujuan Pengembangan</h2>
   <ul>
     <li>Mengotomatisasi pengambilan data dari berbagai Skill Assessment Authorities</li>
-    <li>Menyatukan data requirement dan occupation mapping dalam format terstruktur</li>
-    <li>Mengurangi ketergantungan pada pencarian manual website</li>
+    <li>Menyatukan requirement dan occupation mapping secara terstruktur</li>
+    <li>Mengurangi ketergantungan pada pencarian manual</li>
     <li>Mendukung analisis jalur migrasi berbasis data</li>
   </ul>
 
@@ -94,16 +177,9 @@ blockquote {
        style="width:100%;border-radius:14px;margin:20px 0;">
 
   <p>
-    Alur sistem dimulai dari pengambilan halaman resmi lembaga assessment,
-    dilanjutkan dengan proses parsing HTML untuk mengekstrak
-    informasi penting seperti daftar occupation, dokumen pendukung,
-    dan biaya assessment.
-  </p>
-
-  <p>
-    Data yang diperoleh kemudian melalui tahap normalisasi
-    agar dapat diintegrasikan dengan dataset lain,
-    sebelum akhirnya disimpan ke dalam database MySQL.
+    Sistem bekerja mulai dari pengambilan halaman resmi lembaga assessment,
+    parsing HTML, normalisasi data, hingga penyimpanan
+    ke dalam database MySQL untuk integrasi lanjutan.
   </p>
 
   <h2>Teknologi yang Digunakan</h2>
@@ -117,8 +193,7 @@ blockquote {
 
   <blockquote>
     Skill Assessment Scraping menjadi komponen penting
-    dalam membangun ekosistem data migrasi yang terintegrasi,
-    khususnya untuk analisis jalur kerja dan kebutuhan kompetensi.
+    dalam membangun ekosistem data migrasi yang terintegrasi.
   </blockquote>
 </div>
 
@@ -243,4 +318,3 @@ blockquote {
     </a>
   </div>
 </section>
-
