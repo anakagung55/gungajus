@@ -1,13 +1,77 @@
----
----
 layout: default
 title: "Providers Scraping System"
 permalink: /projects/providers-scraping
----
 category: Data Engineering
-tools: Python, BeautifulSoup, SQL, Retry
+tools: Python, BeautifulSoup, SQL
 year: 2025
 ---
+
+<!-- ================= AI PARTICLE BACKGROUND ================= -->
+<style>
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+#ai-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at center, #0a0a0a, #050505);
+}
+#ai-bg canvas { width: 100%; height: 100%; display: block; }
+</style>
+
+<div id="ai-bg">
+  <canvas id="particles"></canvas>
+</div>
+
+<script>
+const canvas = document.getElementById("particles");
+const ctx = canvas.getContext("2d");
+function resize(){ canvas.width=innerWidth; canvas.height=innerHeight; }
+resize(); addEventListener("resize", resize);
+
+const particles=[];
+for(let i=0;i<90;i++){
+  particles.push({
+    x:Math.random()*canvas.width,
+    y:Math.random()*canvas.height,
+    r:Math.random()*2+1,
+    dx:(Math.random()-.5)*.6,
+    dy:(Math.random()-.5)*.6
+  });
+}
+(function animate(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  particles.forEach(p=>{
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fillStyle="rgba(180,180,255,.8)";
+    ctx.shadowBlur=15;
+    ctx.shadowColor="#6f78ff";
+    ctx.fill();
+    p.x+=p.dx; p.y+=p.dy;
+    if(p.x<0||p.x>canvas.width)p.dx*=-1;
+    if(p.y<0||p.y>canvas.height)p.dy*=-1;
+  });
+  requestAnimationFrame(animate);
+})();
+</script>
+
+<!-- ================= NAVBAR ================= -->
+<div class="navbar">
+  <div class="nav-inner">
+    <div class="navbar-left">Aju's Blog</div>
+    <div class="navbar-right">
+      <a href="{{ site.baseurl }}/">Blog</a>
+      <a href="{{ site.baseurl }}/galeri">Galeri</a>
+      <a href="{{ site.baseurl }}/tentang">Tentang</a>
+      <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
+    </div>
+  </div>
+</div>
+<div class="header-offset"></div>
 
 <style>
 .blog-article {
@@ -143,4 +207,23 @@ blockquote {
     </blockquote>
   </article>
 
+</div>
+
+<!-- ================= FOOTER ================= -->
+<div class="footer-bg">
+  <svg class="footer-wave" viewBox="0 0 1440 500" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#1976ff"/>
+        <stop offset="50%" stop-color="#6a5bff"/>
+        <stop offset="100%" stop-color="#a431ff"/>
+      </linearGradient>
+    </defs>
+    <path d="M0,150 C300,250 600,50 900,150 C1200,250 1500,70 1800,150 L1800,500 L0,500 Z"></path>
+  </svg>
+
+  <footer class="footer">
+    <h2>Aju's Blog</h2>
+    <p>Built with ❤️ using Jekyll • 2025</p>
+  </footer>
 </div>
