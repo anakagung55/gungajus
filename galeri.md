@@ -313,8 +313,8 @@ window.addEventListener("scroll",()=>{
       data-title="Presentasi project ke Pihak Interlace Australia"
       data-desc="Momen tim IT Interlace Bali sharing finalproject yang sudah dikerjakan selama milestone berlangsung,dan diterima positif dengan pihak Interlace Australia"
       data-date="November 29, 2025"
-      data-img="{{ site.baseurl }}/assets/img/header10.jpg">
-      <img src="{{ site.baseurl }}/assets/img/header10.jpg">
+      data-img="{{ site.baseurl }}/assets/img/header11.jpg">
+      <img src="{{ site.baseurl }}/assets/img/header11.jpg">
       <div class="gallery-overlay">
         <h3>Presentasi project ke Pihak Interlace Australia</h3>
       </div>
@@ -323,8 +323,8 @@ window.addEventListener("scroll",()=>{
       data-title="Momen Kebersamaan Interlace"
       data-desc="Momen kebersamaan dalam rangka perayaan setelah sharing final project ke pihak Interlace Australia."
       data-date="November 29, 2025"
-      data-img="{{ site.baseurl }}/assets/img/header11.jpg">
-      <img src="{{ site.baseurl }}/assets/img/header11.jpg">
+      data-img="{{ site.baseurl }}/assets/img/header10.jpg">
+      <img src="{{ site.baseurl }}/assets/img/header10.jpg">
       <div class="gallery-overlay">
         <h3>Momen Kebersamaan Interlace</h3>
       </div>
