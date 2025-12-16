@@ -271,12 +271,12 @@ window.addEventListener("scroll",()=>{
     </div>
     <div class="gallery-item"
       data-title="Kunjungan Kampus Australia"
-      data-desc="Kunjungan dari pihak kampus yang kerja sama dengan Interlace,mereka memaparkan bagaimana kondisi kampus mereka disana dan sharing tentang kehidupan di Australia"
+      data-desc="Kunjungan dari pihak kampus yang bekerja sama dengan Interlace, mereka memaparkan bagaimana kondisi kampus di Australia dan sharing tentang kehidupan di Australia."
       data-date="September 30, 2025"
       data-img="{{ site.baseurl }}/assets/img/header6.jpg">
       <img src="{{ site.baseurl }}/assets/img/header6.jpg">
       <div class="gallery-overlay">
-        <h3>Kunjungan Kampus Australia/h3>
+        <h3>Kunjungan Kampus Australia</h3>
       </div>
     </div>
     <div class="gallery-item"
@@ -311,12 +311,12 @@ window.addEventListener("scroll",()=>{
     </div>
     <div class="gallery-item"
       data-title="Momen Kebersamaan Interlace"
-      data-desc="Momen kebersamaan dalam rangka perayaan setelah sharing final project ke pihak Interlace Australia,perayaan ini dirayakan dengan membeli pizza untuk semua kru"
+      data-desc="Momen kebersamaan dalam rangka perayaan setelah sharing final project ke pihak Interlace Australia."
       data-date="November 29, 2025"
       data-img="{{ site.baseurl }}/assets/img/header11.jpg">
       <img src="{{ site.baseurl }}/assets/img/header11.jpg">
       <div class="gallery-overlay">
-        <h3>Momen Kebersamaan Interlac</h3>
+        <h3>Momen Kebersamaan Interlace</h3>
       </div>
     </div>
     <div class="gallery-item"
