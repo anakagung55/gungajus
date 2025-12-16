@@ -201,7 +201,7 @@ blockquote {
   </ul>
 
   <h2>Workflow Sistem</h2>
-  <img src="{{ site.baseurl }}/assets/img/jobportal-flow.jpg"
+  <img src="{{ site.baseurl }}/assets/img/itjobs-flow.jpg"
        style="width:100%;border-radius:14px;margin:20px 0;">
 
   <h2>Teknologi yang Digunakan</h2>
