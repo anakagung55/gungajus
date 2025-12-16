@@ -316,7 +316,7 @@ window.addEventListener("scroll",()=>{
       data-img="{{ site.baseurl }}/assets/img/header11.jpg">
       <img src="{{ site.baseurl }}/assets/img/header11.jpg">
       <div class="gallery-overlay">
-        <h3>"Momen Kebersamaan Interlac</h3>
+        <h3>Momen Kebersamaan Interlac</h3>
       </div>
     </div>
     <div class="gallery-item"
