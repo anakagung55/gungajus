@@ -186,7 +186,7 @@ blockquote {
   <div class="blog-meta">Data Analysis • 5 min read • 2025</div>
 
   <img src="{{ site.baseurl }}/assets/img/itjobs-viz-thumb.jpg"
-       style="width:100%;border-radius:14px;margin:30px 0;">
+       style="max-width: 600px;border-radius:14px;margin:30px auto;display: block;">
 
   <p>
     <strong>IT Job Visualization Project</strong> merupakan proyek analisis dan
@@ -213,7 +213,7 @@ blockquote {
 
   <h2>Workflow Sistem</h2>
   <img src="{{ site.baseurl }}/assets/img/itjobs-viz-flow.jpg"
-       style="width:100%;border-radius:14px;margin:20px 0;">
+       style="max-width: 600px;border-radius:14px;margin:30px auto;display: block;">
 
   <h2>Teknologi yang Digunakan</h2>
   <ul>
