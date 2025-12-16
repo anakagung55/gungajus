@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "IT Job Portal Scraping Project"
-permalink: /projects/jobportal-scraping
+permalink: /projects/scraping-job-portal
 category: Data Engineering
 tools: Python, BeautifulSoup, SQL
 year: 2025
