@@ -936,7 +936,7 @@ footer.footer {
           <div class="list-desc">
             Scraping data job yang ada di Australia pada job portal platform berbasis online...
           </div>
-          <a class="read-more-btn" href="{{ site.baseurl }}/projects/jobportal-scraping">
+          <a class="read-more-btn" href="{{ site.baseurl }}/projects/scraping-job-portal">
             BACA SELENGKAPNYA
           </a>
           <div class="comment-toggle">💬 Posting Komentar</div>
@@ -950,7 +950,7 @@ footer.footer {
         </div>
       </div>
       <div class="post-card list-item">
-        <img src="{{ site.baseurl }}/assets/img/anzsco-viz-thumb" class="list-thumb">
+        <img src="{{ site.baseurl }}/assets/img/anzsco-viz-thumb.jpg" class="list-thumb">
         <div class="list-content">
           <h2 class="list-title">ANZSCO Data Visualization</h2>
           <div class="list-date">– Desember 13, 2025</div>
