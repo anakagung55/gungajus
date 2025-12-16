@@ -1,35 +1,259 @@
 ---
-title: "IT Job Portal Scraping System"
 layout: default
+title: "IT Job Portal Scraping Project"
+permalink: /projects/jobportal-scraping
+category: Data Engineering
+tools: Python, BeautifulSoup, SQL
+year: 2025
 ---
 
-# 💼 IT Job Portal Scraping System
-> _Scraping data lowongan pekerjaan IT dari berbagai job portal untuk menganalisis tren demand industri teknologi._
+<!-- ================= AI PARTICLE BACKGROUND ================= -->
+<style>
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+#ai-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at center, #0a0a0a, #050505);
+}
+#ai-bg canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+</style>
 
-Proyek ini saya kerjakan untuk mengumpulkan data lowongan kerja IT dari berbagai sumber, kemudian menyiapkannya untuk analisis seperti visualisasi tren, peta skill, dan popularitas role pekerjaan.
+<div id="ai-bg">
+  <canvas id="particles"></canvas>
+</div>
 
----
+<script>
+const canvas = document.getElementById("particles");
+const ctx = canvas.getContext("2d");
 
-## 🎯 Objective
-- Mengambil data lowongan IT dari beberapa job portal secara otomatis.
-- Membersihkan data agar siap dipakai untuk analisis dan visualisasi.
-- Mengidentifikasi role IT yang paling banyak dicari.
-- Menyiapkan dataset untuk proyek visualisasi berikutnya.
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener("resize", resize);
 
----
+const particles = [];
+for (let i = 0; i < 90; i++) {
+  particles.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 2 + 1,
+    dx: (Math.random() - 0.5) * 0.6,
+    dy: (Math.random() - 0.5) * 0.6
+  });
+}
 
-## 📌 Data yang Dikumpulkan
-Dari setiap job portal, scraper mengambil:
+(function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(180,180,255,0.8)";
+    ctx.shadowBlur = 15;
+    ctx.shadowColor = "#6f78ff";
+    ctx.fill();
+    p.x += p.dx;
+    p.y += p.dy;
+    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+  });
+  requestAnimationFrame(animate);
+})();
+</script>
 
-- Judul posisi  
-- Perusahaan  
-- Lokasi  
-- Tanggal posting  
-- Deskripsi singkat  
-- Skill yang dibutuhkan  
-- Link ke postingan asli  
-- Kategori pekerjaan  
+<!-- ================= NAVBAR ================= -->
+<style>
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 14px 0;
+  backdrop-filter: blur(10px);
+  transition: background .35s ease, box-shadow .35s ease;
+}
+.navbar:not(.scrolled) {
+  background: rgba(0,0,0,.25);
+}
+.navbar.scrolled {
+  background: linear-gradient(135deg,#1976ff55,#a431ff55);
+  box-shadow: 0 0 12px rgba(77,97,255,.6),
+              0 0 25px rgba(164,49,255,.4);
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-left {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.navbar-right {
+  display: flex;
+  gap: 24px;
+}
+.navbar-right a {
+  color: #fff !important;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 8px;
+  transition: .25s ease;
+}
+.navbar-right a:hover {
+  background: linear-gradient(135deg,#1976ff,#a431ff);
+}
+.header-offset { margin-top: 90px; }
+</style>
 
----
+<div class="navbar">
+  <div class="nav-inner">
+    <div class="navbar-left">Aju's Blog</div>
+    <div class="navbar-right">
+      <a href="{{ site.baseurl }}/">Blog</a>
+      <a href="{{ site.baseurl }}/galeri">Galeri</a>
+      <a href="{{ site.baseurl }}/tentang">Tentang</a>
+      <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
+    </div>
+  </div>
+</div>
 
+<div class="header-offset"></div>
 
+<script>
+window.addEventListener("scroll", () => {
+  document.querySelector(".navbar")
+    .classList.toggle("scrolled", window.scrollY > 20);
+});
+</script>
+
+<!-- ================= BLOG CONTENT ================= -->
+<style>
+.blog-wrap {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: rgba(30,34,40,.88);
+  border-radius: 18px;
+  color: #e5e5e5;
+  line-height: 1.85;
+  box-shadow: 0 20px 40px rgba(0,0,0,.45);
+  backdrop-filter: blur(6px);
+}
+.blog-wrap h1 { font-size: 38px; color: #fff; }
+.blog-meta { font-size: 14px; opacity: .7; margin-bottom: 30px; }
+.blog-wrap h2 { margin-top: 45px; font-size: 26px; color: #fff; }
+.blog-wrap p, .blog-wrap li { color: #e0e0e0; }
+blockquote {
+  margin: 40px 0;
+  padding: 20px 26px;
+  background: linear-gradient(135deg,#1f2a44,#2a2f36);
+  border-left: 4px solid #6f78ff;
+  border-radius: 12px;
+  color: #dbe2ff;
+}
+</style>
+
+<div class="blog-wrap">
+  <h1>IT Job Portal Scraping Project</h1>
+  <div class="blog-meta">Scraping • 5 min read • 2025</div>
+
+  <img src="{{ site.baseurl }}/assets/img/jobportal-thumb.jpg"
+       style="width:100%;border-radius:14px;margin:30px 0;">
+
+  <p>
+    <strong>IT Job Portal Scraping Project</strong> merupakan sistem automasi
+    pengambilan data lowongan pekerjaan IT di Australia dari berbagai
+    <em>online job portals</em>.
+    Proyek ini bertujuan membangun dataset terstruktur yang dapat digunakan
+    untuk analisis kebutuhan pasar kerja dan tren teknologi.
+  </p>
+
+  <h2>Latar Belakang</h2>
+  <p>
+    Informasi lowongan kerja IT tersebar di berbagai platform
+    seperti job portal komersial dan situs rekrutmen perusahaan.
+    Setiap platform memiliki struktur data berbeda, mulai dari
+    penamaan role, deskripsi pekerjaan, hingga requirement skill.
+  </p>
+
+  <h2>Tujuan Pengembangan</h2>
+  <ul>
+    <li>Mengotomatisasi pengambilan data lowongan pekerjaan IT</li>
+    <li>Menyatukan data dari berbagai job portal</li>
+    <li>Menyediakan dataset untuk analisis tren pasar kerja</li>
+    <li>Mendukung visualisasi dan pengambilan keputusan berbasis data</li>
+  </ul>
+
+  <h2>Workflow Sistem</h2>
+  <img src="{{ site.baseurl }}/assets/img/jobportal-flow.jpg"
+       style="width:100%;border-radius:14px;margin:20px 0;">
+
+  <h2>Teknologi yang Digunakan</h2>
+  <ul>
+    <li>Python (Requests, BeautifulSoup)</li>
+    <li>Text Cleaning & Normalization</li>
+    <li>MySQL Database</li>
+    <li>Jupyter Notebook</li>
+    <li>Git & GitHub</li>
+  </ul>
+
+  <blockquote>
+    Dataset hasil scraping menjadi dasar utama
+    untuk analisis tren IT Job Market
+    dan visualisasi kebutuhan skill di Australia.
+  </blockquote>
+</div>
+
+<!-- ================= RELATED PROJECTS ================= -->
+<section class="related-projects">
+  <div class="related-title">Related Projects</div>
+
+  <div class="related-row">
+    <a href="{{ site.baseurl }}/projects/providers-scraping"
+       class="related-card"
+       style="background-image:url('{{ site.baseurl }}/assets/img/providers-thumb.jpg')">
+      <div class="related-overlay"></div>
+      <div class="related-content">
+        <h3>Providers Scraping</h3>
+        <p>University & Course Data Automation</p>
+        <span class="related-btn">Baca selengkapnya →</span>
+      </div>
+    </a>
+    <a href="{{ site.baseurl }}/projects/anzsco-scraping"
+       class="related-card"
+       style="background-image:url('{{ site.baseurl }}/assets/img/anzsco-thumb.jpg')">
+      <div class="related-overlay"></div>
+      <div class="related-content">
+        <h3>ANZSCO Scraping</h3>
+        <p>Occupation Classification Dataset</p>
+        <span class="related-btn">Baca selengkapnya →</span>
+      </div>
+    </a>
+    <a href="{{ site.baseurl }}/projects/itjobs-viz"
+       class="related-card"
+       style="background-image:url('{{ site.baseurl }}/assets/img/itjobs-viz-thumb.jpg')">
+      <div class="related-overlay"></div>
+      <div class="related-content">
+        <h3>Data Visualization</h3>
+        <p>IT Job Market Analysis</p>
+        <span class="related-btn">Baca selengkapnya →</span>
+      </div>
+    </a>
+  </div>
+</section>
