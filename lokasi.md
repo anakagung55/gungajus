@@ -219,7 +219,7 @@ window.addEventListener("scroll", () => {
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
     <div class="address">
-      📍 <strong><a href= "https://www.interlacestudies.id/">Interlace Studies Bali</strong><br>
+      📍 <strong>Interlace Studies Bali</strong><br>
       Denpasar, Bali, Indonesia
     </div>
   </div>
