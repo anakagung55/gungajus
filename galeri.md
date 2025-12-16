@@ -289,6 +289,56 @@ window.addEventListener("scroll",()=>{
         <h3>Hari Pertama Bootcamp di Interlace</h3>
       </div>
     </div>
+    <div class="gallery-item"
+      data-title="Hari Pertama Bootcamp di Interlace"
+      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
+      data-date="June 29, 2025"
+      data-img="{{ site.baseurl }}/assets/img/header8.jpg">
+      <img src="{{ site.baseurl }}/assets/img/header8.jpg">
+      <div class="gallery-overlay">
+        <h3>Hari Pertama Bootcamp di Interlace</h3>
+      </div>
+    </div>
+    <div class="gallery-item"
+      data-title="Hari Pertama Bootcamp di Interlace"
+      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
+      data-date="June 29, 2025"
+      data-img="{{ site.baseurl }}/assets/img/header9.jpg">
+      <img src="{{ site.baseurl }}/assets/img/header9.jpg">
+      <div class="gallery-overlay">
+        <h3>Hari Pertama Bootcamp di Interlace</h3>
+      </div>
+    </div>
+    <div class="gallery-item"
+      data-title="Hari Pertama Bootcamp di Interlace"
+      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
+      data-date="June 29, 2025"
+      data-img="{{ site.baseurl }}/assets/img/header10.jpg">
+      <img src="{{ site.baseurl }}/assets/img/header10.jpg">
+      <div class="gallery-overlay">
+        <h3>Hari Pertama Bootcamp di Interlace</h3>
+      </div>
+    </div>
+    <div class="gallery-item"
+      data-title="Hari Pertama Bootcamp di Interlace"
+      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
+      data-date="June 29, 2025"
+      data-img="{{ site.baseurl }}/assets/img/header11.jpg">
+      <img src="{{ site.baseurl }}/assets/img/header11.jpg">
+      <div class="gallery-overlay">
+        <h3>Hari Pertama Bootcamp di Interlace</h3>
+      </div>
+    </div>
+    <div class="gallery-item"
+      data-title="Hari Pertama Bootcamp di Interlace"
+      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
+      data-date="June 29, 2025"
+      data-img="{{ site.baseurl }}/assets/img/header12.jpg">
+      <img src="{{ site.baseurl }}/assets/img/header12.jpg">
+      <div class="gallery-overlay">
+        <h3>Hari Pertama Bootcamp di Interlace</h3>
+      </div>
+    </div>
   </div>
 </section>
 <style>
