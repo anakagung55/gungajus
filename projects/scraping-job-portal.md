@@ -181,7 +181,7 @@ blockquote {
     pengambilan data lowongan pekerjaan IT di Australia dari berbagai
     <em>online job portals</em>.
     Proyek ini bertujuan membangun dataset terstruktur yang dapat digunakan
-    untuk analisis kebutuhan pasar kerja dan tren teknologi.
+    untuk analisis kebutuhan pasar kerja dan tren teknologi
   </p>
 
   <h2>Latar Belakang</h2>
