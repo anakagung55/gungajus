@@ -92,7 +92,7 @@ border-left:4px solid #6f78ff;border-radius:12px}
 <div class="blog-meta">Data Visualization • 5 min read • 2025</div>
 
 <img src="{{ site.baseurl }}/assets/img/anzsco-viz-thumb.jpg"
-style="width:100%;border-radius:14px;margin:30px 0;">
+style="max-width: 600px;border-radius:14px;margin:30px auto;display: block;">
 
 <p>
 <strong>ANZSCO Data Visualization Project</strong> merupakan proyek visualisasi
@@ -119,7 +119,7 @@ konsultan migrasi, analis data, maupun pencari kerja.
 
 <h2>Workflow Sistem</h2>
 <img src="{{ site.baseurl }}/assets/img/anzsco-viz-flow.jpg"
-style="width:100%;border-radius:14px;margin:20px 0;">
+style="max-width: 600px;border-radius:14px;margin:30px auto;display: block;">
 
 <p>
 Proses dimulai dari pengolahan dataset ANZSCO hasil scraping,
