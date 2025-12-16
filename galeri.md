@@ -222,7 +222,7 @@ window.addEventListener("scroll",()=>{
     <div class="gallery-item"
       data-title="Hari Pertama Bootcamp di Interlace"
       data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
-      data-date="June 29, 2025"
+      data-date="11 Agustus, 2025"
       data-img="{{ site.baseurl }}/assets/img/header1.jpg">
       <img src="{{ site.baseurl }}/assets/img/header1.jpg">
       <div class="gallery-overlay">
@@ -230,113 +230,113 @@ window.addEventListener("scroll",()=>{
       </div>
     </div>
     <div class="gallery-item"
-      data-title="Hari Pertama Bootcamp di Interlace"
-      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
-      data-date="June 29, 2025"
+      data-title="Hari Kedua Bootcamp di Interlace"
+      data-desc="Bootcamp tentang overview bagaimana Kondisi geografis di Australia,Pekerjaan apa yang ada,Career path jika mau ke Austalia,sesi ini sangat mengesankan,bisa menambah wawasan baru tentang Australia"
+      data-date="Agustus 12, 2025"
       data-img="{{ site.baseurl }}/assets/img/header2.jpg">
       <img src="{{ site.baseurl }}/assets/img/header2.jpg">
       <div class="gallery-overlay">
-        <h3>Hari Pertama Bootcamp di Interlace</h3>
+        <h3>Hari Kedua Bootcamp di Interlace</h3>
       </div>
     </div>
     <div class="gallery-item"
-      data-title="Hari Pertama Bootcamp di Interlace"
-      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
-      data-date="June 29, 2025"
+      data-title="Hari Kelima Bootcamp di Interlace"
+      data-desc="Pengenalan dengan pihak kampus di Australia yang bekerja sama dengan Interlace,mendapat insight bagaimana cara dari scrath,apply sampai mendapat offering letter dari pihak kampus"
+      data-date="Agustus 13, 2025"
       data-img="{{ site.baseurl }}/assets/img/header3.jpg">
       <img src="{{ site.baseurl }}/assets/img/header3.jpg">
       <div class="gallery-overlay">
-        <h3>Hari Pertama Bootcamp di Interlace</h3>
+        <h3>Hari Kelima Bootcamp di Interlace</h3>
       </div>
     </div>
     <div class="gallery-item"
-      data-title="Hari Pertama Bootcamp di Interlace"
-      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
-      data-date="June 29, 2025"
+      data-title="Hari Ketujuh Bootcamp di Interlace"
+      data-desc="Pengenalan dengan pihak kampus di Australia yang bekerja sama dengan Interlace,mendapat insight bagaimana cara dari scrath,apply sampai mendapat offering letter dari pihak kampus"
+      data-date="Agustus 14, 2025"
       data-img="{{ site.baseurl }}/assets/img/header4.jpg">
       <img src="{{ site.baseurl }}/assets/img/header4.jpg">
       <div class="gallery-overlay">
-        <h3>Hari Pertama Bootcamp di Interlace</h3>
+        <h3>Hari Ketujuh Bootcamp di Interlace</h3>
       </div>
     </div>
     <div class="gallery-item"
-      data-title="Hari Pertama Bootcamp di Interlace"
-      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
-      data-date="June 29, 2025"
+      data-title="Kunjungan Pertama Dosen Pembimbing ke lapangan"
+      data-desc="Di kunjungan pertama ini kami memaparkan apa saja yang kami kerjakan di Interlace ini,dan juga projek apa saja yang sedang digarap"
+      data-date="September 23, 2025"
       data-img="{{ site.baseurl }}/assets/img/header5.jpg">
       <img src="{{ site.baseurl }}/assets/img/header5.jpg">
       <div class="gallery-overlay">
-        <h3>Hari Pertama Bootcamp di Interlace</h3>
+        <h3>Kunjungan Pertama Dosen Pembimbing</h3>
       </div>
     </div>
     <div class="gallery-item"
-      data-title="Hari Pertama Bootcamp di Interlace"
-      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
-      data-date="June 29, 2025"
+      data-title="Kunjungan Kampus Australia"
+      data-desc="Kunjungan dari pihak kampus yang kerja sama dengan Interlace,mereka memaparkan bagaimana kondisi kampus mereka disana dan sharing tentang kehidupan di Australia"
+      data-date="September 30, 2025"
       data-img="{{ site.baseurl }}/assets/img/header6.jpg">
       <img src="{{ site.baseurl }}/assets/img/header6.jpg">
       <div class="gallery-overlay">
-        <h3>Hari Pertama Bootcamp di Interlace</h3>
+        <h3>Kunjungan Kampus Australia/h3>
       </div>
     </div>
     <div class="gallery-item"
-      data-title="Hari Pertama Bootcamp di Interlace"
-      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
-      data-date="June 29, 2025"
+      data-title="Kunjungan Bapak Kaprodi ke Interlace"
+      data-desc="Kunjungan bapak Kaprodi Ilmu Komputer ke Interlace membawakan semacam gift untuk pihak Interlace dan sharing terhadap kehidupan magang di Interlace"
+      data-date="November 2, 2025"
       data-img="{{ site.baseurl }}/assets/img/header7.jpg">
       <img src="{{ site.baseurl }}/assets/img/header7.jpg">
       <div class="gallery-overlay">
-        <h3>Hari Pertama Bootcamp di Interlace</h3>
+        <h3>Kunjungan Bapak Kaprodi ke Interlace</h3>
       </div>
     </div>
     <div class="gallery-item"
-      data-title="Hari Pertama Bootcamp di Interlace"
-      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
-      data-date="June 29, 2025"
+      data-title="Perayaan Graduation Senior Staff di Interlace"
+      data-desc="Momen kebersamaan untuk merayakan salah satu staff di Interlace"
+      data-date="November 12, 2025"
       data-img="{{ site.baseurl }}/assets/img/header8.jpg">
       <img src="{{ site.baseurl }}/assets/img/header8.jpg">
       <div class="gallery-overlay">
-        <h3>Hari Pertama Bootcamp di Interlace</h3>
+        <h3>Perayaan Graduation Senior Staff di Interlace</h3>
       </div>
     </div>
     <div class="gallery-item"
-      data-title="Hari Pertama Bootcamp di Interlace"
-      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
-      data-date="June 29, 2025"
+      data-title="Momen Daily Stand Up Meeting"
+      data-desc="Daily Stand Up meeting merupakan habbit kerja di Interlace yakni sharing progress project setiap hari di jam 9 pagi sebelum memulai pekerjaan"
+      data-date="September 28, 2025"
       data-img="{{ site.baseurl }}/assets/img/header9.jpg">
       <img src="{{ site.baseurl }}/assets/img/header9.jpg">
       <div class="gallery-overlay">
-        <h3>Hari Pertama Bootcamp di Interlace</h3>
+        <h3>Momen Daily Stand Up Meeting</h3>
       </div>
     </div>
     <div class="gallery-item"
-      data-title="Hari Pertama Bootcamp di Interlace"
-      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
-      data-date="June 29, 2025"
-      data-img="{{ site.baseurl }}/assets/img/header10.jpg">
-      <img src="{{ site.baseurl }}/assets/img/header10.jpg">
-      <div class="gallery-overlay">
-        <h3>Hari Pertama Bootcamp di Interlace</h3>
-      </div>
-    </div>
-    <div class="gallery-item"
-      data-title="Hari Pertama Bootcamp di Interlace"
-      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
-      data-date="June 29, 2025"
+      data-title="Momen Kebersamaan Interlace"
+      data-desc="Momen kebersamaan dalam rangka perayaan setelah sharing final project ke pihak Interlace Australia,perayaan ini dirayakan dengan membeli pizza untuk semua kru"
+      data-date="November 29, 2025"
       data-img="{{ site.baseurl }}/assets/img/header11.jpg">
       <img src="{{ site.baseurl }}/assets/img/header11.jpg">
       <div class="gallery-overlay">
-        <h3>Hari Pertama Bootcamp di Interlace</h3>
+        <h3>"Momen Kebersamaan Interlac</h3>
       </div>
     </div>
     <div class="gallery-item"
-      data-title="Hari Pertama Bootcamp di Interlace"
-      data-desc="Bootcamp perkenalan lingkungan kantor dan karyawan-karyawan yang ada di Interlace,sesi ini sangat mengesankan,bertemu dan berkenalan dengan orang-orang baru"
-      data-date="June 29, 2025"
+      data-title="Presentasi project ke Pihak Interlace Australia"
+      data-desc="Momen tim IT Interlace Bali sharing finalproject yang sudah dikerjakan selama milestone berlangsung,dan diterima positif dengan pihak Interlace Australia"
+      data-date="November 29, 2025"
+      data-img="{{ site.baseurl }}/assets/img/header10.jpg">
+      <img src="{{ site.baseurl }}/assets/img/header10.jpg">
+      <div class="gallery-overlay">
+        <h3>Presentasi project ke Pihak Interlace Australia</h3>
+      </div>
+    </div>
+    <div class="gallery-item"
+      data-title="Sharing Proggress dengan IT Team Australia"
+      data-desc="Mendiskusikan project yang sudah dan akan dilakukan bersama pihak IT Interlace Australia"
+      data-date="November 30, 2025"
       data-img="{{ site.baseurl }}/assets/img/header12.jpg">
       <img src="{{ site.baseurl }}/assets/img/header12.jpg">
       <div class="gallery-overlay">
-        <h3>Hari Pertama Bootcamp di Interlace</h3>
+        <h3>Sharing Proggress dengan IT Team Australia</h3>
       </div>
     </div>
   </div>
