@@ -174,7 +174,7 @@ blockquote {
   <div class="blog-meta">Scraping • 5 min read • 2025</div>
 
   <img src="{{ site.baseurl }}/assets/img/jobportal-thumb.jpg"
-       style="width:100%;border-radius:14px;margin:30px 0;">
+       style="max-width: 720px;;border-radius:14px;margin:30px 0;">
 
   <p>
     <strong>IT Job Portal Scraping Project</strong> merupakan sistem automasi
@@ -202,7 +202,7 @@ blockquote {
 
   <h2>Workflow Sistem</h2>
   <img src="{{ site.baseurl }}/assets/img/itjobs-flow.jpg"
-       style="width:100%;border-radius:14px;margin:20px 0;">
+       style="max-width: 720px;;border-radius:14px;margin:20px 0;">
 
   <h2>Teknologi yang Digunakan</h2>
   <ul>
