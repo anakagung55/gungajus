@@ -210,7 +210,7 @@ blockquote {
   <div class="blog-meta">Scraping • 5 min read • 2025</div>
 
   <img src="{{ site.baseurl }}/assets/img/ass-scraping.jpg"
-       style="width:100%;border-radius:14px;margin:30px 0;">
+       style="max-width: 600px;border-radius:14px;margin:30px auto;display: block;">
 
   <p>
     <strong>Skill Assessment Scraping Project</strong> merupakan sistem automasi
@@ -246,7 +246,7 @@ blockquote {
 
   <h2>Workflow Sistem</h2>
   <img src="{{ site.baseurl }}/assets/img/ass-flow.jpg"
-       style="width:100%;border-radius:14px;margin:20px 0;">
+       style="max-width: 600px;border-radius:14px;margin:30px auto;display: block;">
 
   <p>
     Sistem bekerja mulai dari pengambilan halaman resmi lembaga assessment,
