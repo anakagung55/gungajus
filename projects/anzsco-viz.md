@@ -91,7 +91,7 @@ border-left:4px solid #6f78ff;border-radius:12px}
 <h1>ANZSCO Data Visualization Project</h1>
 <div class="blog-meta">Data Visualization • 5 min read • 2025</div>
 
-<img src="{{ site.baseurl }}/assets/img/anzsco-viz.jpg"
+<img src="{{ site.baseurl }}/assets/img/anzsco-viz-thumb.jpg"
 style="width:100%;border-radius:14px;margin:30px 0;">
 
 <p>
