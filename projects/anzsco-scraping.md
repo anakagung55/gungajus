@@ -189,7 +189,7 @@ blockquote {
   <div class="blog-meta">Scraping • 5 min read • 2025</div>
 
   <img src="{{ site.baseurl }}/assets/img/anzsco-thumb.jpg"
-       style="width:100%;border-radius:14px;margin:30px 0;">
+       style="max-width: 600px;border-radius:14px;margin:30px auto;display: block;">
 
   <p>
     ANZSCO Scraping merupakan sistem automasi pengambilan data
@@ -216,7 +216,7 @@ blockquote {
 
   <h2>Workflow Sistem</h2>
   <img src="{{ site.baseurl }}/assets/img/anzsco-flow.jpg"
-       style="width:100%;border-radius:14px;margin:20px 0;">
+       style="max-width: 600px;border-radius:14px;margin:30px auto;display: block;">
 
   <p>
     Sistem bekerja dengan melakukan scraping halaman occupation,
