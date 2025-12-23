@@ -127,7 +127,7 @@ for (let i = 0; i < 90; i++) {
     <div class="navbar-right">
       <a href="{{ site.baseurl }}/">Blog</a>
       <a href="{{ site.baseurl }}/galeri">Galeri</a>
-      <a href="{{ site.baseurl }}/tentang">Tentang</a>
+      <a href="https://portfolio.agungajus.page.gd/">Tentang</a>
       <a href="{{ site.baseurl }}/lokasi">Lokasi</a>
     </div>
   </div>
